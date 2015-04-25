@@ -1,0 +1,13 @@
+1.在页面加载完之后，加上以下js：
+if ($("#ulTabInfo li").length > 0) {
+        $("#ulTabInfo").tabs();
+    }
+2.定位到某个tab方法：
+	例子：
+if ($("#ulTabInfo li").length > 0) {
+    $('#ulTabInfo').tabs();
+    $('#ulTabInfo').tabs('select', n);
+    if ($("#hdIsRealMeeting").val() == "0" || $("#hdIsRealMeeting").val() == "") {
+        $('#ulTabInfo').hide();
+    }
+}

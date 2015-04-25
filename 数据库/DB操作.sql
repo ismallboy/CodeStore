@@ -1,0 +1,4 @@
+--ĞŞ¸Ä×Ö¶ÎÀàĞÍ
+Alter table MSTB_MR_LOG alter column OPTION_STATUS_AFTER int null
+
+--
