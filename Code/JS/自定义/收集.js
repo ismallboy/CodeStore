@@ -25,3 +25,44 @@
 		var r = window.location.search.substr(1).match(reg);
 		if (r != null) return unescape(r[2]); return null;
 	}
+11.正则表达式js验证
+	//正则表达式验证是否是标准颜色值
+    $("#txtTicketColor").change(function () {
+        var txt = $(this).val();
+        if (/^#[0-9|a-f|A-F]{6}$/.test(txt) == false) {
+            $(this).focus();
+            alert("请输入标准的6位颜色值");
+            return false;
+        } 
+        $("#spTicketColor").css("background-color", $(this).val());
+    });
+12.获取颜色16进制值：
+	$.fn.getHexBackgroundColor = function () {
+		var rgb = $(this).css("background-color");
+		if (rgb.indexOf('#')>=0) {
+			return rgb;
+		}
+		rgb = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+		function hex(x) { return ("0" + parseInt(x).toString(16)).slice(-2); }
+		return rgb = "#" + hex(rgb[1]) + hex(rgb[2]) + hex(rgb[3]);
+	};
+13.弹出窗口居中：
+////////////////////////////////////////////////////////
+// 函数名称：Open Window
+// 功能说明：弹出窗
+///////////////////////////////////////////////////////
+function openWindow(sURL, sName, w, h, left, top) {
+    var sFeatures = "toolbar = no,";
+    sFeatures += "location = no,";
+    sFeatures += "status = no,";
+    sFeatures += "menubar = no,";
+    sFeatures += "scrollbars = no,";
+    sFeatures += "resizable = yes,";
+    sFeatures = "width = " + w + ",";
+    sFeatures += "height = " + h + ",";
+    sFeatures += "left = " + left + ",";
+    sFeatures += "top = " + top;
+    window.open(sURL, sName, sFeatures, true);
+}
+
+居中显示：openWindow('PersonTemplateSave.aspx', '保存个人模板', 500, 100, screen.width/2 - 250, screen.height/2 - 50);

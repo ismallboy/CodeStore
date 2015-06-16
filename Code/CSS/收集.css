@@ -1,3 +1,8 @@
 1.input使用了OnlyInteger()限定只能输入整数，微软输入法却输入不了的解决方案：
 	Style="ime-mode: disabled;
-2.
+2.设置span内充满样式：
+	#divTicketColor span {
+		display: inline-block;
+		width: 30px;
+	} 
+3.
