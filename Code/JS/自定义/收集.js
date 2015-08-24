@@ -66,3 +66,26 @@ function openWindow(sURL, sName, w, h, left, top) {
 }
 
 居中显示：openWindow('PersonTemplateSave.aspx', '保存个人模板', 500, 100, screen.width/2 - 250, screen.height/2 - 50);
+
+14.设置Dom对象显示最大文本，多出用...代替
+////////////////////////////////////////////////////////
+	//函数说明：设置对象最长文本，超出则用...代替
+	//obj:需要显示文本的对象
+	//maxLen设置最长文本
+	//超出maxLen，则减少多少个字符用...代替
+	//text需要显示的文本
+	function SetMaxText(obj, maxLen, replaceNum, text) {
+		var len = text.length;
+		if (len > maxLen) {
+			text = text.substring(0, maxLen - replaceNum) + "...";
+		}
+		$(obj).text(text);
+	}
+
+15.计算字符串的字节数：
+    String.prototype.lenB = function () { 
+		return this.replace(/[^\x00-\xff]/g, "**").length; 
+	}
+16.js提交
+	setTimeout(__doPostBack($("#btnRebindControlData").attr("name"), ''),0);
+17. 

@@ -1,7 +1,7 @@
-1.   Linq²éÑ¯ÁĞÖµÊÇ·ñÖØ¸´        
-	//×ùÎ»ºÅÎ¨Ò»
+1.   LinqæŸ¥è¯¢åˆ—å€¼æ˜¯å¦é‡å¤        
+	//åº§ä½å·å”¯ä¸€
 	var groupList = (from s in listSeatChart group s by new {SeatName = s.SeatName } into newGroup where newGroup.Count() > 1 select newGroup.Key.SeatName).ToArray();
 	if (groupList != null && groupList.Length > 0)
 	{ 
-			msg += "×ùÎ»ºÅ{0}´æÔÚÖØ¸´Öµ;\\n".FormatWith(string.Join(",",groupList));
+			msg += "åº§ä½å·{0}å­˜åœ¨é‡å¤å€¼;\\n".FormatWith(string.Join(",",groupList));
 	}

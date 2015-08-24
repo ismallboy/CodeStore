@@ -1,10 +1,10 @@
-//ÅÐ¶ÏÒ»¸ö×Ö·û´®ÊÇ·ñÊÇÊý×Ö
+//åˆ¤æ–­ä¸€ä¸ªå­—ç¬¦ä¸²æ˜¯å¦æ˜¯æ•°å­—
 function NumberExtend(str) {
     str = str.replace(/,/g, "");
     return Number(str);
 }
 
-//ÅÐ¶Ï¿Ø¼þµÄÖµÊÇ·ñÎª¿Õ
+//åˆ¤æ–­æŽ§ä»¶çš„å€¼æ˜¯å¦ä¸ºç©º
 function IsEmpty(elem) {
     if ($(elem)[0].tagName == "INPUT") {
         return $.trim($(elem).val()) === "";
@@ -14,27 +14,27 @@ function IsEmpty(elem) {
     }
 }
 
-//Ö»ÔÊÐíÊäÈëÕûÊý£¨Î¢ÈíÆ´ÒôÊäÈë·¨ÖÐÎÄ×´Ì¬ÏÂ¿ÉÄÜ²»ÄÜÊäÈëÊý×Ö£¬Ðè¼ÓÉÏ£ºStyle="ime-mode: disabled;"£©
+//åªå…è®¸è¾“å…¥æ•´æ•°ï¼ˆå¾®è½¯æ‹¼éŸ³è¾“å…¥æ³•ä¸­æ–‡çŠ¶æ€ä¸‹å¯èƒ½ä¸èƒ½è¾“å…¥æ•°å­—ï¼Œéœ€åŠ ä¸Šï¼šStyle="ime-mode: disabled;"ï¼‰
 function OnlyIntegerValue() {
     if (!(event.keyCode == 46) && !(event.keyCode == 8) && !(event.keyCode == 37) && !(event.keyCode == 39))
         if (!((event.keyCode >= 48 && event.keyCode <= 57) || (event.keyCode >= 96 && event.keyCode <= 105)))
             event.returnValue = false;
 }
 
-//Ö»ÔÊÐíÊäÈëÐ¡Êý
+//åªå…è®¸è¾“å…¥å°æ•°
 function OnlyFloatValue() {
     if (!(event.keyCode == 46) && !(event.keyCode == 8) && !(event.keyCode == 37) && !(event.keyCode == 39) && !(event.keyCode == 190) && !(event.keyCode == 110))
         if (!((event.keyCode >= 48 && event.keyCode <= 57) || (event.keyCode >= 96 && event.keyCode <= 105)))
             event.returnValue = false;
 }
 
-//ÅÐ¶ÏÊÇ·ñÊÇÕûÊý
+//åˆ¤æ–­æ˜¯å¦æ˜¯æ•´æ•°
 function IsInt(str) {
     var reg = /^[0-9]*$/;
     return reg.test(str);
 }
 
-//ÅÐ¶ÏÊÇ·ñÊÇÐ¡Êý
+//åˆ¤æ–­æ˜¯å¦æ˜¯å°æ•°
 function IsFloat(str) {
     if (IsInt(str))
         return true;
@@ -42,7 +42,7 @@ function IsFloat(str) {
     return reg.test(str);
 }
 
-/******************Éí·ÝÖ¤Ð£Ñé·½·¨ *****************************/
+/******************èº«ä»½è¯æ ¡éªŒæ–¹æ³• *****************************/
 CommonFunction.Append_Zore = function (temp) {
     if (temp < 10) {
         return "0" + temp;
@@ -53,10 +53,10 @@ CommonFunction.Append_Zore = function (temp) {
 }
 CommonFunction.DentityCardChecked = function (person_id) {
     var aCity = {
-        11: "±±¾©", 12: "Ìì½ò", 13: "ºÓ±±", 14: "É½Î÷", 15: "ÄÚÃÉ¹Å", 21: "ÁÉÄþ", 22: "¼ªÁÖ", 23: "ºÚÁú½­", 31: "ÉÏº£",
-        32: "½­ËÕ", 33: "Õã½­", 34: "°²»Õ", 35: "¸£½¨", 36: "½­Î÷", 37: "É½¶«", 41: "ºÓÄÏ", 42: "ºþ±±", 43: "ºþÄÏ",
-        44: "¹ã¶«", 45: "¹ãÎ÷", 46: "º£ÄÏ", 50: "ÖØÇì", 51: "ËÄ´¨", 52: "¹óÖÝ", 53: "ÔÆÄÏ", 54: "Î÷²Ø", 61: "ÉÂÎ÷",
-        62: "¸ÊËà", 63: "Çàº£", 64: "ÄþÏÄ", 65: "ÐÂ½®", 71: "Ì¨Íå", 81: "Ïã¸Û", 82: "°ÄÃÅ", 91: "¹úÍâ"
+        11: "åŒ—äº¬", 12: "å¤©æ´¥", 13: "æ²³åŒ—", 14: "å±±è¥¿", 15: "å†…è’™å¤", 21: "è¾½å®", 22: "å‰æž—", 23: "é»‘é¾™æ±Ÿ", 31: "ä¸Šæµ·",
+        32: "æ±Ÿè‹", 33: "æµ™æ±Ÿ", 34: "å®‰å¾½", 35: "ç¦å»º", 36: "æ±Ÿè¥¿", 37: "å±±ä¸œ", 41: "æ²³å—", 42: "æ¹–åŒ—", 43: "æ¹–å—",
+        44: "å¹¿ä¸œ", 45: "å¹¿è¥¿", 46: "æµ·å—", 50: "é‡åº†", 51: "å››å·", 52: "è´µå·ž", 53: "äº‘å—", 54: "è¥¿è—", 61: "é™•è¥¿",
+        62: "ç”˜è‚ƒ", 63: "é’æµ·", 64: "å®å¤", 65: "æ–°ç–†", 71: "å°æ¹¾", 81: "é¦™æ¸¯", 82: "æ¾³é—¨", 91: "å›½å¤–"
     };
 
     var sum = 0;
@@ -66,80 +66,80 @@ CommonFunction.DentityCardChecked = function (person_id) {
     var pattern = new RegExp(/(^\d{17}(\d|x|X)$)/i);
 
     if (person_id == "" || person_id == null) {
-        alert("ÇëÊäÈëÉí·ÝÖ¤ºÅÂë");
+        alert("è¯·è¾“å…¥èº«ä»½è¯å·ç ");
         return false;
     }
 
     if (pattern.exec(person_id)) {
         person_id = person_id.replace(/x|X$/i, "a");
-        //»ñÈ¡18Î»Ö¤¼þºÅÖÐµÄ³öÉúÈÕÆÚ
+        //èŽ·å–18ä½è¯ä»¶å·ä¸­çš„å‡ºç”Ÿæ—¥æœŸ
         birthFullYear = person_id.substring(6, 10);
         birthday = person_id.substring(6, 10) + "-" + person_id.substring(10, 12) + "-" + person_id.substring(12, 14);
-        //Ð£Ñé18Î»Éí·ÝÖ¤ºÅÂëµÄºÏ·¨ÐÔ
+        //æ ¡éªŒ18ä½èº«ä»½è¯å·ç çš„åˆæ³•æ€§
         for (var i = 17; i >= 0; i--) {
             sum += (Math.pow(2, i) % 11) * parseInt(person_id.charAt(17 - i), 11);
         }
         if (sum % 11 != 1) {
-            alert("Éí·ÝÖ¤ºÅÂë²»·ûºÏ¹ú¶¨±ê×¼£¬ÇëºË¶Ô£¡");
+            alert("èº«ä»½è¯å·ç ä¸ç¬¦åˆå›½å®šæ ‡å‡†ï¼Œè¯·æ ¸å¯¹ï¼");
             return false;
         }
 
 
-        //¼ì²âÖ¤¼þµØÇøµÄºÏ·¨ÐÔ								
+        //æ£€æµ‹è¯ä»¶åœ°åŒºçš„åˆæ³•æ€§								
         if (aCity[parseInt(person_id.substring(0, 2))] == null) {
-            alert("Éí·ÝÖ¤µØÇøÎ´Öª£¬ÇëºË¶Ô£¡");
+            alert("èº«ä»½è¯åœ°åŒºæœªçŸ¥ï¼Œè¯·æ ¸å¯¹ï¼");
             return false;
         }
         var dateStr = new Date(birthday.replace(/-/g, "/"));
 
         if (birthday != (dateStr.getFullYear() + "-" + CommonFunction.Append_Zore(dateStr.getMonth() + 1) + "-" + CommonFunction.Append_Zore(dateStr.getDate()))) {
-            alert("Éí·ÝÖ¤³öÉúÈÕÆÚ·Ç·¨£¡");
+            alert("èº«ä»½è¯å‡ºç”Ÿæ—¥æœŸéžæ³•ï¼");
             return false;
         }
 
         var yearValids = parseInt(currentYear) - parseInt(birthFullYear);
         if (yearValids > 200 || yearValids < 0) {
-            alert("Éí·ÝÖ¤ÄêÁä³¬³ö¹æ¶¨µÄ·¶Î§£¬ÇëºË¶Ô");
+            alert("èº«ä»½è¯å¹´é¾„è¶…å‡ºè§„å®šçš„èŒƒå›´ï¼Œè¯·æ ¸å¯¹");
             return false;
         }
     } else {
-        alert("ÊäÈëÓÐÎó£¬ÇëÔÙ´ÎºË¶ÔÉí·ÝÖ¤ºÅÂë");
+        alert("è¾“å…¥æœ‰è¯¯ï¼Œè¯·å†æ¬¡æ ¸å¯¹èº«ä»½è¯å·ç ");
         return false;
     }
     return true;
 
 }
-/******************Éí·ÝÖ¤Ð£Ñé·½·¨ *****************************/
+/******************èº«ä»½è¯æ ¡éªŒæ–¹æ³• *****************************/
 
-//¼ìÑéÓ¢ÎÄ
+//æ£€éªŒè‹±æ–‡
 CommonFunction.IsEn = function (input) {
     input = $(input);
     var value = input.val();
     if (value != null || value != "") {
         var pattern = "^[A-Za-z]+$";
-        var regExp = new RegExp(pattern); //new RegExp(pattern, attributes);  Èç new RegExp("[R|n]","gi") 
+        var regExp = new RegExp(pattern); //new RegExp(pattern, attributes);  å¦‚ new RegExp("[R|n]","gi") 
         return regExp.test(value);
     }
     return true;
 }
 
-//Ð£ÑéÖÐÎÄ
+//æ ¡éªŒä¸­æ–‡
 CommonFunction.IsChinese = function (input) {
     //input = $(input);
     var value = input;
     if (value != null || value != "") {
         var pattern = "^[\\u4E00-\\u9FA5\\uF900-\\uFA2D]+$";
-        var regExp = new RegExp(pattern); //new RegExp(pattern, attributes);  Èç new RegExp("[R|n]","gi") 
+        var regExp = new RegExp(pattern); //new RegExp(pattern, attributes);  å¦‚ new RegExp("[R|n]","gi") 
         return regExp.test(value);
     }
     return true;
 }
 
-//JSONÅÅÐò
-//º¯Êý¹¦ÄÜ£ºjson ÅÅÐò  
-// filed:(string)ÅÅÐò×Ö¶Î£¬  
-// reverse: (bool) ÊÇ·ñµ¹ÖÃ(ÊÇ£¬Îªµ¹Ðò)  
-// primer (parse)×ª»»ÀàÐÍ  
+//JSONæŽ’åº
+//å‡½æ•°åŠŸèƒ½ï¼šjson æŽ’åº  
+// filed:(string)æŽ’åºå­—æ®µï¼Œ  
+// reverse: (bool) æ˜¯å¦å€’ç½®(æ˜¯ï¼Œä¸ºå€’åº)  
+// primer (parse)è½¬æ¢ç±»åž‹  
 var SortBy = function (filed, reverse, primer) {
     reverse = (reverse) ? -1 : 1;
     return function (a, b) {
@@ -160,35 +160,35 @@ var SortBy = function (filed, reverse, primer) {
         return 0;
     }
 }
-// µ÷ÓÃ
+// è°ƒç”¨
 function JsonSort(jsonList, fieldName, asc, dataType) {
     jsonList.sort(SortBy(fieldName, asc, dataType));
 }
 
-/* ÏÞÖÆÊäÈëÖ»ÄÜÊäÈëÊý×ÖµÄ·½·¨,ÔÚtxtboxÖÐ¼ÓÈëonkeyup="clearNoNum(this)" */
+/* é™åˆ¶è¾“å…¥åªèƒ½è¾“å…¥æ•°å­—çš„æ–¹æ³•,åœ¨txtboxä¸­åŠ å…¥onkeyup="clearNoNum(this)" */
 AFValidate.clearNoNum = function (obj) {
-    //ÏÈ°Ñ·ÇÊý×ÖµÄ¶¼Ìæ»»µô£¬³ýÁËÊý×ÖºÍ.
+    //å…ˆæŠŠéžæ•°å­—çš„éƒ½æ›¿æ¢æŽ‰ï¼Œé™¤äº†æ•°å­—å’Œ.
     obj.value = obj.value.replace(/[^\d]/g, "");
-    //±ØÐë±£Ö¤µÚÒ»¸öÎªÊý×Ö¶ø²»ÊÇ.
+    //å¿…é¡»ä¿è¯ç¬¬ä¸€ä¸ªä¸ºæ•°å­—è€Œä¸æ˜¯.
     obj.value = obj.value.replace(/^\./g, "");
-    //±£Ö¤Ö»ÓÐ³öÏÖÒ»¸ö.¶øÃ»ÓÐ¶à¸ö.
+    //ä¿è¯åªæœ‰å‡ºçŽ°ä¸€ä¸ª.è€Œæ²¡æœ‰å¤šä¸ª.
     obj.value = obj.value.replace(/\.{2,}/g, ".");
-    //±£Ö¤.Ö»³öÏÖÒ»´Î£¬¶ø²»ÄÜ³öÏÖÁ½´ÎÒÔÉÏ
+    //ä¿è¯.åªå‡ºçŽ°ä¸€æ¬¡ï¼Œè€Œä¸èƒ½å‡ºçŽ°ä¸¤æ¬¡ä»¥ä¸Š
     obj.value = obj.value.replace(".", "$#$").replace(/\./g, "").replace("$#$", ".");
 }
 
-/* ÏÞÖÆÊäÈëÖ»ÄÜÊäÈë½ð¶îµÄ·½·¨,ÔÚtxtboxÖÐ¼ÓÈëonkeyup="clearNoMoney(this)" */
+/* é™åˆ¶è¾“å…¥åªèƒ½è¾“å…¥é‡‘é¢çš„æ–¹æ³•,åœ¨txtboxä¸­åŠ å…¥onkeyup="clearNoMoney(this)" */
 AFValidate.clearNoMoney = function (obj) {
-    //ÏÈ°Ñ·ÇÊý×ÖµÄ¶¼Ìæ»»µô£¬³ýÁËÊý×ÖºÍ.
+    //å…ˆæŠŠéžæ•°å­—çš„éƒ½æ›¿æ¢æŽ‰ï¼Œé™¤äº†æ•°å­—å’Œ.
     obj.value = obj.value.replace(/[^\d.-]/g, "");
-    //±ØÐë±£Ö¤µÚÒ»¸öÎªÊý×Ö¶ø²»ÊÇ.
+    //å¿…é¡»ä¿è¯ç¬¬ä¸€ä¸ªä¸ºæ•°å­—è€Œä¸æ˜¯.
     obj.value = obj.value.replace(/^\./g, "");
-    //±£Ö¤Ö»ÓÐ³öÏÖÒ»¸ö.¶øÃ»ÓÐ¶à¸ö.
+    //ä¿è¯åªæœ‰å‡ºçŽ°ä¸€ä¸ª.è€Œæ²¡æœ‰å¤šä¸ª.
     obj.value = obj.value.replace(/\.{2,}/g, ".");
-    //±£Ö¤.Ö»³öÏÖÒ»´Î£¬¶ø²»ÄÜ³öÏÖÁ½´ÎÒÔÉÏ
+    //ä¿è¯.åªå‡ºçŽ°ä¸€æ¬¡ï¼Œè€Œä¸èƒ½å‡ºçŽ°ä¸¤æ¬¡ä»¥ä¸Š
     obj.value = obj.value.replace(".", "$#$").replace(/\./g, "").replace("$#$", ".");
     obj.value = obj.value.replace("-", "$#$").replace(/-/g, "").replace("$#$", "-");
-    /* ±£Ö¤-Ö»ÄÜ³öÏÖÔÚµÚÒ»Î» */
+    /* ä¿è¯-åªèƒ½å‡ºçŽ°åœ¨ç¬¬ä¸€ä½ */
     if (obj.value.indexOf('-') > 1) {
         obj.value = obj.value.replace(/-/g, "");
     }
