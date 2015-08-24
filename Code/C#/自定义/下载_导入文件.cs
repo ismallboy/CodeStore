@@ -1,8 +1,8 @@
 /// <summary>
-/// ÏÂÔØÎÄ¼ş
+/// ä¸‹è½½æ–‡ä»¶
 /// </summary>
-/// <param name="fileName">µ¼³öÎÄ¼ş±¾µØPath</param>
-/// <param name="outputName">Êä³öÎÄ¼şÃû£¬°üº¬À©Õ¹Ãû,´«ÈëÇ°×îºÃServer.UrlEncode</param>
+/// <param name="fileName">å¯¼å‡ºæ–‡ä»¶æœ¬åœ°Path</param>
+/// <param name="outputName">è¾“å‡ºæ–‡ä»¶åï¼ŒåŒ…å«æ‰©å±•å,ä¼ å…¥å‰æœ€å¥½Server.UrlEncode</param>
 public static void DownloadFile(string fileName,string outputName)
 {
 	byte[] data;
@@ -21,31 +21,31 @@ public static void DownloadFile(string fileName,string outputName)
 	HttpContext.Current.Response.BinaryWrite(data);
 	HttpContext.Current.Response.Flush();
 	HttpContext.Current.Response.Close();
-	//HttpContext.Current.Response.End();   //Alan 2015-05-06 ×¢Îö Ô­Òò£ºTry catch »á°Ñresponse.end()Óï¾ä×÷ÎªÓï¾äÖĞ¶ÏµÄ´íÎóÀ´Ö´ĞĞ
+	//HttpContext.Current.Response.End();   //Alan 2015-05-06 æ³¨æ åŸå› ï¼šTry catch ä¼šæŠŠresponse.end()è¯­å¥ä½œä¸ºè¯­å¥ä¸­æ–­çš„é”™è¯¯æ¥æ‰§è¡Œ
 }
 
 /// <summary>
-/// µ¼Èë×ùÎ»ĞÅÏ¢
+/// å¯¼å…¥åº§ä½ä¿¡æ¯
 /// </summary>
 /// <param name="sender"></param>
 /// <param name="e"></param>
 protected void btnImport_Click(object sender, EventArgs e)
 {
-	//ÅĞ¶ÏÊÇ·ñexelÎÄ¼ş
+	//åˆ¤æ–­æ˜¯å¦exelæ–‡ä»¶
 	if (string.IsNullOrEmpty(fudSeatTable.FileName))
 	{
-		ShowMessage("ÇëÑ¡ÔñÒªµ¼ÈëµÄÎÄ¼ş");
+		ShowMessage("è¯·é€‰æ‹©è¦å¯¼å…¥çš„æ–‡ä»¶");
 		return;
 	}
 	if (Path.GetExtension(fudSeatTable.PostedFile.FileName).ToLower() != ".xls")
 	{
-		ShowMessage("ÇëÑ¡Ôñ.xls¸ñÊ½µÄÎÄ¼ş");
+		ShowMessage("è¯·é€‰æ‹©.xlsæ ¼å¼çš„æ–‡ä»¶");
 		return;
 	} 
 
-	//Ğ£ÑéÊı¾İ
+	//æ ¡éªŒæ•°æ®
 	Stream importStream = fudSeatTable.PostedFile.InputStream;
-	//¶ÁÈ¡excelÎÄ¼şÊı¾İ
+	//è¯»å–excelæ–‡ä»¶æ•°æ®
 	var listExcel = ExcelHelper.ReadExcelData(importStream);
 	string msg = string.Empty;
 	if (listExcel != null && listExcel.Count > 0)
@@ -53,11 +53,11 @@ protected void btnImport_Click(object sender, EventArgs e)
 		var listSeatChart = new List<MsetSeatingChart>();
 		if (CheckData(listExcel, out listSeatChart, out msg))
 		{
-			//¼Ó³¤ÊÂÎñÊ±¼ä 10·ÖÖÓ
+			//åŠ é•¿äº‹åŠ¡æ—¶é—´ 10åˆ†é’Ÿ
 			using (TransactionScope tran = new TransactionScope( TransactionScopeOption.Required, new TimeSpan(0,10,0)))
 			{
 				var msetSeatChartBO = GetService<IMsetSeatingChartBO>();
-				//ÏÈÉ¾³ıÔ­À´µÄ×ùÎ»±íĞÅÏ¢£¬ÔÙÌí¼Óµ±Ç°µ¼ÈëµÄ×ùÎ»±íĞÅÏ¢
+				//å…ˆåˆ é™¤åŸæ¥çš„åº§ä½è¡¨ä¿¡æ¯ï¼Œå†æ·»åŠ å½“å‰å¯¼å…¥çš„åº§ä½è¡¨ä¿¡æ¯
 				var oldSeatTable = msetSeatChartBO.GetFilteredList(o => o.RecordID == this.RecordID);
 				foreach (var item in oldSeatTable)
 				{
@@ -68,24 +68,24 @@ protected void btnImport_Click(object sender, EventArgs e)
 					msetSeatChartBO.Add(item);
 				}
 				tran.Complete();
-				ShowMessage("µ¼Èë³É¹¦;");
-				//¹Ø±Õµ¯³ö²ã£¬Ë¢ĞÂ¸¸Ò³Ãæ
+				ShowMessage("å¯¼å…¥æˆåŠŸ;");
+				//å…³é—­å¼¹å‡ºå±‚ï¼Œåˆ·æ–°çˆ¶é¡µé¢
 				this.Page.ClientScript.RegisterStartupScript(this.Page.GetType(), "MsetUnblockUI", "$.unblockUI();$('#ifrmImportSeatTable').contents().find('#btnSearch').click();", true);
 			}
 		}
 		else
 		{
-			ShowMessage("µ¼Èë×ùÎ»±íĞÅÏ¢Ê§°Ü:\\n" + msg);
-			Logger.Debug("µ¼³ö×ùÎ»±íĞÅÏ¢´íÎó,ÏêÏ¸:" + msg);
+			ShowMessage("å¯¼å…¥åº§ä½è¡¨ä¿¡æ¯å¤±è´¥:\\n" + msg);
+			Logger.Debug("å¯¼å‡ºåº§ä½è¡¨ä¿¡æ¯é”™è¯¯,è¯¦ç»†:" + msg);
 			return;
 		}
 	}
-	//½â³ıµ¯³ö²ã
+	//è§£é™¤å¼¹å‡ºå±‚
 	this.Page.ClientScript.RegisterStartupScript(this.Page.GetType(), "MsetUnblockUI", "$.unblockUI();", true);
 }
 
 /// <summary>
-/// Ä£°åÏÂÔØ
+/// æ¨¡æ¿ä¸‹è½½
 /// </summary>
 /// <param name="sender"></param>
 /// <param name="e"></param>
@@ -93,22 +93,22 @@ protected void ibtnDownload_Click(object sender, EventArgs e)
 {
 	try
 	{
-		//¸ù¾İÃÅÆ±Êı¾İÉèÖÃÉú³ÉexcelÄ£°åÌá¹©ÏÂÔØ
+		//æ ¹æ®é—¨ç¥¨æ•°æ®è®¾ç½®ç”Ÿæˆexcelæ¨¡æ¿æä¾›ä¸‹è½½
 		var msetSeatTableChartBO = GetService<IMsetSeatingChartBO>();
 		string fileFolder = Server.MapPath("~/Template/");
 		var fileName = "MsetSeatTableTemplate_" + Guid.NewGuid().ToString() + ".xls";
 		string fileFullName = fileFolder + fileName;
 		if (!msetSeatTableChartBO.CreateSeatTableTemplate(this.RecordID, fileFullName))
 		{
-			ShowMessage("Éú³ÉÄ£°åÊ§°Ü");
+			ShowMessage("ç”Ÿæˆæ¨¡æ¿å¤±è´¥");
 			return;
 		}
 
 		var mapPath = Request.MapPath("~/Template/" + fileName);
 
-		var exportName = Server.UrlEncode("µ¼Èë×ùÎ»ĞÅÏ¢Ä£°å.xls");
+		var exportName = Server.UrlEncode("å¯¼å…¥åº§ä½ä¿¡æ¯æ¨¡æ¿.xls");
 		MsetUtility.DownloadFile(mapPath, exportName);
-		//É¾³ıÁÙÊ±ÎÄ¼ş
+		//åˆ é™¤ä¸´æ—¶æ–‡ä»¶
 		if (File.Exists(mapPath))
 		{
 			File.Delete(mapPath);
@@ -116,7 +116,7 @@ protected void ibtnDownload_Click(object sender, EventArgs e)
 	}
 	catch (Exception ex)
 	{
-		Logger.Error("ÏÂÔØ×ùÎ»ĞÅÏ¢Ä£°å³ö´í£¬ÎÄ¼şÂ·¾¶£ºÏêÏ¸" + ex.Message + ex.StackTrace);
-		ShowMessage("ÏÂÔØ×ùÎ»ĞÅÏ¢Ä£°åÊ§°Ü£¬ÇëË¢ĞÂÖØÊÔ");
+		Logger.Error("ä¸‹è½½åº§ä½ä¿¡æ¯æ¨¡æ¿å‡ºé”™ï¼Œæ–‡ä»¶è·¯å¾„ï¼šè¯¦ç»†" + ex.Message + ex.StackTrace);
+		ShowMessage("ä¸‹è½½åº§ä½ä¿¡æ¯æ¨¡æ¿å¤±è´¥ï¼Œè¯·åˆ·æ–°é‡è¯•");
 	}
 }

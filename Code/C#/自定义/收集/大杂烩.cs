@@ -1,7 +1,7 @@
-1.ºóÌ¨Ë¢ĞÂ½çÃæ£º
-	¢Ù//»ñÈ¡³É¹¦ºó¹Ø±Õ´°¿Ú²¢Ë¢ĞÂ¸¸´°¿Ú
+1.åå°åˆ·æ–°ç•Œé¢ï¼š
+	â‘ //è·å–æˆåŠŸåå…³é—­çª—å£å¹¶åˆ·æ–°çˆ¶çª—å£
 	string myScript = "<script>window.opener.location.href = window.opener.location.href;  if (window.opener.progressWindow) { window.opener.progressWindow.close(); }  window.close();</script>";
 	Page.ClientScript.RegisterStartupScript(typeof(string), "closeWindowAndRefresh", myScript);
-	¢Úresponse.redirect("");
-2.WebServiceÔÊĞí·ÃÎÊsession
+	â‘¡response.redirect("");
+2.WebServiceå…è®¸è®¿é—®session
 	[WebMethod(EnableSession=true)]
