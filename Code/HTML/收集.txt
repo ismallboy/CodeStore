@@ -1,0 +1,4 @@
+1.去掉IE兼容性视图：
+	在Head第一行加上：
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+2.
