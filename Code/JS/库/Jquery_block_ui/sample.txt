@@ -1,0 +1,16 @@
+    var div = $('<div class="inputform" style="text-align:left;"><div class="ititle ititlefix" style="margin: 0px;">ÇëÑ¡Ôñ¼Î±ö</div></div>');
+
+    $.blockUI({
+        message: div,
+        css: {
+            width: 560,
+            height: 130,
+            position: 'fixed',
+            border: '0px',
+            cursor: "default",
+            left: ($(window).width() - 560) / 2 + 'px',
+            top: ($(window).height() - 130) / 2 + 'px'
+        },
+        overlayCSS: { backgroundColor: '#fff', opacity: 0.7 },
+        onOverlayClick: $.unblockUI
+    });

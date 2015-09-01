@@ -1,0 +1,1 @@
+Àý×Ó£ºGetETicketQRCode.ashx£¿code={0}

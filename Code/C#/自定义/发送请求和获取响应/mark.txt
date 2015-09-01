@@ -1,0 +1,1 @@
+里面有用到委托:public delegate bool PushWechatMessageDelegate(List<MsgWeChatPushDTO> postData);
