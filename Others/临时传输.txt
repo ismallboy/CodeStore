@@ -2,3 +2,15 @@ http://www.oschina.net/code/snippet_1993919_4
 http://blog.csdn.net/weiguo526/article/details/57754149158
 http://www.primeton.com/products/portal/overview.php?utm_source=baidu&utm_medium=cpc&utm_campaign=b-28633
 http://kb.cnblogs.com/page/78947/2/
+
+SQL:
+http://blog.csdn.net/warcraftjimmy/article/details/7661388
+http://kb.cnblogs.com/page/44125/
+http://www.cnblogs.com/lwzz/archive/2012/08/05/2620824.html
+http://www.cnblogs.com/aspnethot/articles/1504082.html
+http://www.cnblogs.com/kissdodog/archive/2013/06/12/3132380.html
+http://www.cnblogs.com/ASPNET2008/p/3330136.html
+http://www.cnblogs.com/ASPNET2008/p/3325532.html
+
+IOC:
+http://www.cnblogs.com/showjan/p/3950989.html
