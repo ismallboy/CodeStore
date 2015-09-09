@@ -3,27 +3,27 @@ DROP TABLE TSTB_MSAT_ACTIVITY_INFO
 ;
 
 CREATE TABLE TSTB_MSAT_ACTIVITY_INFO ( 
-	RECORD_ID varchar(50) NOT NULL,    -- »î¶¯ID 
-	ACTIVITY_SN varchar(50),    -- »î¶¯±àºÅ 
-	PUBLISH_STATUS int,    -- ·¢²¼×´Ì¬£º1=²İ¸å£¬2=ĞŞ¸ÄÎ´·¢²¼£¬3=·¢²¼ÖĞ£¬4=ÒÑ·¢²¼£¬9=·¢²¼Ê§°Ü 
-	PUBLISH_TIME datetime,    -- ·¢²¼Ê±¼ä 
-	PUSH_STATUS int,    -- ÍÆËÍ×´Ì¬£º0=Î´ÍÆËÍ,1=ÍÆËÍÖĞ,2=ÒÑÍÆËÍ 
-	PUSH_TIME datetime,    -- ÍÆËÍÊ±¼ä 
-	IS_CANCEL bit DEFAULT 0,    -- ÊÇ·ñ³·Ïû:1=ÒÑ³·Ïú£¬0=Î´³·Ïú 
-	AD_IMPROT_TYPE varchar(50),    -- »î¶¯ÀàĞÍ£¨»ñÈ¡Ãûµ¥µÄ·½Ê½:ACTIÅàÑµ,ÓªÏúÏµÁĞÅàÑµ£¨Ô­Èı´ó£©,¹«¿ª»áÒé£© 
-	ACTIVITY_CONTENT nvarchar(4000),    -- »î¶¯ÄÚÈİ 
-	ACTIVITY_PHOTO_URL nvarchar(400),    -- ¿¨Æ¬Í¼Æ¬URL 
-	HALL_NAME nvarchar(100),    -- »á³¡Ãû³Æ 
-	HALL_ADDRESS nvarchar(1000),    -- »á³¡µØÖ· 
-	HALL_PHOTO_URL nvarchar(400),    -- »á³¡Í¼Æ¬URL 
-	ACTIVITY_PREVIEW_URL nvarchar(400),    -- Ô¤ÀÀÂ·¾¶ 
+	RECORD_ID varchar(50) NOT NULL,    -- æ´»åŠ¨ID 
+	ACTIVITY_SN varchar(50),    -- æ´»åŠ¨ç¼–å· 
+	PUBLISH_STATUS int,    -- å‘å¸ƒçŠ¶æ€ï¼š1=è‰ç¨¿ï¼Œ2=ä¿®æ”¹æœªå‘å¸ƒï¼Œ3=å‘å¸ƒä¸­ï¼Œ4=å·²å‘å¸ƒï¼Œ9=å‘å¸ƒå¤±è´¥ 
+	PUBLISH_TIME datetime,    -- å‘å¸ƒæ—¶é—´ 
+	PUSH_STATUS int,    -- æ¨é€çŠ¶æ€ï¼š0=æœªæ¨é€,1=æ¨é€ä¸­,2=å·²æ¨é€ 
+	PUSH_TIME datetime,    -- æ¨é€æ—¶é—´ 
+	IS_CANCEL bit DEFAULT 0,    -- æ˜¯å¦æ’¤æ¶ˆ:1=å·²æ’¤é”€ï¼Œ0=æœªæ’¤é”€ 
+	AD_IMPROT_TYPE varchar(50),    -- æ´»åŠ¨ç±»å‹ï¼ˆè·å–åå•çš„æ–¹å¼:ACTIåŸ¹è®­,è¥é”€ç³»åˆ—åŸ¹è®­ï¼ˆåŸä¸‰å¤§ï¼‰,å…¬å¼€ä¼šè®®ï¼‰ 
+	ACTIVITY_CONTENT nvarchar(4000),    -- æ´»åŠ¨å†…å®¹ 
+	ACTIVITY_PHOTO_URL nvarchar(400),    -- å¡ç‰‡å›¾ç‰‡URL 
+	HALL_NAME nvarchar(100),    -- ä¼šåœºåç§° 
+	HALL_ADDRESS nvarchar(1000),    -- ä¼šåœºåœ°å€ 
+	HALL_PHOTO_URL nvarchar(400),    -- ä¼šåœºå›¾ç‰‡URL 
+	ACTIVITY_PREVIEW_URL nvarchar(400),    -- é¢„è§ˆè·¯å¾„ 
 	CREATE_DATE datetime,
 	CREATOR varchar(50),
 	UPDATE_DATE datetime,
 	UPDATOR varchar(50),
 	STATUS int,
-	NOTIFICATION_CNT int DEFAULT 0 NOT NULL,    -- »î¶¯ĞÅÏ¢ÍÆËÍ´ÎÊı 
-	FIRST_PREVIEW_TIME datetime    -- µÚÒ»´ÎÔ¤ÀÀÊ±¼ä 
+	NOTIFICATION_CNT int DEFAULT 0 NOT NULL,    -- æ´»åŠ¨ä¿¡æ¯æ¨é€æ¬¡æ•° 
+	FIRST_PREVIEW_TIME datetime    -- ç¬¬ä¸€æ¬¡é¢„è§ˆæ—¶é—´ 
 )
 ;
 
@@ -31,48 +31,48 @@ ALTER TABLE TSTB_MSAT_ACTIVITY_INFO ADD CONSTRAINT PK_TSTB_MSAT_ACTIVITY_INFO
 	PRIMARY KEY CLUSTERED (RECORD_ID)
 ;
 
-EXEC sp_addextendedproperty 'MS_Description', 'ÊÖ»úÖúÊÖ»î¶¯ĞÅÏ¢', 'Schema', dbo, 'table', TSTB_MSAT_ACTIVITY_INFO
+EXEC sp_addextendedproperty 'MS_Description', 'æ‰‹æœºåŠ©æ‰‹æ´»åŠ¨ä¿¡æ¯', 'Schema', dbo, 'table', TSTB_MSAT_ACTIVITY_INFO
 ;
-EXEC sp_addextendedproperty 'MS_Description', '»î¶¯ID', 'Schema', dbo, 'table', TSTB_MSAT_ACTIVITY_INFO, 'column', RECORD_ID
-;
-
-EXEC sp_addextendedproperty 'MS_Description', '»î¶¯±àºÅ', 'Schema', dbo, 'table', TSTB_MSAT_ACTIVITY_INFO, 'column', ACTIVITY_SN
+EXEC sp_addextendedproperty 'MS_Description', 'æ´»åŠ¨ID', 'Schema', dbo, 'table', TSTB_MSAT_ACTIVITY_INFO, 'column', RECORD_ID
 ;
 
-EXEC sp_addextendedproperty 'MS_Description', '·¢²¼×´Ì¬£º1=²İ¸å£¬2=ĞŞ¸ÄÎ´·¢²¼£¬3=·¢²¼ÖĞ£¬4=ÒÑ·¢²¼£¬9=·¢²¼Ê§°Ü', 'Schema', dbo, 'table', TSTB_MSAT_ACTIVITY_INFO, 'column', PUBLISH_STATUS
+EXEC sp_addextendedproperty 'MS_Description', 'æ´»åŠ¨ç¼–å·', 'Schema', dbo, 'table', TSTB_MSAT_ACTIVITY_INFO, 'column', ACTIVITY_SN
 ;
 
-EXEC sp_addextendedproperty 'MS_Description', '·¢²¼Ê±¼ä', 'Schema', dbo, 'table', TSTB_MSAT_ACTIVITY_INFO, 'column', PUBLISH_TIME
+EXEC sp_addextendedproperty 'MS_Description', 'å‘å¸ƒçŠ¶æ€ï¼š1=è‰ç¨¿ï¼Œ2=ä¿®æ”¹æœªå‘å¸ƒï¼Œ3=å‘å¸ƒä¸­ï¼Œ4=å·²å‘å¸ƒï¼Œ9=å‘å¸ƒå¤±è´¥', 'Schema', dbo, 'table', TSTB_MSAT_ACTIVITY_INFO, 'column', PUBLISH_STATUS
 ;
 
-EXEC sp_addextendedproperty 'MS_Description', 'ÍÆËÍ×´Ì¬£º0=Î´ÍÆËÍ,1=ÍÆËÍÖĞ,2=ÒÑÍÆËÍ', 'Schema', dbo, 'table', TSTB_MSAT_ACTIVITY_INFO, 'column', PUSH_STATUS
+EXEC sp_addextendedproperty 'MS_Description', 'å‘å¸ƒæ—¶é—´', 'Schema', dbo, 'table', TSTB_MSAT_ACTIVITY_INFO, 'column', PUBLISH_TIME
 ;
 
-EXEC sp_addextendedproperty 'MS_Description', 'ÍÆËÍÊ±¼ä', 'Schema', dbo, 'table', TSTB_MSAT_ACTIVITY_INFO, 'column', PUSH_TIME
+EXEC sp_addextendedproperty 'MS_Description', 'æ¨é€çŠ¶æ€ï¼š0=æœªæ¨é€,1=æ¨é€ä¸­,2=å·²æ¨é€', 'Schema', dbo, 'table', TSTB_MSAT_ACTIVITY_INFO, 'column', PUSH_STATUS
 ;
 
-EXEC sp_addextendedproperty 'MS_Description', 'ÊÇ·ñ³·Ïû:1=ÒÑ³·Ïú£¬0=Î´³·Ïú', 'Schema', dbo, 'table', TSTB_MSAT_ACTIVITY_INFO, 'column', IS_CANCEL
+EXEC sp_addextendedproperty 'MS_Description', 'æ¨é€æ—¶é—´', 'Schema', dbo, 'table', TSTB_MSAT_ACTIVITY_INFO, 'column', PUSH_TIME
 ;
 
-EXEC sp_addextendedproperty 'MS_Description', '»î¶¯ÀàĞÍ£¨»ñÈ¡Ãûµ¥µÄ·½Ê½:ACTIÅàÑµ,ÓªÏúÏµÁĞÅàÑµ£¨Ô­Èı´ó£©,¹«¿ª»áÒé£©', 'Schema', dbo, 'table', TSTB_MSAT_ACTIVITY_INFO, 'column', AD_IMPROT_TYPE
+EXEC sp_addextendedproperty 'MS_Description', 'æ˜¯å¦æ’¤æ¶ˆ:1=å·²æ’¤é”€ï¼Œ0=æœªæ’¤é”€', 'Schema', dbo, 'table', TSTB_MSAT_ACTIVITY_INFO, 'column', IS_CANCEL
 ;
 
-EXEC sp_addextendedproperty 'MS_Description', '»î¶¯ÄÚÈİ', 'Schema', dbo, 'table', TSTB_MSAT_ACTIVITY_INFO, 'column', ACTIVITY_CONTENT
+EXEC sp_addextendedproperty 'MS_Description', 'æ´»åŠ¨ç±»å‹ï¼ˆè·å–åå•çš„æ–¹å¼:ACTIåŸ¹è®­,è¥é”€ç³»åˆ—åŸ¹è®­ï¼ˆåŸä¸‰å¤§ï¼‰,å…¬å¼€ä¼šè®®ï¼‰', 'Schema', dbo, 'table', TSTB_MSAT_ACTIVITY_INFO, 'column', AD_IMPROT_TYPE
 ;
 
-EXEC sp_addextendedproperty 'MS_Description', '¿¨Æ¬Í¼Æ¬URL', 'Schema', dbo, 'table', TSTB_MSAT_ACTIVITY_INFO, 'column', ACTIVITY_PHOTO_URL
+EXEC sp_addextendedproperty 'MS_Description', 'æ´»åŠ¨å†…å®¹', 'Schema', dbo, 'table', TSTB_MSAT_ACTIVITY_INFO, 'column', ACTIVITY_CONTENT
 ;
 
-EXEC sp_addextendedproperty 'MS_Description', '»á³¡Ãû³Æ', 'Schema', dbo, 'table', TSTB_MSAT_ACTIVITY_INFO, 'column', HALL_NAME
+EXEC sp_addextendedproperty 'MS_Description', 'å¡ç‰‡å›¾ç‰‡URL', 'Schema', dbo, 'table', TSTB_MSAT_ACTIVITY_INFO, 'column', ACTIVITY_PHOTO_URL
 ;
 
-EXEC sp_addextendedproperty 'MS_Description', '»á³¡µØÖ·', 'Schema', dbo, 'table', TSTB_MSAT_ACTIVITY_INFO, 'column', HALL_ADDRESS
+EXEC sp_addextendedproperty 'MS_Description', 'ä¼šåœºåç§°', 'Schema', dbo, 'table', TSTB_MSAT_ACTIVITY_INFO, 'column', HALL_NAME
 ;
 
-EXEC sp_addextendedproperty 'MS_Description', '»á³¡Í¼Æ¬URL', 'Schema', dbo, 'table', TSTB_MSAT_ACTIVITY_INFO, 'column', HALL_PHOTO_URL
+EXEC sp_addextendedproperty 'MS_Description', 'ä¼šåœºåœ°å€', 'Schema', dbo, 'table', TSTB_MSAT_ACTIVITY_INFO, 'column', HALL_ADDRESS
 ;
 
-EXEC sp_addextendedproperty 'MS_Description', 'Ô¤ÀÀÂ·¾¶', 'Schema', dbo, 'table', TSTB_MSAT_ACTIVITY_INFO, 'column', ACTIVITY_PREVIEW_URL
+EXEC sp_addextendedproperty 'MS_Description', 'ä¼šåœºå›¾ç‰‡URL', 'Schema', dbo, 'table', TSTB_MSAT_ACTIVITY_INFO, 'column', HALL_PHOTO_URL
+;
+
+EXEC sp_addextendedproperty 'MS_Description', 'é¢„è§ˆè·¯å¾„', 'Schema', dbo, 'table', TSTB_MSAT_ACTIVITY_INFO, 'column', ACTIVITY_PREVIEW_URL
 ;
 
 
@@ -80,9 +80,9 @@ EXEC sp_addextendedproperty 'MS_Description', 'Ô¤ÀÀÂ·¾¶', 'Schema', dbo, 'table'
 
 
 
-EXEC sp_addextendedproperty 'MS_Description', '»î¶¯ĞÅÏ¢ÍÆËÍ´ÎÊı', 'Schema', dbo, 'table', TSTB_MSAT_ACTIVITY_INFO, 'column', NOTIFICATION_CNT
+EXEC sp_addextendedproperty 'MS_Description', 'æ´»åŠ¨ä¿¡æ¯æ¨é€æ¬¡æ•°', 'Schema', dbo, 'table', TSTB_MSAT_ACTIVITY_INFO, 'column', NOTIFICATION_CNT
 ;
 
-EXEC sp_addextendedproperty 'MS_Description', 'µÚÒ»´ÎÔ¤ÀÀÊ±¼ä', 'Schema', dbo, 'table', TSTB_MSAT_ACTIVITY_INFO, 'column', FIRST_PREVIEW_TIME
+EXEC sp_addextendedproperty 'MS_Description', 'ç¬¬ä¸€æ¬¡é¢„è§ˆæ—¶é—´', 'Schema', dbo, 'table', TSTB_MSAT_ACTIVITY_INFO, 'column', FIRST_PREVIEW_TIME
 ;
 

@@ -1,7 +1,7 @@
---ÐÞ¸Ä×Ö¶ÎÀàÐÍ
+--ä¿®æ”¹å­—æ®µç±»åž‹
 Alter table MSTB_MR_LOG alter column OPTION_STATUS_AFTER int null
 
---Ôö¼Ó×Ö¶Î
+--å¢žåŠ å­—æ®µ
 USE [AmwayFrameworkWorkflow]
 GO
 
@@ -15,6 +15,8 @@ IF NOT EXISTS ( SELECT  d.name ,
             WHERE   a.name = 'REMARK'
                     AND d.name = 'MSTB_MR_ROOM_INFO' ) 
     ALTER TABLE MSTB_MR_ROOM_INFO ADD REMARK NVARCHAR(500) NULL
+    
+	EXEC sp_addextendedproperty 'MS_Description', 'å¤‡æ³¨', 'Schema', dbo, 'table', MSTB_MR_ROOM_INFO, 'column', REMARK
 GO
 
 --
