@@ -1,0 +1,9 @@
+D:\OtherProject\WinForm\WinCallBat\WinCallBat\bin\Debug\WinCallBat.exe.config
+D:\OtherProject\WinForm\WinCallBat\WinCallBat\bin\Debug\WinCallBat.exe
+D:\OtherProject\WinForm\WinCallBat\WinCallBat\bin\Debug\WinCallBat.pdb
+D:\OtherProject\WinForm\WinCallBat\WinCallBat\obj\Debug\WinCallBat.csprojResolveAssemblyReference.cache
+D:\OtherProject\WinForm\WinCallBat\WinCallBat\obj\Debug\WinCallBat.Form1.resources
+D:\OtherProject\WinForm\WinCallBat\WinCallBat\obj\Debug\WinCallBat.Properties.Resources.resources
+D:\OtherProject\WinForm\WinCallBat\WinCallBat\obj\Debug\WinCallBat.csproj.GenerateResource.Cache
+D:\OtherProject\WinForm\WinCallBat\WinCallBat\obj\Debug\WinCallBat.exe
+D:\OtherProject\WinForm\WinCallBat\WinCallBat\obj\Debug\WinCallBat.pdb
