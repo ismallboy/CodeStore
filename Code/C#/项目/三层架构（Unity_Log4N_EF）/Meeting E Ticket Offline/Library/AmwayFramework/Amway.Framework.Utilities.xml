@@ -1,0 +1,977 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Amway.Framework.Utilities</name>
+    </assembly>
+    <members>
+        <member name="T:Amway.Framework.Utilities.Web.WebServerHelper">
+            <summary>
+            与Web服务器有关的Helper方法
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.WebServerHelper.CurrentClientInfo">
+            <summary>
+            获得当前访问的客户端信息
+            </summary>
+            <returns></returns>
+        </member>
+        <!-- 对于成员“P:Amway.Framework.Utilities.Web.WebServerHelper.CurrentUserID”忽略有格式错误的 XML 注释 -->
+        <member name="T:Amway.Framework.Utilities.Environment.EnvironmentHelper">
+            <summary>
+            环境信息
+            </summary>
+        </member>
+        <!-- 对于成员“M:Amway.Framework.Utilities.Environment.EnvironmentHelper.GetAllNetworkInterfaceIpv4Addresses”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“P:Amway.Framework.Utilities.Environment.EnvironmentHelper.MachineName”忽略有格式错误的 XML 注释 -->
+        <member name="P:Amway.Framework.Utilities.Environment.EnvironmentHelper.UserName">
+            <summary>
+            运行程序的用户名
+            </summary>
+        </member>
+        <!-- 对于成员“P:Amway.Framework.Utilities.Environment.EnvironmentHelper.DomainName”忽略有格式错误的 XML 注释 -->
+        <member name="P:Amway.Framework.Utilities.Environment.EnvironmentHelper.OSName">
+            <summary>
+            操作系统名称
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Environment.EnvironmentHelper.OSVersion">
+            <summary>
+            操作系统版本
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Environment.EnvironmentHelper.OSServicePack">
+            <summary>
+            操作系统SP名称
+            </summary>
+        </member>
+        <!-- 对于成员“P:Amway.Framework.Utilities.Environment.EnvironmentHelper.OSFullName”忽略有格式错误的 XML 注释 -->
+        <member name="P:Amway.Framework.Utilities.Environment.EnvironmentHelper.StackTrace">
+            <summary>
+            当前堆栈信息
+            </summary>
+        </member>
+        <!-- 对于成员“P:Amway.Framework.Utilities.Environment.EnvironmentHelper.NumberOfProcessors”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“P:Amway.Framework.Utilities.Environment.EnvironmentHelper.TotalMemoryUsed”忽略有格式错误的 XML 注释 -->
+        <member name="P:Amway.Framework.Utilities.Environment.EnvironmentHelper.TotalMemory">
+            <summary>
+            总的内存
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Utilities.Web.PageHelper">
+            <summary>
+            页面助手
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Web.PageHelper.ShowMessage(System.Web.UI.Page,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="vPage"></param>
+            <param name="vDesc"></param>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Web.PageHelper.ShowMessage(System.Web.UI.Page,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="vPage"></param>
+            <param name="vDesc"></param>
+            <param name="vCloseWindow"></param>
+            <param name="vReturnValue"></param>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Web.PageHelper.ShowAjaxMessage(System.Web.UI.Page,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="vPage"></param>
+            <param name="vDesc"></param>
+            <param name="vCloseWindow"></param>
+            <param name="vReturnValue"></param>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Web.PageHelper.ShowAjaxMessage(System.Web.UI.Page,System.Exception,System.Boolean,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="vPage"></param>
+            <param name="ex"></param>
+            <param name="vCloseWindow"></param>
+            <param name="vReturnValue"></param>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Web.PageHelper.ShowOpenWindowMessage(System.Web.UI.Page,System.String,System.Boolean,System.Boolean,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="vPage"></param>
+            <param name="vDesc"></param>
+            <param name="vCloseWindow"></param>
+            <param name="vReturnValue"></param>
+            <param name="clientID"></param>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Web.PageHelper.ShowModalDialog(System.Web.UI.Page,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="vPage"></param>
+            <param name="url"></param>
+            <param name="feature"></param>
+            <param name="vClickObjectClientID"></param>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Web.PageHelper.OpenPopupWindow(System.Web.UI.Page,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="vPage"></param>
+            <param name="url"></param>
+            <param name="width"></param>
+            <param name="height"></param>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Web.PageHelper.WindowClose(System.Web.UI.Page,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="vPage"></param>
+            <param name="vReturnValue"></param>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Web.PageHelper.WindowClose(System.Web.UI.Page,System.Boolean,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="vPage"></param>
+            <param name="vReturnValue"></param>
+            <param name="alertMessage"></param>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Web.PageHelper.WindowClose(System.Web.UI.Page,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="vPage"></param>
+            <param name="vReturnValue"></param>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Web.PageHelper.RegisterShowMessage(System.Web.UI.Page,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="vPage"></param>
+            <param name="vDesc"></param>
+            <param name="vCloseWindow"></param>
+            <param name="vReturnValue"></param>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Web.PageHelper.RegisterCloseWindowScript(System.Web.UI.WebControls.Button)">
+            <summary>
+            给按钮注册“单击关闭窗口”的脚本
+            </summary>
+            <param name="btn"></param>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Web.PageHelper.RegisterCloseWindowScript(System.Web.UI.WebControls.LinkButton)">
+            <summary>
+            给按钮注册“单击关闭窗口”的脚本
+            </summary>
+            <param name="btn"></param>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Web.PageHelper.RegisterCloseWindowScript(System.Web.UI.HtmlControls.HtmlInputButton)">
+            <summary>
+            给按钮注册“单击关闭窗口”的脚本
+            </summary>
+            <param name="btn"></param>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Web.PageHelper.RegisterRefreshPageScript(System.Web.UI.WebControls.Button,System.String)">
+            <summary>
+            给按钮注册“单击关闭窗口，并根据返回值触发按钮事件刷新页面”的脚本
+            </summary>
+            <param name="btnRefresh"></param>
+            <param name="returnValue"></param>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Web.PageHelper.RegisterRefreshPageScript(System.Web.UI.WebControls.LinkButton,System.String)">
+            <summary>
+            给按钮注册“单击关闭窗口，并根据返回值触发按钮事件刷新页面”的脚本
+            </summary>
+            <param name="btnRefresh"></param>
+            <param name="returnValue"></param>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Web.PageHelper.RegisterRefreshPageScript(System.Web.UI.HtmlControls.HtmlInputButton,System.String)">
+            <summary>
+            给按钮注册“单击关闭窗口，并根据返回值触发按钮事件刷新页面”的脚本
+            </summary>
+            <param name="btnRefresh"></param>
+            <param name="returnValue"></param>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Web.PageHelper.RegisterOpenWindowScript(System.Web.UI.Page,System.String,System.Int32,System.Int32)">
+            <summary>
+            向页面注册“在模式对话框打开页面”的脚本
+            </summary>
+            <param name="page"></param>
+            <param name="url"></param>
+            <param name="width"></param>
+            <param name="height"></param>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Web.PageHelper.RegisterDeleteConfirmScript(System.Web.UI.WebControls.Button)">
+            <summary>
+            给按钮注册“删除前确认”的脚本
+            </summary>
+            <param name="btn"></param>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Web.PageHelper.RegisterDeleteConfirmScript(System.Web.UI.WebControls.LinkButton)">
+            <summary>
+            给按钮注册“删除前确认”的脚本
+            </summary>
+            <param name="lbtn"></param>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Web.PageHelper.RegisterOpenWindowScript(System.Web.UI.WebControls.LinkButton,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            给按钮注册“单击在模式对话框打开页面，并在对话框关闭时根据返回值刷新页面”的脚本
+            </summary>
+            <param name="lbtn"></param>
+            <param name="url"></param>
+            <param name="vClickObjectClientID"></param>
+            <param name="width"></param>
+            <param name="height"></param>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Web.PageHelper.RegisterOpenWindowScript(System.Web.UI.WebControls.Button,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            给按钮注册“单击在模式对话框打开页面，并在对话框关闭时根据返回值刷新页面”的脚本
+            </summary>
+            <param name="btn"></param>
+            <param name="url"></param>
+            <param name="vClickObjectClientID"></param>
+            <param name="width"></param>
+            <param name="height"></param>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Web.PageHelper.RegisterOpenWindowScript(System.Web.UI.HtmlControls.HtmlInputButton,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            给按钮注册“单击在模式对话框打开页面，并在对话框关闭时根据返回值刷新页面”的脚本
+            </summary>
+            <param name="btn"></param>
+            <param name="url"></param>
+            <param name="vClickObjectClientID"></param>
+            <param name="width"></param>
+            <param name="height"></param>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Web.PageHelper.RegisterOpenWindowScript(System.Web.UI.WebControls.LinkButton,System.String,System.Int32,System.Int32)">
+            <summary>
+            给按钮注册“单击在模式对话框打开页面，但在对话框关闭时不刷新页面”的脚本
+            </summary>
+            <param name="lbtn"></param>
+            <param name="url"></param>
+            <param name="width"></param>
+            <param name="height"></param>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Web.PageHelper.RegisterOpenWindowScript(System.Web.UI.WebControls.Button,System.String,System.Int32,System.Int32)">
+            <summary>
+            给按钮注册“单击在模式对话框打开页面，但在对话框关闭时不刷新页面”的脚本
+            </summary>
+            <param name="lbtn"></param>
+            <param name="url"></param>
+            <param name="width"></param>
+            <param name="height"></param>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Web.PageHelper.RegisterOpenWindowScript(System.Web.UI.HtmlControls.HtmlInputButton,System.String,System.Int32,System.Int32)">
+            <summary>
+            给按钮注册“单击在模式对话框打开页面，但在对话框关闭时不刷新页面”的脚本
+            </summary>
+            <param name="lbtn"></param>
+            <param name="url"></param>
+            <param name="width"></param>
+            <param name="height"></param>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Web.PageHelper.IsExcludeSpecial(System.String)">
+            <summary>
+            不包含特殊字符，特殊字符定义见变量c 
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Web.PageHelper.IsOnlyCharacter(System.String)">
+            <summary>
+            只包含字母
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Web.PageHelper.IsOnlyCharacterAndDecrement(System.String)">
+            <summary>
+            只包含字母、减号
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Web.PageHelper.IsOnlyCharacterAndUnderLine(System.String)">
+            <summary>
+            只包含字母、下划线
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Web.PageHelper.IsOnlyCharacterUnderLineDecrement(System.String)">
+            <summary>
+            只包含字母、减号、下划线
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Web.PageHelper.IsOnlyCharacterUnderLineDecrementNumber(System.String)">
+            <summary>
+            只包含字母、减号、下划线、数字
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.PageHelper.MinDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Utilities.Trace.TraceHelper.TraceSource">
+            <summary>
+            本应用所有日志类型记为AmwayFrameworkTrace
+            </summary>
+        </member>
+        <!-- 对于成员“M:Amway.Framework.Utilities.Trace.TraceHelper.#cctor”忽略有格式错误的 XML 注释 -->
+        <member name="M:Amway.Framework.Utilities.Trace.TraceHelper.GetExceptionDetails(System.Exception)">
+            <summary>
+            获得异常信息
+            </summary>
+            <param name="ex"></param>
+            <returns></returns>
+        </member>
+        <!-- 对于成员“M:Amway.Framework.Utilities.Trace.TraceHelper.InitializeTraceSource(System.String)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Amway.Framework.Utilities.Trace.TraceHelper.TraceBeginMethod(System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="M:Amway.Framework.Utilities.Trace.TraceHelper.TraceEndMethod(System.String)">
+            <summary>
+            记录结束
+            </summary>
+            <param name="p"></param>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Trace.TraceHelper.TraceError(System.String)">
+            <summary>
+            记录错误日志
+            </summary>
+            <param name="exmsg"></param>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Trace.TraceHelper.TraceError(System.String,System.Object[])">
+            <summary>
+            记录错误日志
+            </summary>
+            <param name="exmsg"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Trace.TraceHelper.TraceInformation(System.String)">
+            <summary>
+            记录信息日志
+            </summary>
+            <param name="p"></param>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Trace.TraceHelper.TraceInformation(System.String,System.Object[])">
+            <summary>
+            记录信息日志
+            </summary>
+            <param name="p"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Trace.TraceHelper.TraceWarning(System.String)">
+            <summary>
+            记录告警日志
+            </summary>
+            <param name="p"></param>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Trace.TraceHelper.TraceWarning(System.String,System.Object[])">
+            <summary>
+            记录告警日志
+            </summary>
+            <param name="p"></param>
+            <param name="args"></param>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Trace.TraceHelper.AmwayFrameworkTraceSource">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Utilities.Encryption.TripleDESEncryption">
+            <summary>
+            3DES加密
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Encryption.TripleDESEncryption.Encrypt(System.String,System.String)">
+            <summary>
+            Encrypts the string using Triple DES
+            </summary>
+            <param name="Input">String to be encrypted</param>
+            <param name="Key">Key to encrypt with (must be at least 24 bytes)</param>
+            <returns>Encrypted string</returns>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Encryption.TripleDESEncryption.Decrypt(System.String,System.String)">
+            <summary>
+            Decrypts the string using Triple DES
+            </summary>
+            <param name="Input">String to be decrypted</param>
+            <param name="Key">Key to decrypt with (must be at least 24 bytes)</param>
+            <returns>Decrypted string</returns>
+        </member>
+        <member name="T:Amway.Framework.Utilities.Arguments">
+            <summary>
+            Command Line Arguments Parser
+            命令行参数读取器
+            读取 -par1 = XXXX -par2= YYYY 形式的参数
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Utilities.Web.ServerVariablesHelper">
+            <summary>
+            封装所有已知的ServerVariables
+            参考 http://msdn.microsoft.com/en-us/library/ms524602(VS.90).aspx
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Web.ServerVariablesHelper.GetServerVariables(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.ALL_HTTP">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.ALL_RAW">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.APP_POOL_ID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.APPL_MD_PATH">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.APPL_PHYSICAL_PATH">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.AUTH_PASSWORD">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.AUTH_TYPE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.AUTH_USER">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.CACHE_URL">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.CERT_COOKIE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.CERT_FLAGS">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.CERT_ISSUER">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.CERT_KEYSIZE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.CERT_SECRETKEYSIZE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.CERT_SERIALNUMBER">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.CERT_SERVER_ISSUER">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.CERT_SERVER_SUBJECT">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.CERT_SUBJECT">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.CONTENT_LENGTH">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.CONTENT_TYPE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.GATEWAY_INTERFACE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.HTTP_ACCEPT">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.HTTP_ACCEPT_ENCODING">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.HTTP_ACCEPT_LANGUAGE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.HTTP_CONNECTION">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.HTTP_COOKIE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.HTTP_HOST">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.HTTP_METHOD">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.HTTP_REFERER">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.HTTP_URL">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.HTTP_USER_AGENT">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.HTTP_VERSION">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.HTTPS">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.HTTPS_KEYSIZE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.HTTPS_SECRETKEYSIZE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.HTTPS_SERVER_ISSUER">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.HTTPS_SERVER_SUBJECT">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.INSTANCE_ID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.INSTANCE_META_PATH">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.LOCAL_ADDR">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.LOGON_USER">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.PATH_INFO">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.PATH_TRANSLATED">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.QUERY_STRING">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.REMOTE_ADDR">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.REMOTE_HOST">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.REMOTE_PORT">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.REMOTE_USER">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.REQUEST_METHOD">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.SCRIPT_NAME">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.SCRIPT_TRANSLATED">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.SERVER_NAME">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.SERVER_PORT">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.SERVER_PORT_SECURE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.SERVER_PROTOCOL">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.SERVER_SOFTWARE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.SSI_EXEC_DISABLED">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.UNENCODED_URL">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.UNMAPPED_REMOTE_USER">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.URL">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ServerVariablesHelper.URL_PATH_INFO">
+            <summary>
+            
+            </summary>
+        </member>
+        <!-- 对于成员“T:Amway.Framework.Utilities.Web.ServerInfo”忽略有格式错误的 XML 注释 -->
+        <member name="T:Amway.Framework.Utilities.Encryption.DESEncryption">
+            <summary>
+            DES加密
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Encryption.DESEncryption.Encrypt(System.String,System.String)">
+            <summary>
+            Encrypts a string using DES
+            </summary>
+            <param name="Input">String to encrypt</param>
+            <param name="Key">Key to encrypt with (must be at least 8 bytes)</param>
+            <returns>An encrypted string</returns>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Encryption.DESEncryption.Decrypt(System.String,System.String)">
+            <summary>
+            Decrypts a string using DES
+            </summary>
+            <param name="Input">Input string</param>
+            <param name="Key">Key to use in decryption (must be at least 8 bytes)</param>
+            <returns>A decrypted string</returns>
+        </member>
+        <member name="T:Amway.Framework.Utilities.Compression.GZip">
+            <summary>
+            GZip压缩
+            </summary>
+        </member>
+        <!-- 对于成员“F:Amway.Framework.Utilities.Compression.GZip.bufferSize”忽略有格式错误的 XML 注释 -->
+        <member name="M:Amway.Framework.Utilities.Compression.GZip.Compress(System.Byte[])">
+            <summary>
+            Compresses byte data
+            </summary>
+            <param name="Bytes">Byte array to be compressed</param>
+            <returns>A byte array of compressed data</returns>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Compression.GZip.Decompress(System.Byte[])">
+            <summary>
+            Decompresses byte data
+            </summary>
+            <param name="Bytes">Byte array to be decompressed</param>
+            <returns>A byte array of decompressed data</returns>
+        </member>
+        <member name="M:Amway.Framework.Utilities.LangHelper.GetRes(System.String,System.String)">
+            <summary>
+            获取资源文件中的键值
+            </summary>
+            <param name="fileName"></param>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Utilities.LangHelper.CultureString(System.String,System.String,System.String)">
+            <summary>
+            对字符串进行多语言选择
+            </summary>
+            <param name="valueEn">英文值</param>
+            <param name="valueChs">简体中文值</param>
+            <param name="valueCht">繁体中文值</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amway.Framework.Utilities.Encryption.RSAEncryption">
+            <summary>
+            RSA加密
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Encryption.RSAEncryption.Encrypt(System.String,System.String)">
+            <summary>
+            Encrypts a string using RSA
+            </summary>
+            <param name="Input">Input string (should be small as anything over 128 bytes can not be decrypted)</param>
+            <param name="Key">Key to use for encryption</param>
+            <returns>An encrypted string (64bit string)</returns>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Encryption.RSAEncryption.Decrypt(System.String,System.String)">
+            <summary>
+            Decrypts a string using RSA
+            </summary>
+            <param name="Input">Input string (should be small as anything over 128 bytes can not be decrypted)</param>
+            <param name="Key">Key to use for decryption</param>
+            <returns>A decrypted string</returns>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Encryption.RSAEncryption.CreateKey(System.Boolean)">
+            <summary>
+            Creates a new set of keys
+            </summary>
+            <param name="PrivatePublic">True if private key should be included, false otherwise</param>
+            <returns>XML representation of the key information</returns>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Encryption.RSAEncryption.SignHash(System.String,System.String,System.String@)">
+            <summary>
+            Takes a string and creates a signed hash of it
+            </summary>
+            <param name="Input">Input string</param>
+            <param name="Key">Key to encrypt/sign with</param>
+            <param name="Hash">This will be filled with the unsigned hash</param>
+            <returns>A signed hash of the input (64bit string)</returns>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Encryption.RSAEncryption.VerifyHash(System.String,System.String,System.String)">
+            <summary>
+            Verifies a signed hash against the unsigned version
+            </summary>
+            <param name="Hash">The unsigned hash (should be 64bit string)</param>
+            <param name="SignedHash">The signed hash (should be 64bit string)</param>
+            <param name="Key">The key to use in decryption</param>
+            <returns>True if it is verified, false otherwise</returns>
+        </member>
+        <member name="T:Amway.Framework.Utilities.Encryption.AESEncryption">
+            <summary>
+            AES加密
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Encryption.AESEncryption.Encrypt(System.String,System.String,System.String,System.String,System.Int32,System.String,System.Int32)">
+            <summary>
+            Encrypts a string
+            </summary>
+            <param name="PlainText">Text to be encrypted</param>
+            <param name="Password">Password to encrypt with</param>
+            <param name="Salt">Salt to encrypt with</param>
+            <param name="HashAlgorithm">Can be either SHA1 or MD5</param>
+            <param name="PasswordIterations">Number of iterations to do</param>
+            <param name="InitialVector">Needs to be 16 ASCII characters long</param>
+            <param name="KeySize">Can be 128, 192, or 256</param>
+            <returns>An encrypted string</returns>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Encryption.AESEncryption.Decrypt(System.String,System.String,System.String,System.String,System.Int32,System.String,System.Int32)">
+            <summary>
+            Decrypts a string
+            </summary>
+            <param name="CipherText">Text to be decrypted</param>
+            <param name="Password">Password to decrypt with</param>
+            <param name="Salt">Salt to decrypt with</param>
+            <param name="HashAlgorithm">Can be either SHA1 or MD5</param>
+            <param name="PasswordIterations">Number of iterations to do</param>
+            <param name="InitialVector">Needs to be 16 ASCII characters long</param>
+            <param name="KeySize">Can be 128, 192, or 256</param>
+            <returns>A decrypted string</returns>
+        </member>
+        <!-- 对于成员“T:Amway.Framework.Utilities.Web.ClientInfo”忽略有格式错误的 XML 注释 -->
+        <member name="P:Amway.Framework.Utilities.Web.ClientInfo.UserAgent">
+            <summary>
+            用户Agent
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ClientInfo.UserHostAddress">
+            <summary>
+            用户主机地址
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Web.ClientInfo.UserHostName">
+            <summary>
+            用户主机名
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Utilities.Encryption.MD5">
+            <summary>
+            MD5加密
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Encryption.MD5.ComputeHash(System.String)">
+            <summary>
+            Computes a hash using MD5
+            </summary>
+            <param name="Input">Input string</param>
+            <returns>A hash of the input string using MD5</returns>
+        </member>
+        <member name="T:Amway.Framework.Utilities.DB2.DbHelperDB2">
+            <summary>
+            DB2数据访问助手
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Utilities.DB2.DbHelperDB2.connectionString">
+            <summary>
+            数据库连接字符串 (需要先安装DB2驱动和配置好本机ODBC)
+            "Database=aep;UID=aep;PWD=aep;";
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Utilities.DB2.DbHelperDB2.ExecuteSql(System.String)">
+            <summary>
+            执行SQL语句，返回影响的记录数
+            </summary>
+            <param name="SQLString">SQL语句</param>
+            <returns>影响的记录数</returns>
+        </member>
+        <member name="M:Amway.Framework.Utilities.DB2.DbHelperDB2.ExecuteQuerySql(System.String)">
+            <summary>
+            执行SQL语句，返回结果集
+            </summary>
+            <param name="SQLString"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Amway.Framework.Utilities.Compression.Deflate">
+            <summary>
+            Deflate 压缩
+            </summary>
+        </member>
+        <!-- 对于成员“F:Amway.Framework.Utilities.Compression.Deflate.bufferSize”忽略有格式错误的 XML 注释 -->
+        <member name="M:Amway.Framework.Utilities.Compression.Deflate.Compress(System.Byte[])">
+            <summary>
+            Compresses data
+            </summary>
+            <param name="Bytes">The byte array to be compressed</param>
+            <returns>A byte array of compressed data</returns>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Compression.Deflate.Decompress(System.Byte[])">
+            <summary>
+            Decompresses data
+            </summary>
+            <param name="Bytes">The byte array to be decompressed</param>
+            <returns>A byte array of uncompressed data</returns>
+        </member>
+        <member name="T:Amway.Framework.Utilities.Encryption.SHA1">
+            <summary>
+            SHA1加密
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Utilities.Encryption.SHA1.ComputeHash(System.String)">
+            <summary>
+            Computes a hash using SHA1
+            </summary>
+            <param name="Input">Input string</param>
+            <returns>A hash of the input string using SHA1</returns>
+        </member>
+        <member name="T:Amway.Framework.Utilities.Configuration.AgilePointConfig">
+            <summary>
+            AgilePoint配置
+            </summary>
+        </member>
+        <!-- 对于成员“M:Amway.Framework.Utilities.Configuration.AgilePointConfig.GetSetting(System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="P:Amway.Framework.Utilities.Configuration.AgilePointConfig.ServiceUrl">
+            <summary>
+            AgilePoint 服务地址
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Utilities.Configuration.AgilePointConfig.UserName">
+            <summary>
+            访问 AgilePoint 服务使用的用户名
+            </summary>
+        </member>
+        <!-- 对于成员“P:Amway.Framework.Utilities.Configuration.AgilePointConfig.Password”忽略有格式错误的 XML 注释 -->
+        <member name="P:Amway.Framework.Utilities.Configuration.AgilePointConfig.Domain">
+            <summary>
+            AgilePoint 服务所在的域名
+            </summary>
+        </member>
+    </members>
+</doc>

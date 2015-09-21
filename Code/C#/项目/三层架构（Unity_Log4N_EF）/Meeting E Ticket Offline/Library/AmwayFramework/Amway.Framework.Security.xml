@@ -1,0 +1,729 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Amway.Framework.Security</name>
+    </assembly>
+    <members>
+        <member name="T:Amway.Framework.Security.UserProfileModule">
+            <summary>
+            UserProfileModule
+            本版本不再使用,可以从代码中移除
+            功能已经合并到SQLAuthorizationModule
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Security.UserProfileModule.Dispose">
+            <summary>
+            Dispose
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Security.UserProfileModule.Init(System.Web.HttpApplication)">
+            <summary>
+            初始化
+            挂接事件处理函数
+            </summary>
+            <param name="context">HttpApplication</param>
+        </member>
+        <member name="M:Amway.Framework.Security.UserProfileModule.context_PreRequestHandlerExecute(System.Object,System.EventArgs)">
+            <summary>
+            PreRequestHandlerExecute事件处理函数
+            </summary>
+            <param name="sender">事件触发者</param>
+            <param name="e">事件参数</param>
+        </member>
+        <member name="T:Amway.Framework.Security.SQLMembershipProvider">
+            <summary>
+            用于生产环境的MembershipProvider
+            本地用户 通过数据库验证
+            非本地用户 通过AD验证
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Security.SQLMembershipProvider.ChangePassword(System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="username"></param>
+            <param name="oldPassword"></param>
+            <param name="newPassword"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Security.SQLMembershipProvider.ChangePasswordQuestionAndAnswer(System.String,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="username"></param>
+            <param name="password"></param>
+            <param name="newPasswordQuestion"></param>
+            <param name="newPasswordAnswer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Security.SQLMembershipProvider.CreateUser(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Object,System.Web.Security.MembershipCreateStatus@)">
+            <summary>
+            
+            </summary>
+            <param name="username"></param>
+            <param name="password"></param>
+            <param name="email"></param>
+            <param name="passwordQuestion"></param>
+            <param name="passwordAnswer"></param>
+            <param name="isApproved"></param>
+            <param name="providerUserKey"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Security.SQLMembershipProvider.DeleteUser(System.String,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="username"></param>
+            <param name="deleteAllRelatedData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Security.SQLMembershipProvider.FindUsersByEmail(System.String,System.Int32,System.Int32,System.Int32@)">
+            <summary>
+            
+            </summary>
+            <param name="emailToMatch"></param>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <param name="totalRecords"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Security.SQLMembershipProvider.FindUsersByName(System.String,System.Int32,System.Int32,System.Int32@)">
+            <summary>
+            
+            </summary>
+            <param name="usernameToMatch"></param>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <param name="totalRecords"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Security.SQLMembershipProvider.GetAllUsers(System.Int32,System.Int32,System.Int32@)">
+            <summary>
+            
+            </summary>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <param name="totalRecords"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Security.SQLMembershipProvider.GetNumberOfUsersOnline">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Security.SQLMembershipProvider.GetPassword(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="username"></param>
+            <param name="answer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Security.SQLMembershipProvider.GetUser(System.String,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="username"></param>
+            <param name="userIsOnline"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Security.SQLMembershipProvider.GetUser(System.Object,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="providerUserKey"></param>
+            <param name="userIsOnline"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Security.SQLMembershipProvider.GetUserNameByEmail(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="email"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Security.SQLMembershipProvider.ResetPassword(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="username"></param>
+            <param name="answer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Security.SQLMembershipProvider.UnlockUser(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="userName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Security.SQLMembershipProvider.UpdateUser(System.Web.Security.MembershipUser)">
+            <summary>
+            
+            </summary>
+            <param name="user"></param>
+        </member>
+        <member name="M:Amway.Framework.Security.SQLMembershipProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <param name="config"></param>
+        </member>
+        <member name="M:Amway.Framework.Security.SQLMembershipProvider.ValidateUser(System.String,System.String)">
+            <summary>
+            验证用户密码
+            </summary>
+            <param name="username"></param>
+            <param name="password"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amway.Framework.Security.SQLMembershipProvider.EnablePasswordReset">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Security.SQLMembershipProvider.EnablePasswordRetrieval">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Security.SQLMembershipProvider.MaxInvalidPasswordAttempts">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Security.SQLMembershipProvider.MinRequiredNonAlphanumericCharacters">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Security.SQLMembershipProvider.MinRequiredPasswordLength">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Security.SQLMembershipProvider.PasswordAttemptWindow">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Security.SQLMembershipProvider.PasswordFormat">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Security.SQLMembershipProvider.PasswordStrengthRegularExpression">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Security.SQLMembershipProvider.RequiresQuestionAndAnswer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Security.SQLMembershipProvider.RequiresUniqueEmail">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Security.TestMembershipProvider">
+            <summary>
+            用于开发环境的MembershipProvider
+            本地用户 通过数据库验证
+            非本地用户密码都是1
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Security.TestMembershipProvider.ChangePassword(System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="username"></param>
+            <param name="oldPassword"></param>
+            <param name="newPassword"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Security.TestMembershipProvider.ChangePasswordQuestionAndAnswer(System.String,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="username"></param>
+            <param name="password"></param>
+            <param name="newPasswordQuestion"></param>
+            <param name="newPasswordAnswer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Security.TestMembershipProvider.CreateUser(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Object,System.Web.Security.MembershipCreateStatus@)">
+            <summary>
+            
+            </summary>
+            <param name="username"></param>
+            <param name="password"></param>
+            <param name="email"></param>
+            <param name="passwordQuestion"></param>
+            <param name="passwordAnswer"></param>
+            <param name="isApproved"></param>
+            <param name="providerUserKey"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Security.TestMembershipProvider.DeleteUser(System.String,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="username"></param>
+            <param name="deleteAllRelatedData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Security.TestMembershipProvider.FindUsersByEmail(System.String,System.Int32,System.Int32,System.Int32@)">
+            <summary>
+            
+            </summary>
+            <param name="emailToMatch"></param>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <param name="totalRecords"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Security.TestMembershipProvider.FindUsersByName(System.String,System.Int32,System.Int32,System.Int32@)">
+            <summary>
+            
+            </summary>
+            <param name="usernameToMatch"></param>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <param name="totalRecords"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Security.TestMembershipProvider.GetAllUsers(System.Int32,System.Int32,System.Int32@)">
+            <summary>
+            
+            </summary>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <param name="totalRecords"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Security.TestMembershipProvider.GetNumberOfUsersOnline">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Security.TestMembershipProvider.GetPassword(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="username"></param>
+            <param name="answer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Security.TestMembershipProvider.GetUser(System.String,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="username"></param>
+            <param name="userIsOnline"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Security.TestMembershipProvider.GetUser(System.Object,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="providerUserKey"></param>
+            <param name="userIsOnline"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Security.TestMembershipProvider.GetUserNameByEmail(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="email"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Security.TestMembershipProvider.ResetPassword(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="username"></param>
+            <param name="answer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Security.TestMembershipProvider.UnlockUser(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="userName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Security.TestMembershipProvider.UpdateUser(System.Web.Security.MembershipUser)">
+            <summary>
+            
+            </summary>
+            <param name="user"></param>
+        </member>
+        <member name="F:Amway.Framework.Security.TestMembershipProvider._applicationName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Security.TestMembershipProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <param name="config"></param>
+        </member>
+        <member name="M:Amway.Framework.Security.TestMembershipProvider.ValidateUser(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="username"></param>
+            <param name="password"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amway.Framework.Security.TestMembershipProvider.EnablePasswordReset">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Security.TestMembershipProvider.EnablePasswordRetrieval">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Security.TestMembershipProvider.MaxInvalidPasswordAttempts">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Security.TestMembershipProvider.MinRequiredNonAlphanumericCharacters">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Security.TestMembershipProvider.MinRequiredPasswordLength">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Security.TestMembershipProvider.PasswordAttemptWindow">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Security.TestMembershipProvider.PasswordFormat">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Security.TestMembershipProvider.PasswordStrengthRegularExpression">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Security.TestMembershipProvider.RequiresQuestionAndAnswer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Security.TestMembershipProvider.RequiresUniqueEmail">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Security.TestMembershipProvider.ApplicationName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Security.SQLRoleProvider">
+            <summary>
+            RoleProvider
+            目前版本没有使用,可以从代码中移除
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Security.SQLRoleProvider._applicationName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Security.SQLRoleProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <param name="config"></param>
+        </member>
+        <member name="M:Amway.Framework.Security.SQLRoleProvider.AddUsersToRoles(System.String[],System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="usernames"></param>
+            <param name="roleNames"></param>
+        </member>
+        <member name="M:Amway.Framework.Security.SQLRoleProvider.CreateRole(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="roleName"></param>
+        </member>
+        <member name="M:Amway.Framework.Security.SQLRoleProvider.DeleteRole(System.String,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="roleName"></param>
+            <param name="throwOnPopulatedRole"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Security.SQLRoleProvider.FindUsersInRole(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="roleName"></param>
+            <param name="usernameToMatch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Security.SQLRoleProvider.GetAllRoles">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Security.SQLRoleProvider.GetRolesForUser(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="username"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Security.SQLRoleProvider.GetUsersInRole(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="roleName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Security.SQLRoleProvider.IsUserInRole(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="username"></param>
+            <param name="roleName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Security.SQLRoleProvider.RemoveUsersFromRoles(System.String[],System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="usernames"></param>
+            <param name="roleNames"></param>
+        </member>
+        <member name="M:Amway.Framework.Security.SQLRoleProvider.RoleExists(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="roleName"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amway.Framework.Security.SQLRoleProvider.ApplicationName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Security.SQLAuthorizationModule">
+            <summary>
+            权限控制Http模块
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Security.SQLAuthorizationModule.Dispose">
+            <summary>
+            Dispose
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Security.SQLAuthorizationModule.Init(System.Web.HttpApplication)">
+            <summary>
+            初始化
+            挂接事件处理函数
+            </summary>
+            <param name="context">HttpApplication</param>
+        </member>
+        <member name="M:Amway.Framework.Security.SQLAuthorizationModule.context_Error(System.Object,System.EventArgs)">
+            <summary>
+            统一错误处理入口
+            </summary>
+            <param name="sender">事件触发者</param>
+            <param name="e">事件参数</param>
+        </member>
+        <member name="M:Amway.Framework.Security.SQLAuthorizationModule.context_PreRequestHandlerExecute(System.Object,System.EventArgs)">
+            <summary>
+            PreRequestHandlerExecute 事件处理函数
+            </summary>
+            <param name="sender">事件触发者</param>
+            <param name="e">事件参数</param>
+        </member>
+        <member name="M:Amway.Framework.Security.SQLAuthorizationModule.context_EndRequest(System.Object,System.EventArgs)">
+            <summary>
+            EndRequest事件处理函数
+            </summary>
+            <param name="sender">事件触发者</param>
+            <param name="e">事件参数</param>
+        </member>
+        <member name="M:Amway.Framework.Security.SQLAuthorizationModule.context_AcquireRequestState(System.Object,System.EventArgs)">
+            <summary>
+            访问鉴权
+            </summary>
+            <param name="sender">事件触发者</param>
+            <param name="e">事件参数</param>
+        </member>
+        <member name="M:Amway.Framework.Security.SQLAuthorizationModule.SetCulture">
+            <summary>
+            设置语言属性
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Security.SessionManager">
+            <summary>
+            SessionManager
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Security.SessionManager.SetCurrentCulture">
+            <summary>
+            根据Session的信息设置显示语言
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Security.SessionManager.ReloadUserProfileFromDB(System.String)">
+            <summary>
+            重新加载UserProfile
+            </summary>
+        </member>
+        <!-- 对于成员“P:Amway.Framework.Security.SessionManager.CurrentUserProfile”忽略有格式错误的 XML 注释 -->
+        <member name="T:Amway.Framework.Security.SecurityManager">
+            <summary>
+            系统安全控制
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Security.SecurityManager.ROLE_CAN_OVER_AREA_APPLY">
+            <summary>
+            能够跨区申请的角色
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Security.SecurityManager.IsUrlAuthorized(System.String)">
+            <summary>
+            对当前用户进行访问鉴权
+            </summary>
+            <param name="url">访问的url</param>
+            <returns>是否有权限访问该地址</returns>
+        </member>
+        <member name="M:Amway.Framework.Security.SecurityManager.IsUrlAuthorized(System.Web.HttpRequest)">
+            <summary>
+            对当前用户进行访问鉴权
+            </summary>
+            <param name="request">请求的HttpRequest</param>
+            <returns>是否有权限访问该地址</returns>
+        </member>
+        <member name="M:Amway.Framework.Security.SecurityManager.IsOperationAuthorized(System.String)">
+            <summary>
+            对当前用户进行访问鉴权
+            </summary>
+            <param name="MenuCode">功能菜单编码</param>
+            <returns>是否有权限访问该功能</returns>
+        </member>
+        <member name="M:Amway.Framework.Security.SecurityManager.IsSysOperationAuthorized(System.String,System.String)">
+            <summary>
+            对当前用户进行访问鉴权
+            </summary>
+            <param name="SystemID">系统ID</param>
+            <param name="MenuCode">功能菜单编码</param>
+            <returns>是否有权限访问该功能</returns>
+        </member>
+        <member name="M:Amway.Framework.Security.SecurityManager.IsUrlAuthorized(System.String,System.String)">
+            <summary>
+             访问鉴权
+            </summary>
+            <param name="EmpNumber">员工号</param>
+            <param name="url">访问的URL</param>
+            <returns>是否有权限访问该地址</returns>
+        </member>
+        <member name="M:Amway.Framework.Security.SecurityManager.IsUrlAuthorized(System.String,System.Web.HttpRequest)">
+            <summary>
+            访问鉴权
+            </summary>
+            <param name="EmpNumber">员工号</param>
+            <param name="request">请求的HttpRequest</param>
+            <returns>是否有权限访问该地址</returns>
+        </member>
+        <member name="M:Amway.Framework.Security.SecurityManager.IsOperationAuthorized(System.String,System.String)">
+            <summary>
+            功能鉴权
+            </summary>
+            <param name="EmpNumber">员工号</param>
+            <param name="MenuCode">功能菜单编号</param>
+            <returns>是否有权限访问该功能</returns>
+        </member>
+        <member name="M:Amway.Framework.Security.SecurityManager.IsOperationAuthorized(System.String,System.String,System.String)">
+            <summary>
+            功能鉴权
+            </summary>
+            <param name="EmpNumber">员工号</param>
+            <param name="SystemCode">系统编号</param>
+            <param name="MenuCode">功能菜单编号</param>
+            <returns>是否有权限访问该功能菜单</returns>
+        </member>
+        <member name="M:Amway.Framework.Security.SecurityManager.IsFlowFormAuthorized(System.String)">
+            <summary>
+            表单鉴权
+            </summary>
+            <param name="applyEmpNumber">申请人的AD帐号</param>
+            <returns>是否有权限查看该申请人提交的表单</returns>
+        </member>
+        <member name="M:Amway.Framework.Security.SecurityManager.IsFlowFormAuthorized(System.String,Amway.Framework.Management.Entities.FlowFormBase)">
+            <summary>
+            表单鉴权
+            </summary>
+            <param name="applyEmpNumber">申请人的AD帐号</param>
+            <param name="flowForm">表单信息</param>
+            <returns>是否有权限查看该申请人提交的表单</returns>
+        </member>
+        <member name="M:Amway.Framework.Security.SecurityManager.IsFlowFormAuthorized(System.String,System.String)">
+            <summary>
+            表单鉴权
+            </summary>
+            <param name="viewEmpNumber">查看人的AD编码</param>
+            <param name="applyEmpNumber">申请人的AD帐号</param>
+            <returns>是否有权限查看该申请人提交的表单</returns>
+        </member>
+        <member name="M:Amway.Framework.Security.SecurityManager.IsFlowFormAuthorized(Amway.Framework.Management.Entities.Employee,Amway.Framework.Management.Entities.Employee)">
+            <summary>
+            表单鉴权
+            </summary>
+            <param name="viewEmployee">查看人</param>
+            <param name="applyEmployee">申请人</param>
+            <returns>是否有权限查看该申请人提交的表单</returns>
+        </member>
+        <member name="M:Amway.Framework.Security.SecurityManager.GetDepartmentPath(Amway.Framework.Management.Entities.Department,System.String)">
+            <summary>
+            获取部门的上下级路径
+            </summary>
+            <param name="department">部门</param>
+            <param name="path">路径</param>
+            <returns>部门路径字符串</returns>
+        </member>
+        <member name="M:Amway.Framework.Security.SecurityManager.GetAuthorizedScope(System.String)">
+            <summary>
+            取得当前用户在指定系统的范围控制属性
+            </summary>
+            <param name="systemID">系统ID</param>
+            <returns>范围控制属性</returns>
+        </member>
+        <member name="M:Amway.Framework.Security.SecurityManager.CanOverUserArea(System.String)">
+            <summary>
+            判断当前用户是否允许跨区代理申请
+            </summary>
+            <param name="systemID">系统ID</param>
+            <returns>是否允许跨区代理申请</returns>
+        </member>
+    </members>
+</doc>

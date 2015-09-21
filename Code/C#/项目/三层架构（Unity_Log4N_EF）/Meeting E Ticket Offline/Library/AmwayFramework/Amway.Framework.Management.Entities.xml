@@ -1,0 +1,1051 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Amway.Framework.Management.Entities</name>
+    </assembly>
+    <members>
+        <member name="F:Amway.Framework.Management.Entities.WorkflowStep.START">
+            <summary>
+            流程特殊环节"开始" 节点代码
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.Entities.WorkflowStep.END">
+            <summary>
+            流程特殊环节"结束" 节点代码
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.WorkflowStep.WorkflowStepName">
+            多语言显示字段，将根据Thread.CurrentThread.CurrentCulture.Name进行语言切换
+        </member>
+        <!-- 对于成员“M:Amway.Framework.Management.Entities.WorkDelegateItem.#ctor”忽略有格式错误的 XML 注释 -->
+        <member name="P:Amway.Framework.Management.Entities.WorkDelegateItem.WorkFlowId">
+            <summary>
+            流程模板ID
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.WorkDelegateItem.DelegateId">
+            <summary>
+            DelegateID
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.WorkDelegateItem.WorkFlowCode">
+            <summary>
+            流程模板编码
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.WorkDelegateItem.WorkFlowName">
+            <summary>
+            流程模板名称
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.WorkDelegateItem.Operation">
+            <summary>
+            操作
+            </summary>
+        </member>
+        <!-- 对于成员“P:Amway.Framework.Management.Entities.WorkDelegateItem.WorkDelegateStatus”忽略有格式错误的 XML 注释 -->
+        <member name="P:Amway.Framework.Management.Entities.WorkDelegateItem.Updator">
+            <summary>
+            最后设置人EmpNumber
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.WorkDelegateItem.UpdatorName">
+            <summary>
+            最后设置人名称
+            </summary>
+        </member>
+        <!-- 对于成员“P:Amway.Framework.Management.Entities.WorkDelegateItem.UpdateDate”忽略有格式错误的 XML 注释 -->
+        <member name="P:Amway.Framework.Management.Entities.Menu.MenuName">
+            多语言显示字段，将根据Thread.CurrentThread.CurrentCulture.Name进行语言切换
+        </member>
+        <member name="T:Amway.Framework.Management.Entities.FlowFormBase">
+            <summary>
+            流程表单 实体
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.Entities.FlowFormBase.formCode">
+            <summary>
+            表单号
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.Entities.FlowFormBase.applyDate">
+            <summary>
+            申请日期
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.Entities.FlowFormBase.applyEmployee">
+            <summary>
+            申请人
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.Entities.FlowFormBase.fillerEmployee">
+            <summary>
+            填表人
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.Entities.FlowFormBase.formStatus">
+            <summary>
+            表单状态
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.Entities.FlowFormBase.flowID">
+            <summary>
+            流程ID
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.Entities.FlowFormBase.flowCode">
+            <summary>
+            流程编码
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.Entities.FlowFormBase.instanceID">
+            <summary>
+            流程实例
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.Entities.FlowFormBase.AdditionalApprover">
+            <summary>
+            额外审批人
+            在同意事件中，该属性会被赋值
+            当前处理人也会在这个列表中
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowFormBase.ItemRecord">
+            <summary>
+            表单的数据库实体类
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowFormBase.FormCode">
+            <summary>
+            表单号
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowFormBase.CurrentStep">
+            <summary>
+            当前步骤
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowFormBase.CurrentApprover">
+            <summary>
+            当前审批人名称
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowFormBase.CurrentApproverToolTip">
+            <summary>
+            所有当前审批人
+            如果当前审批人有多个，则全部显示在此处
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowFormBase.ApplyDate">
+            <summary>
+            申请日期
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowFormBase.ApplyEmployee">
+            <summary>
+            申请人
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowFormBase.ApplyEmployeeDetail">
+            <summary>
+            申请人详细信息
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowFormBase.ApplyEmployeeArea">
+            <summary>
+            申请人所属区域
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowFormBase.ApplyEmployeeDept">
+            <summary>
+            申请人所属部门
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowFormBase.ApplyEmail">
+            <summary>
+            申请人邮箱地址
+            由于申请人邮箱是表单上一个可填项，所以作为单独的数据拿出来
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowFormBase.ApplyPhone">
+            <summary>
+            申请人电话
+            由于申请人邮箱是表单上一个可填项，所以作为单独的数据拿出来
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowFormBase.FillerEmployee">
+            <summary>
+            填表人
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowFormBase.FillerEmployeeDetail">
+            <summary>
+            填表人详细信息
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowFormBase.FillerEmployeeDept">
+            <summary>
+            填表人所属部门
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowFormBase.FillerEmail">
+            <summary>
+            填表人邮箱地址
+            由于填表人邮箱是表单上一个可填项，所以作为单独的数据拿出来
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowFormBase.FillerPhone">
+            <summary>
+            填表人电话
+            由于填表人电话是表单上一个可填项，所以作为单独的数据拿出来
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowFormBase.FormStatus">
+            <summary>
+            表单状态非枚举值
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowFormBase.RecordStatus">
+            <summary>
+            表单状态
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowFormBase.FlowID">
+            <summary>
+            流程编码
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowFormBase.FlowCode">
+            <summary>
+            流程中的WorkflowCode
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowFormBase.InstanceID">
+            <summary>
+            流程实例
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowFormBase.RecordID">
+            <summary>
+            流程实例ID
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowFormBase.FlowVersion">
+            <summary>
+            流程版本
+            当流程未提交时，不知道版本号，版本号为0
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowFormBase.WorkflowObjectID">
+            <summary>
+            AgilePoint流程的WorkflowObjectId,用于设置或获取流程变量
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowFormBase.WorkflowDefID">
+            <summary>
+            AgilePoint流程模板ID
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowFormBase.WorkflowInstID">
+            <summary>
+            AgilePoint流程实例ID
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowFormBase.ResultText">
+            <summary>
+            表单的审批结果接口，如果为空则使用框架默认值
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowFormBase.CommentText">
+            <summary>
+            表单的审批意见接口，如果为空则使用框架默认值或者控件值
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowFormBase.SkipTheNext">
+            <summary>
+            当当前节点为序顺审批时，在同意操作之后，是否跳过后继审批人，直接离开当前节点
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowFormBase.UpdateAttributes">
+            <summary>
+            用于更新的流程变量
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowFormBase.SendLinkToEmpNumbers">
+            <summary>
+            发送链接需要发送的用户
+            用#分隔成一组一组 Number@EnglishName格式的数据
+            此变量同时也用于征求意见
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowFormBase.SendLinkToCCEmpNumbers">
+            <summary>
+            发送链接被抄送的用户
+            用#分隔成一组一组 Number@EnglishName格式的数据
+            此变量同时也用于征求意见
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowFormBase.SendLinkCurrentEmpNumber">
+            <summary>
+            发送链接时，当前表单用户
+            此变量同时也用于征求意见
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowFormBase.SendLinkCustomTitle">
+            <summary>
+            发送链接时自定义邮件头
+            此变量同时也用于征求意见
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowFormBase.SendLinkCustomBody">
+            <summary>
+            发送链接时自定义邮件正文
+            此变量同时也用于征求意见
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowFormBase.TaskMoveFrom">
+            <summary>
+            如果是任务转移操作，该属性为任务转移人
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowFormBase.TaskMoveTo">
+            <summary>
+            如果是任务转移操作，该属性为任务转移目标人
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowFormBase.SourceApproverNumber">
+            <summary>
+            如果是代理审批,代理审批人AD帐号
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowFormBase.SourceApproverEN">
+            <summary>
+            如果是代理审批,代理审批人英文名
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowFormBase.AddApprovers">
+            <summary>
+            增加的并行审批人的 Emp Number列表
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowFormBase.RemoveApprovers">
+            <summary>
+            删除的并行审批人的 Emp Number列表
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.EmailTemplate.TemplateSubject">
+            多语言显示字段，将根据Thread.CurrentThread.CurrentCulture.Name进行语言切换
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.EmailTemplate.TemplateContent">
+            多语言显示字段，将根据Thread.CurrentThread.CurrentCulture.Name进行语言切换
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.BaseDataExtField.FieldName">
+            多语言显示字段，将根据Thread.CurrentThread.CurrentCulture.Name进行语言切换
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.BaseData.BaseDataName">
+            多语言显示字段，将根据Thread.CurrentThread.CurrentCulture.Name进行语言切换
+        </member>
+        <member name="T:Amway.Framework.Management.Entities.WorkDateSetting">
+            <summary>
+            流程節點的超時與催辦信息
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Management.Entities.FlowInfomation">
+            <summary>
+            流程基本信息实体
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.Entities.FlowInfomation.systemID">
+            <summary>
+            应用系统ID
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.Entities.FlowInfomation.systemName">
+            <summary>
+            应用系统名称
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.Entities.FlowInfomation.flowCode">
+            <summary>
+            流程编码
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.Entities.FlowInfomation.flowName">
+            <summary>
+            流程名称
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.Entities.FlowInfomation.flowFormCode">
+            <summary>
+            单号
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.Entities.FlowInfomation.flowFormID">
+            <summary>
+            表单ID
+            </summary>
+        </member>
+        <!-- 对于成员“F:Amway.Framework.Management.Entities.FlowInfomation.flowStatus”忽略有格式错误的 XML 注释 -->
+        <member name="F:Amway.Framework.Management.Entities.FlowInfomation.instanceID">
+            <summary>
+            流程实例ID
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.Entities.FlowInfomation.currentActivityID">
+            <summary>
+            当前步骤ID
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.Entities.FlowInfomation.currentActivityName">
+            <summary>
+            当前步骤名称
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.Entities.FlowInfomation.currentEmployeeID">
+            <summary>
+            当前处理人ID
+            </summary>
+        </member>
+        <!-- 对于成员“F:Amway.Framework.Management.Entities.FlowInfomation.currentEmployeeName”忽略有格式错误的 XML 注释 -->
+        <member name="F:Amway.Framework.Management.Entities.FlowInfomation.formDescr">
+            <summary>
+            填表说明
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowInfomation.SystemID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowInfomation.SystemName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowInfomation.FlowCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowInfomation.FlowName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowInfomation.FlowFormCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowInfomation.FlowFormID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowInfomation.FlowStatus">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowInfomation.InstanceID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowInfomation.CurrentActivityID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowInfomation.CurrentActivityName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowInfomation.CurrentEmployeeID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowInfomation.CurrentEmployeeName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FlowInfomation.FormDescr">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.QueryButton.ButtonName">
+            多语言显示字段，将根据Thread.CurrentThread.CurrentCulture.Name进行语言切换
+        </member>
+        <member name="T:Amway.Framework.Management.Entities.BaseDataRecord">
+            <summary>
+            基础数据服务记录
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.BaseDataRecord.Code">
+            <summary>
+            编码
+            </summary>
+        </member>
+        <!-- 对于成员“P:Amway.Framework.Management.Entities.BaseDataRecord.DisplayName”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“P:Amway.Framework.Management.Entities.BaseDataRecord.DisplayNameCht”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“P:Amway.Framework.Management.Entities.BaseDataRecord.DisplayNameChs”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“P:Amway.Framework.Management.Entities.BaseDataRecord.DisplayNameEn”忽略有格式错误的 XML 注释 -->
+        <member name="P:Amway.Framework.Management.Entities.BaseDataRecord.ExtendField">
+            <summary>
+            扩展字段
+            NameValue 方式
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.WorkflowInfo.RequestFormDescr">
+            多语言显示字段，将根据Thread.CurrentThread.CurrentCulture.Name进行语言切换
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.WorkflowInfo.DefineApproverDescr">
+            多语言显示字段，将根据Thread.CurrentThread.CurrentCulture.Name进行语言切换
+        </member>
+        <member name="F:Amway.Framework.Management.Entities.Employee._EmployeeDetail">
+            <summary>
+            获取指定区域的员工信息
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Management.Entities.Employee.OrderOfUserArea(System.String)">
+            <summary>
+            多个区域的顺序
+            </summary>
+            <param name="userArea"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.Employee.EmployeeDetail">
+             <summary>
+            获取指定区域的员工信息
+             </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.Employee.EmployeeNumber">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.Employee.FileLocationCode">
+            <summary>
+            文件服务器的LocationCode
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.Employee.IsSecurity">
+            <summary>
+            实体是否涉及个资安全
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.QueryCondition.ConditionName">
+            多语言显示字段，将根据Thread.CurrentThread.CurrentCulture.Name进行语言切换
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.EmployeeDetail.IsSecurity">
+            <summary>
+            实体是否涉及个资安全
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.BaseDataItem.DisplayName">
+            多语言显示字段，将根据Thread.CurrentThread.CurrentCulture.Name进行语言切换
+        </member>
+        <member name="T:Amway.Framework.Management.Entities.QueryDataSource">
+            <summary>
+            数据源
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.QueryDataSource.Code">
+            <summary>
+            数据源编码
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.QueryDataSource.DisplayName">
+            <summary>
+            数据源显示名称
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.QueryDataSource.DisplayNameChs">
+            <summary>
+            数据源显示名称
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.QueryDataSource.DisplayNameCht">
+            <summary>
+            数据源显示名称
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.QueryDataSource.DisplayNameEn">
+            <summary>
+            数据源显示名称
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.QueryDataSource.DbType">
+            <summary>
+            数据库类型
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.QueryDataSource.ConnectionString">
+            <summary>
+            数据库连接串
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.QueryDataSource.UserName">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.QueryDataSource.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Management.Entities.QueryColumnItem">
+            <summary>
+            字段选择
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.QueryColumnItem.ColumnName">
+            <summary>
+            字段名
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.QueryColumnItem.DataType">
+            <summary>
+            数据类型
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.ItemRecordApproveEmp.OverDueDate">
+            <summary>
+            超时时间/下一次检查时间
+            V_2.4.0 
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.ItemRecordApproveEmp.OverDueHandle">
+            <summary>
+            是否需要作超时处理
+            V_2.4.0 
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Management.Entities.QueryTableItem">
+            <summary>
+            数据库表格
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.Entities.QueryTableItem.Columns">
+            <summary>
+            字段列表
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Management.Entities.QueryTableItem.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.QueryTableItem.TableName">
+            <summary>
+            表格名称
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.AuthorizedScope.IsFilteAreaCode">
+            <summary>
+            是否过滤区域
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.AuthorizedScope.AreaCodes">
+            <summary>
+            过滤区域列表
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.AuthorizedScope.IsFilteDeptFuncCode">
+            <summary>
+            是否过滤职能部门
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.AuthorizedScope.DeptFuncCodes">
+            <summary>
+            过滤职能部门列表
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.AuthorizedScope.IsFilteUnitCode">
+            <summary>
+            是否过滤部门
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.AuthorizedScope.UnitCodes">
+            <summary>
+            过滤部门编码列表
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.AuthorizedScope.IsFilteEmpNumber">
+            <summary>
+            是否过滤用户
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.AuthorizedScope.EmpNumbers">
+            <summary>
+            过滤用户编码列表
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.AuthorizedScope.IsFilteLocation">
+            <summary>
+            是否过滤属地
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.AuthorizedScope.Locations">
+            <summary>
+            过滤属地列表
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.WorkflowStepButton.ButtonName">
+            多语言显示字段，将根据Thread.CurrentThread.CurrentCulture.Name进行语言切换
+        </member>
+        <member name="T:Amway.Framework.Management.Entities.QueryDBSchema">
+            <summary>
+            数据库结构
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.Entities.QueryDBSchema.Tables">
+            <summary>
+            数据库中的表格
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Management.Entities.QueryDBSchema.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.QueryDBSchema.DataBaseName">
+            <summary>
+            数据库名称
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.QueryDBSchema.dataSource">
+            <summary>
+            连接该数据库的数据源信息
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.Entities.SystemInfo.FormPageName">
+            <summary>
+            流程表单页面的名字
+            每个流程应用的跟路径下面应该存在该名字的表单页面
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.Entities.SystemInfo.lockObject">
+            <summary>
+            用于同步
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.Entities.SystemInfo.formUrl">
+            <summary>
+            表单URL
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Management.Entities.SystemInfo.BuildFormUrl(Amway.Framework.Management.Entities.SystemInfo)">
+            <summary>
+            通过应用程序信息生成表单号
+            </summary>
+            <param name="systemInfo">应用程序信息实体</param>
+            <returns></returns>
+        </member>
+        <member name="F:Amway.Framework.Management.Entities.SystemInfo.menuList">
+            <summary>
+            属于该应用的功能菜单
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.SystemInfo.SystemName">
+            多语言显示字段，将根据Thread.CurrentThread.CurrentCulture.Name进行语言切换
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.SystemInfo.ThemeCode">
+            <summary>
+            样式的Code
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.SystemInfo.ThemeName">
+            <summary>
+            样式的名称
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.SystemInfo.StyleCode">
+            <summary>
+            风格的Code
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.SystemInfo.StyleName">
+            <summary>
+            风格的名称
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.SystemInfo.WorkflowCode">
+            <summary>
+            流程
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.SystemInfo.WorkflowPrefix">
+            <summary>
+            流程表格前序
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.SystemInfo.WorkflowVersion">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.SystemInfo.WorkflowTemplate">
+            <summary>
+            流程模板名称
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.SystemInfo.AllowCallBack">
+            <summary>
+            是否需要回调WebService
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.SystemInfo.CallBackUrl">
+            <summary>
+            回调WebService url
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.SystemInfo.IsUseOverDue">
+            <summary>
+            是否需要超時處理
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.SystemInfo.OverDueCallBackUrl">
+            <summary>
+            超時回调WebService url
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.SystemInfo.IsUseCustomVariable">
+            <summary>
+            是否需要使用自定义邮件参数
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.SystemInfo.CustomVariableCallBackUrl">
+            <summary>
+            自定义参数的回调Url
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.SystemInfo.FormUrl">
+            <summary>
+            表单URL
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.SystemInfo.MenuList">
+            <summary>
+            属于该应用的功能菜单
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.QueryColumn.HeaderName">
+            多语言显示字段，将根据Thread.CurrentThread.CurrentCulture.Name进行语言切换
+        </member>
+        <member name="T:Amway.Framework.Management.Entities.UserProfile">
+            <summary>
+            用户Profile
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.Entities.UserProfile.lockObject">
+            <summary>
+            用于同步
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Management.Entities.UserProfile.IsApplicationAdmin(System.String)">
+            <summary>
+            是否应用管理员
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.Entities.UserProfile.adminSystemList">
+            <summary>
+            当前用户管理的应用系统列表
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.Entities.UserProfile.adminWorflowList">
+            <summary>
+            管理的流程列表
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.Entities.UserProfile.roles">
+            <summary>
+            角色列表
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.Entities.UserProfile.menus">
+            <summary>
+            功能菜单列表
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.Entities.UserProfile.blackSystemCodeList">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Management.Entities.UserProfile.IsBlackSystem(System.String)">
+            <summary>
+            是否在该系统的黑名单中
+            </summary>
+            <param name="systemCode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.UserProfile.Department">
+            <summary>
+            用户部门信息
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.UserProfile.CurrentLoginTime">
+            <summary>
+            当前登录时间
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.UserProfile.CurrentLoginIP">
+            <summary>
+            当前登录IP
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.UserProfile.IsSystemAdmin">
+            <summary>
+            是否系统管理员
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.UserProfile.AdminSystemList">
+            <summary>
+            管理的应用系统列表
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.UserProfile.AdminWorflowList">
+            <summary>
+            管理的流程列表
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.UserProfile.Roles">
+            <summary>
+            角色列表
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.UserProfile.Menus">
+            <summary>
+            功能菜单列表
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.UserProfile.BlackSystemCodeList">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.UserProfile.IsMock">
+            <summary>
+            是否模拟用户
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Management.Entities.ItemRecordRelation">
+            <summary>
+            关联表单
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Management.Entities.FileDetails">
+            <summary>
+            文件详细信息
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FileDetails.FileID">
+            <summer> 
+             FileID 
+            </summer> 
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FileDetails.SystemID">
+            <summer> 
+             SystemID 
+            </summer> 
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FileDetails.FileName">
+            <summer> 
+             FileName 
+            </summer> 
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FileDetails.FileType">
+            <summer> 
+             FileServerName 
+            </summer> 
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FileDetails.FileSize">
+            <summer> 
+             FileSize 
+            </summer> 
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FileDetails.UploadDate">
+            <summer> 
+             UploadDate 
+            </summer>        
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FileDetails.DeleteDate">
+            <summer> 
+             DeleteDate 
+            </summer> 
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FileDetails.UploadBy">
+            <summer> 
+             UploadBy 
+            </summer>        
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FileDetails.DeleteBy">
+            <summer> 
+             DeleteBy 
+            </summer> 
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FileDetails.FileDesc">
+            <summer> 
+             FileDesc 
+            </summer> 
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FileDetails.URL">
+            <summer> 
+             URL 
+            </summer> 
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FileDetails.FilePath">
+            <summer> 
+             FilePath 
+            </summer> 
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FileDetails.FileCode">
+            <summer> 
+             FileCode 
+            </summer> 
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FileDetails.RecordId">
+            <summer> 
+             RecordId 
+            </summer> 
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FileDetails.ServiceUrl">
+            <summer> 
+             ServiceUrl 
+            </summer> 
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.FileDetails.AttServerID">
+            <summer> 
+             AttServerID 
+            </summer> 
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.Query.QueryName">
+            多语言显示字段，将根据Thread.CurrentThread.CurrentCulture.Name进行语言切换
+        </member>
+        <member name="P:Amway.Framework.Management.Entities.EmployeeItem.ID">
+            <summary>
+            唯一标识
+            </summary>
+        </member>
+        <!-- 对于成员“P:Amway.Framework.Management.Entities.EmployeeItem.Status”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“P:Amway.Framework.Management.Entities.EmployeeItem.Creator”忽略有格式错误的 XML 注释 -->
+        <member name="P:Amway.Framework.Management.Entities.EmployeeItem.CreateDate">
+            <summary>
+            创建日期
+            </summary>
+        </member>
+        <!-- 对于成员“P:Amway.Framework.Management.Entities.EmployeeItem.Updator”忽略有格式错误的 XML 注释 -->
+        <member name="P:Amway.Framework.Management.Entities.EmployeeItem.UpdateDate">
+            <summary>
+            更新日期
+            </summary>
+        </member>
+    </members>
+</doc>

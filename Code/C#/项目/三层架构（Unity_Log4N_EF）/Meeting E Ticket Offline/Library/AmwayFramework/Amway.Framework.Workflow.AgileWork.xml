@@ -1,0 +1,1406 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Amway.Framework.Workflow.AgileWork</name>
+    </assembly>
+    <members>
+        <member name="T:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService">
+            <remarks/>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.#ctor">
+            <remarks/>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.GetData(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.GetDataAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.GetDataAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.GetDataByCulture(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.GetDataByCultureAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.GetDataByCultureAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.GetDataTable(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.GetDataTableAsync(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.GetDataTableAsync(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.GetDataTableByCulture(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.GetDataTableByCultureAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.GetDataTableByCultureAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.GetData2(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.GetData2Async(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.GetData2Async(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.GetData3(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.GetData3Async(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.GetData3Async(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.GetDataTable3(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.GetDataTable3Async(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.GetDataTable3Async(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.GetData2ByCulture(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.GetData2ByCultureAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.GetData2ByCultureAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.GetDataTable2(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.GetDataTable2Async(System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.GetDataTable2Async(System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.GetDataTable2ByCulture(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.GetDataTable2ByCultureAsync(System.String,System.String,System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.GetDataTable2ByCultureAsync(System.String,System.String,System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.GetEmployeeNumberList(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.GetEmployeeNumberListAsync(System.String)">
+            <remarks/>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.GetEmployeeNumberListAsync(System.String,System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="E:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.GetDataCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.GetDataByCultureCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.GetDataTableCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.GetDataTableByCultureCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.GetData2Completed">
+            <remarks/>
+        </member>
+        <member name="E:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.GetData3Completed">
+            <remarks/>
+        </member>
+        <member name="E:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.GetDataTable3Completed">
+            <remarks/>
+        </member>
+        <member name="E:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.GetData2ByCultureCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.GetDataTable2Completed">
+            <remarks/>
+        </member>
+        <member name="E:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.GetDataTable2ByCultureCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataService.GetEmployeeNumberListCompleted">
+            <remarks/>
+        </member>
+        <member name="T:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataRecord">
+            <remarks/>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataRecord.Code">
+            <remarks/>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataRecord.DisplayName">
+            <remarks/>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataRecord.DisplayNameCht">
+            <remarks/>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataRecord.DisplayNameChs">
+            <remarks/>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataRecord.DisplayNameEn">
+            <remarks/>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.BaseDataService.BaseDataRecord.ExtendField">
+            <remarks/>
+        </member>
+        <member name="T:Amway.Framework.Workflow.AgileWork.BaseDataService.NameValuePair">
+            <remarks/>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.BaseDataService.NameValuePair.Name">
+            <remarks/>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.BaseDataService.NameValuePair.Value">
+            <remarks/>
+        </member>
+        <member name="T:Amway.Framework.Workflow.AgileWork.BaseDataService.GetDataCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Amway.Framework.Workflow.AgileWork.BaseDataService.GetDataCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.BaseDataService.GetDataCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Amway.Framework.Workflow.AgileWork.BaseDataService.GetDataByCultureCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Amway.Framework.Workflow.AgileWork.BaseDataService.GetDataByCultureCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.BaseDataService.GetDataByCultureCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Amway.Framework.Workflow.AgileWork.BaseDataService.GetDataTableCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Amway.Framework.Workflow.AgileWork.BaseDataService.GetDataTableCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.BaseDataService.GetDataTableCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Amway.Framework.Workflow.AgileWork.BaseDataService.GetDataTableByCultureCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Amway.Framework.Workflow.AgileWork.BaseDataService.GetDataTableByCultureCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.BaseDataService.GetDataTableByCultureCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Amway.Framework.Workflow.AgileWork.BaseDataService.GetData2CompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Amway.Framework.Workflow.AgileWork.BaseDataService.GetData2CompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.BaseDataService.GetData2CompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Amway.Framework.Workflow.AgileWork.BaseDataService.GetData3CompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Amway.Framework.Workflow.AgileWork.BaseDataService.GetData3CompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.BaseDataService.GetData3CompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Amway.Framework.Workflow.AgileWork.BaseDataService.GetDataTable3CompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Amway.Framework.Workflow.AgileWork.BaseDataService.GetDataTable3CompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.BaseDataService.GetDataTable3CompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Amway.Framework.Workflow.AgileWork.BaseDataService.GetData2ByCultureCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Amway.Framework.Workflow.AgileWork.BaseDataService.GetData2ByCultureCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.BaseDataService.GetData2ByCultureCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Amway.Framework.Workflow.AgileWork.BaseDataService.GetDataTable2CompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Amway.Framework.Workflow.AgileWork.BaseDataService.GetDataTable2CompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.BaseDataService.GetDataTable2CompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Amway.Framework.Workflow.AgileWork.BaseDataService.GetDataTable2ByCultureCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Amway.Framework.Workflow.AgileWork.BaseDataService.GetDataTable2ByCultureCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.BaseDataService.GetDataTable2ByCultureCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Amway.Framework.Workflow.AgileWork.BaseDataService.GetEmployeeNumberListCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Amway.Framework.Workflow.AgileWork.BaseDataService.GetEmployeeNumberListCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.BaseDataService.GetEmployeeNumberListCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.Utility.AgileWorkHelp.APPROVER_EMPS">
+            <summary>
+            一次性分配任务审批人列表
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.Utility.AgileWorkHelp.SEQUENCE_APPROVER_EMPS">
+            <summary>
+            顺序审批人列表
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.Utility.AgileWorkHelp.APPROVE_RESULT">
+            <summary>
+            审批结果
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.Utility.AgileWorkHelp.RECORD_ID">
+            <summary>
+            流程ID
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.Utility.AgileWorkHelp.WORKFLOW_PREFIX">
+            <summary>
+            流程记录表前缀
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.Utility.AgileWorkHelp.WORKFLOW_INFO_ID">
+            <summary>
+            流程ID
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.Utility.AgileWorkHelp.WORKFLOW_CODE">
+            <summary>
+            流程代码
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.Utility.AgileWorkHelp.SYSTEM_ID">
+            <summary>
+            系统ID
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.Utility.AgileWorkHelp.OVERDUE">
+            <summary>
+            超时标识
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.Utility.AgileWorkHelp.CUSTOM_APPROVER">
+            <summary>
+            自定义审批人，也就是提交表单添加的审批人
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.Utility.AgileWorkHelp.IS_CUSTOM_APPROVER">
+            <summary>
+            当前环节是否是自定义审批人环节
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.Utility.AgileWorkHelp.FILLER_EMP_NUMBER">
+            <summary>
+            填表人AD帐号
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.Utility.AgileWorkHelp.COMPLETE_CURRENT_TASK">
+            <summary>
+            是否完成当前任务
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.Utility.AgileWorkHelp.REPORT_LINE_HISTORY">
+            <summary>
+            当前节点的ReportLine审批人历史记录
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.Utility.AgileWorkHelp.REPORT_LINE_APPROVER">
+            <summary>
+            ReportLine线上的当前ReportLine审批人,不管增加了多少额外审批人，这个变量保存着ReportLine线上的当前审批用户
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.Utility.AgileWorkHelp.REPORT_LINE_APPROVER_AREA">
+            <summary>
+            ReportLine线上的当前ReportLine审批人的用户所在区域,不管增加了多少额外审批人，这个变量保存着ReportLine线上的当前审批用户所在区域
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.Utility.AgileWorkHelp.APPROVAL_BOX_IS_TOP">
+            <summary>
+            当前ReportLine是否已经到顶点的标识
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.Utility.AgileWorkHelp.POLICY_ROLE_ADDITIONAL_APPROVER">
+            <summary>
+            符合条件的审批政策的角色的额外审批人
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.Utility.AgileWorkHelp.APPLY_USER_AREA">
+            <summary>
+            申请人所在区域
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.Utility.AgileWorkHelp.ADDITIONAL">
+            <summary>
+            额外审请人节点
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.Utility.AgileWorkHelp.IS_ADD_APPROVER">
+            <summary>
+            是否增加审批人
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.Utility.AgileWorkHelp.ADD_APPROVERS">
+            <summary>
+            增加的审批人
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.Utility.AgileWorkHelp.GetCustomAtt(Ascentn.Workflow.Base.IWFAPI,System.String,System.String)">
+            <summary>
+            获取流程变量字符串
+            </summary>
+            <param name="api">API</param>
+            <param name="workObjectId"></param>
+            <param name="name">流程变量名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.Utility.AgileWorkHelp.IsMeetingSystem(System.String)">
+            <summary>
+            是否会议系统项目
+            </summary>
+            <param name="currWorkflowCode"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Amway.Framework.Workflow.AgileWork.Utility.AgileEventType">
+            <summary>
+            AgileWork邮件通知类型
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.Utility.AgileEventType.AssignedWorkItem">
+            <summary>
+            用户接收到新的审批任务
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.Utility.AgileEventType.CompleteWorkItem">
+            <summary>
+            用户完成审批任务
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.Utility.AgileEventType.RefusedWorkItem">
+            <summary>
+            用户拒绝表单
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.Utility.AgileEventType.CompleteWorkFlow">
+            <summary>
+            流程表单完成
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.Utility.AgileEventType.WorkItemOverDue">
+            <summary>
+            流程节点超时
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.Utility.AgileEventType.WorkItemOverDueJump">
+            <summary>
+            超时，并自动跳转
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DataAccess.SQLHelper.ValidateConnectionString(System.String)">
+            <summary>
+            验证连接字符串是否正确
+            </summary>
+            <param name="connectionString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DataAccess.SQLHelper.GetStringColumn(System.Data.DataRow,System.String)">
+            <summary>
+            获取数据行中某列的数据
+            </summary>
+            <param name="dr"></param>
+            <param name="columnName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DataAccess.ComDataUtility.GetVarValue(System.String)">
+            <summary>
+            通过系统名称获取系统值
+            </summary>
+            <param name="varId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DataAccess.ComDataUtility.GetRoleEmps(System.String)">
+            <summary>
+            查找角色下所有用户
+            </summary>
+            <param name="roleId">角色ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DataAccess.ComDataUtility.GetRoleEmps(System.String,System.String)">
+            <summary>
+            通过角色Code和系统Id获取角色下面的用户
+            </summary>
+            <param name="systemId"></param>
+            <param name="roleCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DataAccess.ComDataUtility.GetDataServiceEmp(System.String,System.String)">
+            <summary>
+            通过基础数据服务名称和列名获取值
+            </summary>
+            <param name="serviceId">服务名称</param>
+            <param name="serviceColId">列表</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DataAccess.ComDataUtility.GetDataServiceExtCol(System.String,System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            获取基础服务一个扩展字段
+            </summary>
+            <param name="baseDataId"></param>
+            <param name="colName"></param>
+            <param name="itemIds"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DataAccess.ComDataUtility.GetDataServiceExtColCode(System.String,System.String)">
+            <summary>
+            获取数据服务，某一自定义列的列代码
+            </summary>
+            <param name="baseDataId">基础数据服务名称</param>
+            <param name="colName">列名</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DataAccess.ComDataUtility.GetPolicyRoles(System.String)">
+            <summary>
+            通过政策名称获取规则列表
+            </summary>
+            <param name="policyId">正策名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DataAccess.ComDataUtility.GetPolicyRoleAddedApprover(System.String)">
+            <summary>
+            通过政策规则ID获取此规则的额外审批人
+            </summary>
+            <param name="roleId">规则ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DataAccess.ComDataUtility.GetReportLineEmpNumber(System.String)">
+            <summary>
+            获取用户的ReportLine
+            </summary>
+            <param name="preApprover"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DataAccess.ComDataUtility.GetReportLineEmpNumber(System.String,System.String,System.String)">
+            <summary>
+            获取用户的ReportLine
+            </summary>
+            <param name="preApprover">上一步审批人</param>
+            <param name="preApproverUserArea">上一步审批人所在区域</param>
+            <param name="reporteLineUserArea">需要查找reportLine所在区域</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DataAccess.ComDataUtility.GetEmployeeAndDeptInfo(System.String)">
+            <summary>
+            获取用户以及用户部门信息
+            </summary>
+            <param name="applierEmp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DataAccess.ComDataUtility.GetEmployeeAndDeptInfo(System.String,System.String)">
+            <summary>
+            获取用户以及用户部门信息
+            </summary>
+            <param name="empNumber">用户AD号</param>
+            <param name="userArea">用户所在区域,可以为空或null</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DataAccess.ComDataUtility.GetEmployeeInfo(System.String)">
+            <summary>
+            获取用户信息(MSTB_COM_EMPLOYEE 表)
+            </summary>
+            <param name="empNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DataAccess.ComDataUtility.GetEmployeeInfo(System.String,System.String)">
+            <summary>
+            获取用户信息(MSTB_COM_EMPLOYEE_DETAIL 表)
+            </summary>
+            <param name="empNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DataAccess.ComDataUtility.GetDeptInfo(System.String)">
+            <summary>
+            获取部门信息(MSTB_COM_DEPARTMENT 表)
+            </summary>
+            <param name="unitCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DataAccess.ComDataUtility.GetDepartmentShopInfo(System.String)">
+            <summary>
+            通过部门信息获取部门店铺信息表
+            </summary>
+            <param name="deptUnitCode">部门代码</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DataAccess.ComDataUtility.GetEmployeeShopInfo(System.String)">
+            <summary>
+            获取员工的店铺信息
+            </summary>
+            <param name="empNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DataAccess.ComDataUtility.GetApprovalboxSpecial(System.String,System.Int32)">
+            <summary>
+            获取approvalbox特殊用户
+            </summary>
+            <param name="empType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DataAccess.ComDataUtility.GetDelegate(System.String,System.String)">
+            <summary>
+            获取用户的委托用户
+            如果用户没有委托，则返回自己
+            </summary>
+            <param name="userName"></param>
+            <param name="workflowInfoId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DataAccess.ComDataUtility.CalculateSql(System.String)">
+            <summary>
+            计算sql返回值
+            </summary>
+            <param name="p"></param>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DataAccess.ComDataUtility.NoticeAmwayFramework(System.String,System.String,System.String,System.String,System.String,System.String,Ascentn.Workflow.Base.WFCustomAttributes,Amway.Framework.Workflow.AgileWork.FrameworkWebAdmin.AgileEventType)">
+            <summary>
+            调用WebService发送通知
+            </summary>
+            <param name="recordId"></param>
+            <param name="Prefix"></param>
+            <param name="empNumber"></param>
+            <param name="noticeType"></param>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DataAccess.ComDataUtility.WriteLog(System.String,System.String)">
+            <summary>
+            往业务库写日志
+            </summary>
+            <param name="msg">日志信息</param>
+            <param name="systemId">系统ID</param>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DataAccess.ComDataUtility.GetWorkflowVariable(System.String)">
+            <summary>
+            获取流程信息
+            </summary>
+            <param name="workflowInfoId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DataAccess.ComDataUtility.GetSystemInfo(System.String)">
+            <summary>
+            获取系统信息
+            </summary>
+            <param name="systemId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DataAccess.ComDataUtility.GetAllUserArea">
+            <summary>
+            获取用户所有区域
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.Runtime.AmwayAgileWork.GetSingleReject(Ascentn.Workflow.Base.IWFAPI)">
+            <summary>
+            获取流程变量SingleReject，用于判断单人审批时，单人退回操作是否退回节点。
+            </summary>
+            <param name="api"></param>
+            <returns>如果为true，则单人退回忽略其它人，如果为false，则单人退回还需要其它人退回才起作用</returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.Runtime.AmwayAgileWork.CancelOtherWorkItems(Ascentn.Workflow.Base.IWFAPI,Ascentn.Workflow.Base.WFManualWorkItem)">
+            <summary>
+            取消当前WorkItem以外的所有正在处理的WorkItem
+            </summary>
+            <param name="api"></param>
+            <param name="workitem">当前WorkItem</param>
+            <returns>被取消的WorkItem分配的用户列表</returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.Runtime.AmwayAgileWork.CancelProcInst(Ascentn.Workflow.Base.WFCompletingManualWorkItemEventArgs,System.String,System.String,System.String,System.String,Ascentn.Workflow.Base.WFCustomAttributes)">
+            <summary>
+            退回取消流程
+            </summary>
+            <param name="api"></param>
+            <param name="recordId"></param>
+            <param name="prefix"></param>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.Runtime.AmwayAgileWork.GetDataServiceUser(Ascentn.Workflow.Base.IWFAPI)">
+            <summary>
+            通过基础数据服务名称和列获取用户
+            </summary>
+            <param name="api"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.Runtime.AmwayAgileWork.GetRoleUsers(Ascentn.Workflow.Base.IWFAPI)">
+            <summary>
+            通过角色名称查找角色下面的用户
+            </summary>
+            <param name="api"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.Runtime.AmwayAgileWork.GetFormDataUsers(Ascentn.Workflow.Base.IWFAPI)">
+            <summary>
+            获取表单中数据所指的用户
+            表单中如果有多个用户，按"#;"分隔
+            </summary>
+            <param name="api"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.Runtime.AmwayAgileWork.GetSystemVarUsers(Ascentn.Workflow.Base.IWFAPI)">
+            <summary>
+            获取系统变量中设定的用户
+            </summary>
+            <param name="api"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.Runtime.AmwayAgileWork.dicWorkflowVariable">
+            <summary>
+            流程变量设置
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.Runtime.AmwayAgileWork.GetFirstApprovalBoxUser(Ascentn.Workflow.Base.IWFAPI)">
+            <summary>
+            进入ApprovalBox节点时，读取第一个reportLine用户
+            </summary>
+            <param name="api"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.Runtime.AmwayAgileWork.GetUserReportLine(Ascentn.Workflow.Base.IWFAPI,System.String,System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            获取用户的ReportLine
+            </summary>
+            <param name="api"></param>
+            <param name="currentEmpArea"></param>
+            <param name="currentEmp"></param>
+            <param name="additionalApprover"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.Runtime.AmwayAgileWork.GetReportLineEmployee(Ascentn.Workflow.Base.IWFAPI,System.String,System.String)">
+            <summary>
+            获取当前用户的reportLine
+            </summary>
+            <param name="currentEmp"></param>
+            <param name="currentEmpArea"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.Runtime.AmwayAgileWork.GetReportLineIsTop(Ascentn.Workflow.Base.IWFAPI,System.Data.DataTable,System.Collections.Generic.Dictionary{System.String,System.String},System.String,System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            判断当前用户是不是审批政策的顶点
+            如果是顶点，则参数additionalApprover返回符合政策的额外审批人
+            </summary>
+            <param name="api"></param>
+            <param name="dtRoles"></param>
+            <param name="applierAttributes"></param>
+            <param name="reportLineEmp"></param>
+            <param name="additionalApprover"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.Runtime.AmwayAgileWork.ConditionReplace(System.String,System.String,System.String)">
+            <summary>
+            角色条件语句替换函数
+            如果用于替换的字符串可以转换成数据，则换成不带''号SQL
+            如果用于替换的字符串可以转换成日期，则换成带CONVERT类型的SQL
+            其它直接当成字符串，用''括上
+            </summary>
+            <param name="input">角色条件判断语句</param>
+            <param name="oldStr">需要替换的字符串</param>
+            <param name="newStr">用于替换的字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.Runtime.AmwayAgileWork.PermissionsReplace(System.String,System.String,System.String)">
+            <summary>
+            用于权限判断语句的替换
+            </summary>
+            <param name="input"></param>
+            <param name="oldStr"></param>
+            <param name="newStr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.Runtime.AmwayAgileWork.GetApproverAttriubtes(Ascentn.Workflow.Base.IWFAPI,System.String,System.String)">
+            <summary>
+            获取审批人信息
+            </summary>
+            <param name="api"></param>
+            <returns></returns>
+        </member>
+        <!-- 对于成员“M:Amway.Framework.Workflow.AgileWork.Runtime.AmwayAgileWork.FillAttributes(System.Collections.Generic.Dictionary{System.String,System.String},System.Data.DataRow,System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="M:Amway.Framework.Workflow.AgileWork.Runtime.AmwayAgileWork.GetApplierAttributes(Ascentn.Workflow.Base.IWFAPI)">
+            <summary>
+            获取提交用户信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.Runtime.AmwayAgileWork.GetCellString(System.Object)">
+            <summary>
+            获取表格单位格信息，如果为DBNull值，返回string.Empty
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Amway.Framework.Workflow.AgileWork.Runtime.NullReportLineException">
+            <summary>
+            ReportLine为空时引发的异常
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.Entities.RoleInfo.RoleId">
+            <summary>
+            角色Id
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.Entities.RoleInfo.RoleName">
+            <summary>
+            角色名称
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.Entities.RoleInfo.SystemInfoId">
+            <summary>
+            政策所属应用ID
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.Entities.RoleInfo.SystemInfoCode">
+            <summary>
+            正策所属应用CODE
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.Entities.RoleInfo.SystemInfoNameCHS">
+            <summary>
+            政策所属应用名称
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.Entities.SystemVarInfo.VariableId">
+            <summary>
+            系统变量ID
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.Entities.SystemVarInfo.VariableName">
+            <summary>
+            系统变量名称
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.Entities.SystemVarInfo.SystemInfoId">
+            <summary>
+            政策所属应用ID
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.Entities.SystemVarInfo.SystemInfoCode">
+            <summary>
+            正策所属应用CODE
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.Entities.SystemVarInfo.SystemInfoNameCHS">
+            <summary>
+            政策所属应用名称
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.DesignTime.WorkflowInfoConfig.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DesignTime.WorkflowInfoConfig.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DesignTime.WorkflowInfoConfig.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DesignTime.ButtonConfigForm.ShowDialog(Amway.Framework.Workflow.AgileWork.DesignTime.AmwayAgileWorkDescriptor)">
+            <summary>
+            IWFAgileShapePropertyDialog接口实现
+            </summary>
+            <param name="descriptor"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.DesignTime.ButtonConfigForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DesignTime.ButtonConfigForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DesignTime.ButtonConfigForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Workflow.AgileWork.FrameworkWebAdmin.ServiceForAgilePoint">
+            <remarks/>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.FrameworkWebAdmin.ServiceForAgilePoint.#ctor">
+            <remarks/>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.FrameworkWebAdmin.ServiceForAgilePoint.HelloWorld">
+            <remarks/>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.FrameworkWebAdmin.ServiceForAgilePoint.HelloWorldAsync">
+            <remarks/>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.FrameworkWebAdmin.ServiceForAgilePoint.HelloWorldAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.FrameworkWebAdmin.ServiceForAgilePoint.AgilePointEventNotice(System.String,System.String,System.String,Amway.Framework.Workflow.AgileWork.FrameworkWebAdmin.AgileEventType,System.String,Amway.Framework.Workflow.AgileWork.FrameworkWebAdmin.NameValue[])">
+            <remarks/>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.FrameworkWebAdmin.ServiceForAgilePoint.AgilePointEventNoticeAsync(System.String,System.String,System.String,Amway.Framework.Workflow.AgileWork.FrameworkWebAdmin.AgileEventType,System.String,Amway.Framework.Workflow.AgileWork.FrameworkWebAdmin.NameValue[])">
+            <remarks/>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.FrameworkWebAdmin.ServiceForAgilePoint.AgilePointEventNoticeAsync(System.String,System.String,System.String,Amway.Framework.Workflow.AgileWork.FrameworkWebAdmin.AgileEventType,System.String,Amway.Framework.Workflow.AgileWork.FrameworkWebAdmin.NameValue[],System.Object)">
+            <remarks/>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.FrameworkWebAdmin.ServiceForAgilePoint.CancelAsync(System.Object)">
+            <remarks/>
+        </member>
+        <member name="E:Amway.Framework.Workflow.AgileWork.FrameworkWebAdmin.ServiceForAgilePoint.HelloWorldCompleted">
+            <remarks/>
+        </member>
+        <member name="E:Amway.Framework.Workflow.AgileWork.FrameworkWebAdmin.ServiceForAgilePoint.AgilePointEventNoticeCompleted">
+            <remarks/>
+        </member>
+        <member name="T:Amway.Framework.Workflow.AgileWork.FrameworkWebAdmin.AgileEventType">
+            <remarks/>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.FrameworkWebAdmin.AgileEventType.AssignedWorkItem">
+            <remarks/>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.FrameworkWebAdmin.AgileEventType.CompleteWorkItem">
+            <remarks/>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.FrameworkWebAdmin.AgileEventType.RefusedWorkItem">
+            <remarks/>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.FrameworkWebAdmin.AgileEventType.CompleteWorkFlow">
+            <remarks/>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.FrameworkWebAdmin.AgileEventType.WorkItemOverDue">
+            <remarks/>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.FrameworkWebAdmin.AgileEventType.WorkItemOverDueJump">
+            <remarks/>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.FrameworkWebAdmin.AgileEventType.EnterActivtyInstance">
+            <remarks/>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.FrameworkWebAdmin.AgileEventType.LeaveActivityInstance">
+            <remarks/>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.FrameworkWebAdmin.AgileEventType.CompleteWorkItemAndSkipNext">
+            <remarks/>
+        </member>
+        <member name="T:Amway.Framework.Workflow.AgileWork.FrameworkWebAdmin.NameValue">
+            <remarks/>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.FrameworkWebAdmin.NameValue.Name">
+            <remarks/>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.FrameworkWebAdmin.NameValue.Value">
+            <remarks/>
+        </member>
+        <member name="T:Amway.Framework.Workflow.AgileWork.FrameworkWebAdmin.HelloWorldCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="T:Amway.Framework.Workflow.AgileWork.FrameworkWebAdmin.HelloWorldCompletedEventArgs">
+            <remarks/>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.FrameworkWebAdmin.HelloWorldCompletedEventArgs.Result">
+            <remarks/>
+        </member>
+        <member name="T:Amway.Framework.Workflow.AgileWork.FrameworkWebAdmin.AgilePointEventNoticeCompletedEventHandler">
+            <remarks/>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DataAccess.ConfigDataUtility.GetPolicyList(System.String)">
+            <summary>
+            获取ApprovalBox政策列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DataAccess.ConfigDataUtility.GetSysteVarList(System.String)">
+            <summary>
+            获取系统变量列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DataAccess.ConfigDataUtility.GetRoleList(System.String)">
+            <summary>
+            获取角色列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DataAccess.ConfigDataUtility.GetDataServiceList(System.String)">
+            <summary>
+            获取数据服务名称
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DataAccess.ConfigDataUtility.GetDataServiceFieldList(System.String)">
+            <summary>
+            获取数据服务相关的列列表
+            </summary>
+            <param name="dataServiceId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DataAccess.ConfigDataUtility.GetWorkflowInfoList">
+            <summary>
+            获取工作流相关信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.Entities.PolicyInfo.PolicyId">
+            <summary>
+            政策ID
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.Entities.PolicyInfo.PolicyName">
+            <summary>
+            政策名称
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.Entities.PolicyInfo.WorkflowInfoId">
+            <summary>
+            政策所属流程名称
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.Entities.PolicyInfo.WorkflowInfoCode">
+            <summary>
+            政策所属流程代码
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.Entities.PolicyInfo.SystemInfoId">
+            <summary>
+            政策所属应用ID
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.Entities.PolicyInfo.SystemInfoCode">
+            <summary>
+            正策所属应用CODE
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.Entities.PolicyInfo.SystemInfoNameCHS">
+            <summary>
+            政策所属应用名称
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.DesignTime.ConnectionStringConnfigForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DesignTime.ConnectionStringConnfigForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DesignTime.ConnectionStringConnfigForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.DesignTime.ConnectionStringConnfigForm.ConnectionString">
+            <summary>
+            连接字符串
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.DesignTime.ApprovalConfigForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DesignTime.ApprovalConfigForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DesignTime.ApprovalConfigForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DesignTime.ApprovalConfigForm.ShowDialog(Amway.Framework.Workflow.AgileWork.DesignTime.AmwayAgileWorkDescriptor)">
+            <summary>
+            IWFAgileShapePropertyDialog接口实现
+            </summary>
+            <param name="descriptor"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DesignTime.ApprovalConfigForm.IsNullOrWhite(System.String)">
+            <summary>
+            判断字符串是不是空白字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DesignTime.ApprovalConfigForm.InitApprovalBox">
+            <summary>
+            初始化ApprovalBox相关政策
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.DesignTime.ApprovalConfigForm.policyInfoList">
+            <summary>
+            ApprovalBox政策列表
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DesignTime.ApprovalConfigForm.RefreshPolicyList">
+            <summary>
+            刷新ApprovalBox政策列表
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.DesignTime.ApprovalConfigForm.systemVarInfoList">
+            <summary>
+            系统变量列表
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DesignTime.ApprovalConfigForm.RefreshSystemVarList">
+            <summary>
+            刷新系统变量列表
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DesignTime.ApprovalConfigForm.comboBox1_SelectedIndexChanged_1(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.DesignTime.ApprovalConfigForm.roleInfoList">
+            <summary>
+            角色列表
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DataAccess.WorkFlowDataUtility.UpdateRecordFlow(Ascentn.Workflow.Base.WFManualWorkItem,System.String)">
+            <summary>
+            更新差旅表单工作流部份
+            </summary>
+            <param name="workitem"></param>
+            <param name="recordId"></param>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DataAccess.WorkFlowDataUtility.UpdateRecordStatus(System.String,System.String,System.Int32)">
+            <summary>
+            更新差旅表单记录产状态
+            </summary>
+            <param name="recordId"></param>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DataAccess.WorkFlowDataUtility.UpdateRecordFinishDate(System.String,System.String,System.DateTime)">
+            <summary>
+            更新完成时间
+            </summary>
+            <param name="recordId"></param>
+            <param name="wfPrefix"></param>
+            <param name="finishDate"></param>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DataAccess.WorkFlowDataUtility.AddItemRecordApprovalEmp(Ascentn.Workflow.Base.WFManualWorkItem,System.String,System.String,System.String,System.Int32,System.String,System.String)">
+            <summary>
+            填加当前审批人表记录
+            </summary>
+            <param name="workitem"></param>
+            <param name="recordId"></param>
+            <param name="workflowInfoId"></param>
+            <param name="wfPrefix"></param>
+            <param name="approvalType"></param>
+            <param name="userArea"></param>
+            <param name="applyUserArea"></param>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DataAccess.WorkFlowDataUtility.AddItemRecordApprovalEmp(System.String,System.String,System.String,System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            填加当前审批人表记录
+            </summary>
+            <param name="recordId"></param>
+            <param name="workflowInfoId"></param>
+            <param name="wfPrefix"></param>
+            <param name="approvalType"></param>
+            <param name="currentEmpNumber"></param>
+            <param name="orginEmpNumber"></param>
+            <param name="workitemId"></param>
+            <param name="workitemActivityInstID"></param>
+            <param name="workitemName"></param>
+            <param name="userArea"></param>
+            <param name="applyUserArea"></param>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DataAccess.WorkFlowDataUtility.RemoveItemRecordApprovalEmp(System.String)">
+            <summary>
+            删除当前审批人表中的当前节点记录
+            </summary>
+            <param name="workitemId"></param>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DataAccess.WorkFlowDataUtility.RemoveItemRecordApprovalEmpByType(System.String,System.Int32)">
+            <summary>
+            当除当前审批人表中的某一类型节点记录
+            </summary>
+            <param name="recordId"></param>
+            <param name="approveType"></param>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DataAccess.WorkFlowDataUtility.GetItemRecordInfo(System.String,System.String)">
+            <summary>
+            获取表单记录
+            </summary>
+            <param name="recordId"></param>
+            <param name="wfPrefix"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DataAccess.WorkFlowDataUtility.CheckAdditionalStep(System.String,System.String,System.String,System.String)">
+            <summary>
+            检测当前审批人是否是额外审批人
+            </summary>
+            <param name="recordId"></param>
+            <param name="prefix"></param>
+            <param name="activityId"></param>
+            <param name="sourceEmpNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.Entities.DataServiceFieldInfo.DataServiceId">
+            <summary>
+            数据服务Id
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.Entities.DataServiceFieldInfo.DataServiceFieldId">
+            <summary>
+            数据服务字段ID
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.Entities.DataServiceFieldInfo.FieldCode">
+            <summary>
+            字段CODE
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.Entities.DataServiceFieldInfo.DataServiceFieldNameCHS">
+            <summary>
+            数据服务字段名称
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Workflow.AgileWork.DesignTime.MutiApprovalMode">
+            <summary>
+            多人任务分配方式
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Workflow.AgileWork.DesignTime.AgileWorkApprovalType">
+            <summary>
+            审批人类型
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.DesignTime.AmwayAgileWorkDescriptor.DatabaseConnectionString">
+            <summary>
+            全局连接字符串变量
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DesignTime.AmwayAgileWorkDescriptor.GetButtonConfigs">
+            <summary>
+            获取按钮设置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.DesignTime.AmwayAgileWorkDescriptor.SetButtonConfigs(System.Collections.Generic.List{Amway.Framework.Workflow.AgileWork.DesignTime.ButtonConfig})">
+            <summary>
+            设置按钮设置
+            </summary>
+            <param name="list"></param>
+        </member>
+        <!-- 对于成员“M:Amway.Framework.Workflow.AgileWork.DesignTime.AmwayAgileWorkDescriptor.GetDefaultButtonConfigs”忽略有格式错误的 XML 注释 -->
+        <member name="M:Amway.Framework.Workflow.AgileWork.DesignTime.AmwayAgileWorkDescriptor.GetValue(System.String)">
+            <summary>
+            获取当前流程节点保存的设置
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.DesignTime.AmwayAgileWorkDescriptor.MutiApprvalMode">
+            <summary>
+            多人任务时的审批方式
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.DesignTime.AmwayAgileWorkDescriptor.AgileWorkApprovalType">
+            <summary>
+            审批人类型
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.DesignTime.AmwayAgileWorkDescriptor.ApprovalBoxPolicy">
+            <summary>
+            ApprovalBox政策名称
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.DesignTime.AmwayAgileWorkDescriptor.ApprovalBoxPolicyId">
+            <summary>
+            ApprovalBox政策Id
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.DesignTime.AmwayAgileWorkDescriptor.SystemParameterName">
+            <summary>
+            系统参数名称
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.DesignTime.AmwayAgileWorkDescriptor.SystemParameterId">
+            <summary>
+            系统参数ID
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.DesignTime.AmwayAgileWorkDescriptor.RoleName">
+            <summary>
+            角色名称
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.DesignTime.AmwayAgileWorkDescriptor.RoleId">
+            <summary>
+            角色ID
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.DesignTime.AmwayAgileWorkDescriptor.DataServiceName">
+            <summary>
+            基础服务名称
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.DesignTime.AmwayAgileWorkDescriptor.DataServiceId">
+            <summary>
+            基础服务Id
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.DesignTime.AmwayAgileWorkDescriptor.DataServiceColumn">
+            <summary>
+            基础服务使用的列
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.DesignTime.AmwayAgileWorkDescriptor.DataServiceColumnCode">
+            <summary>
+            基础服务使用的列Id
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Workflow.AgileWork.DesignTime.ButtonConfig">
+            <summary>
+            按钮设置
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Workflow.AgileWork.DesignTime.ButtonConfig.ALL">
+            <summary>
+            按钮全部可见
+            </summary>
+        </member>
+        <!-- 对于成员“F:Amway.Framework.Workflow.AgileWork.DesignTime.ButtonConfig.CURRENT”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“F:Amway.Framework.Workflow.AgileWork.DesignTime.ButtonConfig.APPLY”忽略有格式错误的 XML 注释 -->
+        <member name="P:Amway.Framework.Workflow.AgileWork.DesignTime.ButtonConfig.TextCN">
+            <summary>
+            按钮文本(简体)
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.DesignTime.ButtonConfig.TextTW">
+            <summary>
+            按钮文本(繁体)
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.DesignTime.ButtonConfig.TextEN">
+            <summary>
+            按钮文本(英文)
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.DesignTime.ButtonConfig.Code">
+            <summary>
+            按钮代码
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.DesignTime.ButtonConfig.Role">
+            <summary>
+            按钮权限
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.Utility.ExtendClass.FilterDomain(System.String)">
+            <summary>
+            将用户名用的AD前缀去除,如果没有AD前缀，返回自己
+            </summary>
+            <param name="fullName">需要去除的用户名</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.Utility.ExtendClass.MakeFullName(System.String)">
+            <summary>
+            为用户名加上AD前缀
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Workflow.AgileWork.Utility.ExtendClass.GetValue(Ascentn.Workflow.Base.WFCustomAttributes,System.String)">
+            <summary>
+            通过流程变量名获取名变值，如果变量名称不存在，则返回string.Empty
+            </summary>
+            <param name="attributes">流程变量集合</param>
+            <param name="key">变量名称</param>
+            <returns></returns>
+        </member>
+        <!-- 对于成员“M:Amway.Framework.Workflow.AgileWork.Utility.ExtendClass.CopyDictionary(System.Collections.Generic.Dictionary{System.String,System.String})”忽略有格式错误的 XML 注释 -->
+        <member name="P:Amway.Framework.Workflow.AgileWork.Entities.DataServiceInfo.DataServiceId">
+            <summary>
+            数据服务Id
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.Entities.DataServiceInfo.DataServiceCode">
+            <summary>
+            数据服务Code
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.Entities.DataServiceInfo.DataServiceNameCHS">
+            <summary>
+            数据服务名称
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.Entities.DataServiceInfo.SystemInfoId">
+            <summary>
+            数据服务所属应用ID
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.Entities.DataServiceInfo.SystemInfoCode">
+            <summary>
+            数据服务所属应用CODE
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.Entities.DataServiceInfo.SystemInfoNameCHS">
+            <summary>
+            数据服务所属应用名称
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Workflow.AgileWork.Entities.DataServiceInfo.FieldInfos">
+            <summary>
+            数据服务拥有列的列表
+            </summary>
+        </member>
+    </members>
+</doc>

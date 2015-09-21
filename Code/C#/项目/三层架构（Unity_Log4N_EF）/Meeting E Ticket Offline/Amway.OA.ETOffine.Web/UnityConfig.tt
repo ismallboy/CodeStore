@@ -1,0 +1,75 @@
+﻿<#
+//<summary>
+//Unity 配置文件生成模板
+//生成BO 以及 DAO 组件的Unity配置文件
+//</summary>
+//<remarks></remarks>
+//<history>
+//No. Date        Version Author      Comments
+//1.  2011/08/25  1.00    LuKailin    Create
+//</history>
+#>
+
+<#@ template language="C#" debug="false" hostspecific="true"#>
+<#@ include file="EF.Utility.CS.ttinclude"#><#@
+ output extension=".xml"#><#
+// Copyright (c) Microsoft Corporation.  All rights reserved.
+
+CodeGenerationTools code = new CodeGenerationTools(this);
+MetadataLoader loader = new MetadataLoader(this);
+CodeRegion region = new CodeRegion(this, 1);
+MetadataTools ef = new MetadataTools(this);
+
+var inputFile = @"..\Amway.OA.ETOffine.DAL\ETOffine.edmx";
+MetadataWorkspace metadataWorkspace = null;
+bool allMetadataLoaded =loader.TryLoadAllMetadata(inputFile, out metadataWorkspace);
+EdmItemCollection ItemCollection = (EdmItemCollection)metadataWorkspace.GetItemCollection(DataSpace.CSpace);
+#>
+  <unity xmlns="http://schemas.microsoft.com/practices/2010/unity">
+    <!--引用程序集 开始-->
+    <assembly name="Amway.OA.MSET"/>
+    <assembly name="Amway.OA.MSET.BLL"/>
+    <assembly name="Amway.OA.MSET.DAL"/>
+    <namespace name="Amway.OA.MSET"/>
+    <namespace name="Amway.OA.MSET.BLL"/>
+    <namespace name="Amway.OA.MSET.DAL"/>
+    <!--引用程序集 结束-->
+
+    <container name="AmwayFrameworkContainer" >
+      <!--基础类库组件 开始-->
+      <!--基础类库组件 结束-->
+
+      <!--业务逻辑组件 开始-->
+<#
+foreach (EntityType entity in ItemCollection.GetItems<EntityType>().OrderBy(e => e.Name))
+{
+#>
+      <register type="I<#=code.Escape(entity)#>BO" mapTo="<#=code.Escape(entity)#>BO">
+        <lifetime type="transient"/>
+      </register>
+<#		
+}
+#>
+      <!--业务逻辑组件 结束-->
+
+      <!--业务数据访问组件 开始-->
+<#
+foreach (EntityType entity in ItemCollection.GetItems<EntityType>().OrderBy(e => e.Name))
+{
+#>
+      <register type="I<#=code.Escape(entity)#>DAO" mapTo="<#=code.Escape(entity)#>DAO">
+        <lifetime type="transient"/>
+      </register>
+<#		
+}
+#>
+      <!--业务数据访问组件 结束-->
+
+	  <!--流程管理组件 开始-->
+      <register type="IFlowFormManager" mapTo="MSETFlowFormManager">
+        <lifetime type="transient"/>
+      </register>
+      <!--流程管理组件 结束-->
+
+    </container>
+  </unity>

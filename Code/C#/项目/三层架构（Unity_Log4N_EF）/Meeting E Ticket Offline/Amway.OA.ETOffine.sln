@@ -1,0 +1,72 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amway.OA.ETOffine.DAL", "Amway.OA.ETOffine.DAL\Amway.OA.ETOffine.DAL.csproj", "{AEEC70B7-FC35-452B-B5AB-724C5921A2CA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{68579E7B-98D3-4E52-8C83-F85782B026E1} = {68579E7B-98D3-4E52-8C83-F85782B026E1}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amway.OA.ETOffine.BLL", "Amway.OA.ETOffine.BLL\Amway.OA.ETOffine.BLL.csproj", "{5BA5233A-7E0C-45A4-8778-FF9F3E8F8772}"
+	ProjectSection(ProjectDependencies) = postProject
+		{68579E7B-98D3-4E52-8C83-F85782B026E1} = {68579E7B-98D3-4E52-8C83-F85782B026E1}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amway.OA.ETOffine.Entities", "Amway.OA.ETOffine.Entities\Amway.OA.ETOffine.Entities.csproj", "{6233927C-BCD7-4600-99B4-36977D2DA261}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amway.OA.ETOffine.Web", "Amway.OA.ETOffine.Web\Amway.OA.ETOffine.Web.csproj", "{FBA0A970-8CEC-4555-8A8B-DF7ACE5A4CE6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{68579E7B-98D3-4E52-8C83-F85782B026E1} = {68579E7B-98D3-4E52-8C83-F85782B026E1}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amway.OA.ETOffine", "Amway.OA.ETOffine\Amway.OA.ETOffine.csproj", "{68579E7B-98D3-4E52-8C83-F85782B026E1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6233927C-BCD7-4600-99B4-36977D2DA261} = {6233927C-BCD7-4600-99B4-36977D2DA261}
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Amway.OA.ETOffine.Setup", "Amway.OA.ETOffine.Setup\Amway.OA.ETOffine.Setup.vdproj", "{455E12B1-9F5C-46EA-BFAF-A06AB8720345}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amway.OA.ETOffine.WebInstaller", "Amway.OA.ETOffine.WebInstaller\Amway.OA.ETOffine.WebInstaller.csproj", "{C7361AE3-DF00-4517-B462-F695BF06086A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amway.OA.ETOffine.Installer", "Amway.OA.ETOffine.Installer\Amway.OA.ETOffine.Installer.csproj", "{85B4FE40-23C1-4153-AFEE-DB4373A4B01C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AEEC70B7-FC35-452B-B5AB-724C5921A2CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEEC70B7-FC35-452B-B5AB-724C5921A2CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEEC70B7-FC35-452B-B5AB-724C5921A2CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEEC70B7-FC35-452B-B5AB-724C5921A2CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BA5233A-7E0C-45A4-8778-FF9F3E8F8772}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BA5233A-7E0C-45A4-8778-FF9F3E8F8772}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BA5233A-7E0C-45A4-8778-FF9F3E8F8772}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BA5233A-7E0C-45A4-8778-FF9F3E8F8772}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6233927C-BCD7-4600-99B4-36977D2DA261}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6233927C-BCD7-4600-99B4-36977D2DA261}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6233927C-BCD7-4600-99B4-36977D2DA261}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6233927C-BCD7-4600-99B4-36977D2DA261}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBA0A970-8CEC-4555-8A8B-DF7ACE5A4CE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBA0A970-8CEC-4555-8A8B-DF7ACE5A4CE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBA0A970-8CEC-4555-8A8B-DF7ACE5A4CE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBA0A970-8CEC-4555-8A8B-DF7ACE5A4CE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68579E7B-98D3-4E52-8C83-F85782B026E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68579E7B-98D3-4E52-8C83-F85782B026E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68579E7B-98D3-4E52-8C83-F85782B026E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68579E7B-98D3-4E52-8C83-F85782B026E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{455E12B1-9F5C-46EA-BFAF-A06AB8720345}.Debug|Any CPU.ActiveCfg = Debug
+		{455E12B1-9F5C-46EA-BFAF-A06AB8720345}.Release|Any CPU.ActiveCfg = Release
+		{C7361AE3-DF00-4517-B462-F695BF06086A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7361AE3-DF00-4517-B462-F695BF06086A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7361AE3-DF00-4517-B462-F695BF06086A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7361AE3-DF00-4517-B462-F695BF06086A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85B4FE40-23C1-4153-AFEE-DB4373A4B01C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85B4FE40-23C1-4153-AFEE-DB4373A4B01C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85B4FE40-23C1-4153-AFEE-DB4373A4B01C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85B4FE40-23C1-4153-AFEE-DB4373A4B01C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
