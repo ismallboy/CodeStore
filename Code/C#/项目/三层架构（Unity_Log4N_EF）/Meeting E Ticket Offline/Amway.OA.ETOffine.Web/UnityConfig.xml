@@ -1,0 +1,47 @@
+﻿
+  <unity xmlns="http://schemas.microsoft.com/practices/2010/unity">
+    <!--引用程序集 开始-->
+    <assembly name="Amway.OA.MSET"/>
+    <assembly name="Amway.OA.MSET.BLL"/>
+    <assembly name="Amway.OA.MSET.DAL"/>
+    <namespace name="Amway.OA.MSET"/>
+    <namespace name="Amway.OA.MSET.BLL"/>
+    <namespace name="Amway.OA.MSET.DAL"/>
+    <!--引用程序集 结束-->
+
+    <container name="AmwayFrameworkContainer" >
+      <!--基础类库组件 开始-->
+      <!--基础类库组件 结束-->
+
+      <!--业务逻辑组件 开始-->
+      <register type="IMsetOfflineActivityBO" mapTo="MsetOfflineActivityBO">
+        <lifetime type="transient"/>
+      </register>
+      <register type="IMsetOfflineCheckingLogBO" mapTo="MsetOfflineCheckingLogBO">
+        <lifetime type="transient"/>
+      </register>
+      <register type="IMsetOfflineTicketBO" mapTo="MsetOfflineTicketBO">
+        <lifetime type="transient"/>
+      </register>
+      <!--业务逻辑组件 结束-->
+
+      <!--业务数据访问组件 开始-->
+      <register type="IMsetOfflineActivityDAO" mapTo="MsetOfflineActivityDAO">
+        <lifetime type="transient"/>
+      </register>
+      <register type="IMsetOfflineCheckingLogDAO" mapTo="MsetOfflineCheckingLogDAO">
+        <lifetime type="transient"/>
+      </register>
+      <register type="IMsetOfflineTicketDAO" mapTo="MsetOfflineTicketDAO">
+        <lifetime type="transient"/>
+      </register>
+      <!--业务数据访问组件 结束-->
+
+	  <!--流程管理组件 开始-->
+      <register type="IFlowFormManager" mapTo="MSETFlowFormManager">
+        <lifetime type="transient"/>
+      </register>
+      <!--流程管理组件 结束-->
+
+    </container>
+  </unity>

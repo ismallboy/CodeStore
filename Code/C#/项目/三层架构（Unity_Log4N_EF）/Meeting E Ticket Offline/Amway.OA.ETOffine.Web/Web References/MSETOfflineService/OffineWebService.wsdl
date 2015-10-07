@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Notice">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="recordId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="workflowInfoId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="empNumber" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="AgileEventType" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="agileWorkCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="customAttribute" type="tns:ArrayOfNameValue" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfNameValue">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="NameValue" nillable="true" type="tns:NameValue" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="NameValue">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Value" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="NoticeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="NoticeResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DownLoadActivity">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="rid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ETOffineTicketDTO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="RecordID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TicketID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TicketSN" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Category" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TicketStatus" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CheckingTime" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="AdaCard" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Owner_Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CheckinIP" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MachineName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="MsetCKActivityInfoDTO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="RecordID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ActivitySN" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ActivityName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ActivityCityName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ActivityAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ActivityChildDetail" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="StartTime" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="FinishTime" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ActivityCount" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ETOffineActivityDTO">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:MsetCKActivityInfoDTO">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="ActivityCategory" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ActivityDetail" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="IsRealName" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="TicketCount" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="Creator" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="CreateDate" nillable="true" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="Updator" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="UpdateDate" nillable="true" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="Items" type="tns:ArrayOfETOffineTicketDTO" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ArrayOfETOffineTicketDTO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ETOffineTicketDTO" nillable="true" type="tns:ETOffineTicketDTO" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="DownLoadActivityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DownLoadActivityResult" type="tns:ETOffineActivityDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WsSecurityHeader" type="tns:WsSecurityHeader" />
+      <s:complexType name="WsSecurityHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="AppId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AppKey" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+      <s:element name="UploadActivity">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="recordID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ticketList" type="tns:ArrayOfETOffineTicketDTO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadActivityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UploadActivityResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="NoticeSoapIn">
+    <wsdl:part name="parameters" element="tns:Notice" />
+  </wsdl:message>
+  <wsdl:message name="NoticeSoapOut">
+    <wsdl:part name="parameters" element="tns:NoticeResponse" />
+  </wsdl:message>
+  <wsdl:message name="DownLoadActivitySoapIn">
+    <wsdl:part name="parameters" element="tns:DownLoadActivity" />
+  </wsdl:message>
+  <wsdl:message name="DownLoadActivitySoapOut">
+    <wsdl:part name="parameters" element="tns:DownLoadActivityResponse" />
+  </wsdl:message>
+  <wsdl:message name="DownLoadActivityWsSecurityHeader">
+    <wsdl:part name="WsSecurityHeader" element="tns:WsSecurityHeader" />
+  </wsdl:message>
+  <wsdl:message name="UploadActivitySoapIn">
+    <wsdl:part name="parameters" element="tns:UploadActivity" />
+  </wsdl:message>
+  <wsdl:message name="UploadActivitySoapOut">
+    <wsdl:part name="parameters" element="tns:UploadActivityResponse" />
+  </wsdl:message>
+  <wsdl:message name="UploadActivityWsSecurityHeader">
+    <wsdl:part name="WsSecurityHeader" element="tns:WsSecurityHeader" />
+  </wsdl:message>
+  <wsdl:portType name="OffineWebServiceSoap">
+    <wsdl:operation name="Notice">
+      <wsdl:input message="tns:NoticeSoapIn" />
+      <wsdl:output message="tns:NoticeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DownLoadActivity">
+      <wsdl:input message="tns:DownLoadActivitySoapIn" />
+      <wsdl:output message="tns:DownLoadActivitySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadActivity">
+      <wsdl:input message="tns:UploadActivitySoapIn" />
+      <wsdl:output message="tns:UploadActivitySoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="OffineWebServiceSoap" type="tns:OffineWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Notice">
+      <soap:operation soapAction="http://tempuri.org/Notice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DownLoadActivity">
+      <soap:operation soapAction="http://tempuri.org/DownLoadActivity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:DownLoadActivityWsSecurityHeader" part="WsSecurityHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadActivity">
+      <soap:operation soapAction="http://tempuri.org/UploadActivity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:UploadActivityWsSecurityHeader" part="WsSecurityHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="OffineWebServiceSoap12" type="tns:OffineWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Notice">
+      <soap12:operation soapAction="http://tempuri.org/Notice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DownLoadActivity">
+      <soap12:operation soapAction="http://tempuri.org/DownLoadActivity" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:DownLoadActivityWsSecurityHeader" part="WsSecurityHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadActivity">
+      <soap12:operation soapAction="http://tempuri.org/UploadActivity" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:UploadActivityWsSecurityHeader" part="WsSecurityHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="OffineWebService">
+    <wsdl:port name="OffineWebServiceSoap" binding="tns:OffineWebServiceSoap">
+      <soap:address location="http://10.143.170.128:8080/OA/MSETCK/WebService/OffineWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="OffineWebServiceSoap12" binding="tns:OffineWebServiceSoap12">
+      <soap12:address location="http://10.143.170.128:8080/OA/MSETCK/WebService/OffineWebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

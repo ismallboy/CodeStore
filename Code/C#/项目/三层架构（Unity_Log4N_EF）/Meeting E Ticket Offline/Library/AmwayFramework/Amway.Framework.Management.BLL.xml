@@ -1,0 +1,2618 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Amway.Framework.Management.BLL</name>
+    </assembly>
+    <members>
+        <member name="T:Amway.Framework.Management.BLL.TraceLogBO">
+            <summary>
+            TraceLog业务逻辑组件
+            </summary>
+            <summary>
+            TraceLog业务逻辑组件
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.MenuBO">
+            <summary>
+            Menu业务逻辑组件
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.MenuBO.GetMenuHtmlByApplicatonCode(System.String)">
+            <summary>
+            根据应用编码获得菜单Html
+            </summary>
+            <param name="systemCode">应用编码</param>
+            <returns>菜单html</returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.MenuBO.GetMenuHtmlByApplicatonCode(System.String,System.String)">
+            <summary>
+            根据应用编码获得菜单Html
+            </summary>
+            <param name="systemCode">应用编码</param>
+            <param name="subSystemCode">子系统编码</param>
+            <returns>菜单html</returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.MenuBO.GetTopMenuHtmlByApplicatonCode(System.String)">
+            <summary>
+            获得顶层菜单html
+            </summary>
+            <param name="systemCode">应用编码</param>
+            <returns>菜单Html</returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.MenuBO.GetTopMenuHtmlByApplicatonCode(System.String,System.String)">
+            <summary>
+            获得顶层菜单html
+            </summary>
+            <param name="systemCode">应用编码</param>
+            <param name="subSystemCode">子系统编码</param>
+            <returns>菜单Html</returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.MenuBO.GetLeftMenuHtmlByApplicatonCode(System.String,System.String)">
+            <summary>
+            获得左边菜单Html
+            </summary>
+            <param name="systemCode">应用编码</param>
+            <param name="parentMenuId">父菜单Id</param>
+            <returns>左边菜单Html</returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.MenuBO.GetLeftMenuHtmlByApplicatonCode(System.String,System.String,System.String)">
+            <summary>
+            获得左边菜单Html
+            </summary>
+            <param name="systemCode">应用编码</param>
+            <param name="subSystemCode">子系统编码</param>
+            <param name="parentMenuId">父菜单Id</param>
+            <returns>左边菜单Html</returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.MenuBO.GetDropDownMenuHtml(System.String)">
+            <summary>
+            获得下拉菜单
+            </summary>
+            <param name="systemCode">应用编码</param>
+            <param name="parentMenuId">父菜单Id</param>
+            <returns>下拉菜单Html</returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.MenuBO.GetDropDownMenuHtml(System.String,System.String)">
+            <summary>
+            获得下拉菜单
+            </summary>
+            <param name="systemCode">应用编码</param>
+            <param name="subSystemCode">子系统编码</param>
+            <returns>下拉菜单Html</returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.MenuBO.GetMenuInfo(System.String,System.String,System.String)">
+            <summary>
+            根据排序和过滤条件，获取菜单数据
+            </summary>
+            <param name="strSort">排序属性名称</param>
+            <param name="sortDirection">升降序名称</param>
+            <param name="strwhere">过滤条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.MenuBO.GetMenuByCondition(System.String,System.String,System.String)">
+            <summary>
+            根据条件查询菜单
+            </summary>
+            <param name="systemID">系统ID</param>
+            <param name="menuCode">菜单编码</param>
+            <param name="menuName">菜单名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.MenuBO.Update(Amway.Framework.Management.Entities.Menu)">
+            <summary>
+            更新
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.MenuBO.Add(Amway.Framework.Management.Entities.Menu)">
+            <summary>
+            增加
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.MenuBO.AdjustUrl(System.String,System.String)">
+            <summary>
+            调整URL
+            增加子系统编码参数
+            </summary>
+            <param name="url"></param>
+            <param name="subSystemCode"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.DepartmentStageBO">
+            <summary>
+            DepartmentStage业务逻辑组件
+            </summary>
+            <summary>
+            DepartmentStage业务逻辑组件
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.BaseDataBO">
+            <summary>
+            BaseData业务逻辑组件
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.BLL.BaseDataBO.FIELD_NAME_ID">
+            <summary>
+            字段名称ID
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.BLL.BaseDataBO.FIELD_NAME_CODE">
+            <summary>
+            字段名称编码
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.BLL.BaseDataBO.FIELD_NAME_DISPLAYNAME">
+            <summary>
+            字段名称显示名
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.BLL.BaseDataBO.FIELD_NAME_DISPLAYNAME_CHS">
+            <summary>
+            字段名称简体中文显示名
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.BLL.BaseDataBO.FIELD_NAME_DISPLAYNAME_CHT">
+            <summary>
+            字段名称繁体中文显示名
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.BLL.BaseDataBO.FIELD_NAME_DISPLAYNAME_EN">
+            <summary>
+            字段名称英文显示名
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.BLL.BaseDataBO.BASEDATA_DATALIST_CACHE_KEY">
+            <summary>
+            基础数据服务的缓存KEY
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.BLL.BaseDataBO.BASEDATA_DATATABLE_CACHE_KEY">
+            <summary>
+            基础数据服务的缓存KEY
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.Update(Amway.Framework.Management.Entities.BaseData)">
+            <summary>
+            
+            </summary>
+            <param name="entity"></param>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.GetData(System.String,System.String)">
+            <summary>
+            获取指定的基础数据
+            </summary>
+            <param name="SystemCode">系统编码</param>
+            <param name="BaseDataCode">基础数据编码</param>
+            <returns>指定的基础数据集合</returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.GetData(System.String,System.String,System.Boolean)">
+            <summary>
+            获取指定的基础数据
+            </summary>
+            <param name="SystemCode">系统编码</param>
+            <param name="BaseDataCode">基础数据编码</param>
+            <param name="filterStatus">是否过滤已删除的数据</param>
+            <returns>指定的基础数据集合</returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.GetData(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Boolean,System.Boolean)">
+            <summary>
+            获取指定的基础数据
+            </summary>
+            <param name="SystemCode">系统编码</param>
+            <param name="BaseDataCode">基础数据编码</param>
+            <param name="Filter">过滤参数</param>
+            <param name="IsAnd">多个参数之间是or还是and 的关系</param>
+            <param name="GetFromCache">是否从缓存获取</param>
+            <returns>指定的基础数据集合</returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.GetDataTable(System.String,System.String)">
+            <summary>
+            获取指定的基础数据
+            </summary>
+            <param name="SystemCode">系统编码</param>
+            <param name="BaseDataCode">基础数据编码</param>
+            <returns>指定的基础数据DataTable</returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.GetDataTable(System.String,System.String,System.Boolean)">
+            <summary>
+            获取指定的基础数据
+            </summary>
+            <param name="SystemCode">系统编码</param>
+            <param name="BaseDataCode">基础数据编码</param>
+            <param name="filterStatus">是否过滤已删除的数据</param>
+            <returns>指定的基础数据DataTable</returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.GetDataTable(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Boolean,System.Boolean)">
+            <summary>
+            获取指定的基础数据
+            </summary>
+            <param name="SystemCode">系统编码</param>
+            <param name="BaseDataCode">基础数据编码</param>
+            <param name="Filter">过滤参数</param>
+            <param name="IsAnd">多个参数之间是or还是and 的关系</param>
+            <param name="GetFromCache">是否从缓存获取</param>
+            <returns>指定的基础数据DataTable</returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.GetData2(System.String,System.String)">
+            <summary>
+            获取指定的基础数据
+            </summary>
+            <param name="SystemID">系统ID</param>
+            <param name="BaseDataCode">基础数据编码</param>
+            <returns>指定的基础数据</returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.GetData2(System.String,System.String,System.Boolean)">
+            <summary>
+            获取指定的基础数据
+            </summary>
+            <param name="SystemID">系统ID</param>
+            <param name="BaseDataCode">基础数据编码</param>
+            <param name="filterStatus">是否过滤已删除的数据</param>
+            <returns>指定的基础数据</returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.GetData2(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Boolean,System.Boolean)">
+            <summary>
+            获取指定的基础数据
+            </summary>
+            <param name="SystemID">系统ID</param>
+            <param name="BaseDataCode">基础数据编码</param>
+            <param name="Filter">过滤参数</param>
+            <param name="IsAnd">多个参数之间是or还是and 的关系</param>
+            <param name="GetFromCache">是否从缓存获取</param>
+            <returns>指定的基础数据</returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.GetDataTable2(System.String,System.String)">
+            <summary>
+            获取指定的基础数据
+            </summary>
+            <param name="SystemID">系统ID</param>
+            <param name="BaseDataCode">基础数据编码</param>
+            <returns>指定的基础数据DataTable</returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.GetDataTable2(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Boolean,System.Boolean)">
+            <summary>
+            获取指定的基础数据
+            </summary>
+            <param name="SystemID">系统ID</param>
+            <param name="BaseDataCode">基础数据服务编码</param>
+            <param name="Filter">过滤参数</param>
+            <param name="IsAnd">多个参数之间是or还是and 的关系</param>
+            <param name="GetFromCache">是否从缓存获取</param>
+            <returns>指定的基础数据</returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.GetData3(System.String)">
+            <summary>
+             获取指定的基础数据
+            </summary>
+            <param name="BaseDataID">基础数据服务ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.GetData3(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Boolean,System.Boolean)">
+            <summary>
+            获取指定的基础数据
+            </summary>
+            <param name="BaseDataID">基础数据服务ID</param>
+            <param name="Filter">过滤参数</param>
+            <param name="IsAnd">多个参数之间是or还是and 的关系</param>
+            <param name="GetFromCache">是否从缓存获取</param>
+            <returns>指定的基础数据</returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.GetDataTable3(System.String)">
+            <summary>
+            获取指定的基础数据
+            </summary>
+            <param name="BaseDataID">基础数据服务ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.GetDataTable3(System.String,System.Boolean)">
+            <summary>
+            获取指定的基础数据
+            </summary>
+            <param name="BaseDataID">基础数据服务ID</param>
+            <param name="GetFromCache">是否从缓存获取</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.GetDataTable3(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Boolean,System.Boolean)">
+            <summary>
+            获取指定的基础数据
+            </summary>
+            <param name="BaseDataID">基础数据服务ID</param>
+            <param name="Filter">过滤参数</param>
+            <param name="IsAnd">多个参数之间是or还是and 的关系</param>
+            <param name="GetFromCache">是否从缓存获取</param>
+            <returns>指定的基础数据</returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.Decode(System.String,System.String,System.String,System.String)">
+            <summary>
+            使用基础数据服务进行翻译
+            </summary>
+            <param name="SystemCode">系统编码</param>
+            <param name="BaseDataCode">基础数据服务编码</param>
+            <param name="Code">编码</param>
+            <param name="NoFoundDisplayName">没找到时的返回值</param>
+            <returns>显示名称</returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.Decode(System.String,System.String,System.Object,System.String)">
+            <summary>
+            使用基础数据服务进行翻译
+            </summary>
+            <param name="SystemCode">系统编码</param>
+            <param name="BaseDataCode">基础数据服务编码</param>
+            <param name="Code">编码</param>
+            <param name="NoFoundDisplayName">没找到时的返回值</param>
+            <returns>显示名称</returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.Decode(System.String,System.String,System.String)">
+            <summary>
+            使用基础数据服务进行翻译
+            </summary>
+            <param name="BaseDataID">基础数据服务ID</param>
+            <param name="Code">编码</param>
+            <param name="NoFoundDisplayName">没找到时的返回值</param>
+            <returns>显示名称</returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.GetRefListByBaseDataID(System.String)">
+            <summary>
+            返回一个基础数据服务的字段可以使用的参考基础数据服务列表
+            </summary>
+            <param name="baseDataID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.GetRefListBySystemID(System.String)">
+            <summary>
+            返回一个系统可以使用的基础数据服务列表
+            </summary>
+            <param name="systemID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.GetRefListByBaseDataExtFieldID(System.String)">
+            <summary>
+            返回一个基础数据服务的字段可以使用的参考基础数据服务列表
+            </summary>
+            <param name="baseDataExtFieldID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.GetFieldCodeByBaseDataID(System.String)">
+            <summary>
+            根据baseDataID获得字段列表
+            </summary>
+            <param name="baseDataID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.GetBaseDataInfoByCondition(System.String,System.String,System.String,System.String)">
+            <summary>
+            基础数据服务信息查询
+            </summary>
+            <param name="systemID">应用系统ID</param>
+            <param name="baseDataCode">基础数据服务编号</param>
+            <param name="baseDataNameEn">基础数据服务英文名</param>
+            <param name="baseDataNameCn">基础数据服务中文名</param>
+            <returns>符合条件的基础数据服务列表</returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.GetBaseDataInfoByCondition(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="systemID"></param>
+            <param name="baseDataCode"></param>
+            <param name="baseDataNameEn"></param>
+            <param name="baseDataNameCn"></param>
+            <param name="sortColumn"></param>
+            <param name="asc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.TestSQLDataSource(Amway.Framework.Management.Common.Enum.DbType,System.String,System.String)">
+            <summary>
+            测试数据库连接
+            </summary>
+            <param name="dbType"></param>
+            <param name="connString"></param>
+            <param name="sqlStatement"></param>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.GetConnStringTemplate(Amway.Framework.Management.Common.Enum.DbType)">
+            <summary>
+            返回数据库连接串模板
+            </summary>
+            <param name="dbType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.GetSQLStateMentTemplate(Amway.Framework.Management.Common.Enum.DbType)">
+            <summary>
+            获取SQL语句模板
+            </summary>
+            <param name="dbType">数据库类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.TestWebServiceDataSource(System.String,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="url"></param>
+            <param name="methodName"></param>
+            <param name="userName"></param>
+            <param name="password"></param>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.GetWebServiceDataSourceField(System.String,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="url"></param>
+            <param name="methodName"></param>
+            <param name="userName"></param>
+            <param name="password"></param>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.GetData(Amway.Framework.Management.Entities.BaseData)">
+            <summary>
+            获取基础数据
+            </summary>
+            <param name="baseData">基础数据配置</param>
+            <returns>基础数据</returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.GetData(Amway.Framework.Management.Entities.BaseData,System.Collections.Generic.Dictionary{System.String,System.String},System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            获取基础数据
+            </summary>
+            <param name="baseData">基础数据配置</param>
+            <param name="Filter">过滤条件</param>
+            <param name="IsAnd">与还是或</param>
+            <param name="GetFromCache">是否从缓存获取</param>
+            <param name="filterStatus">是否过滤删除的记录</param>
+            <returns>基础数据</returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.FilteDataList(System.Collections.Generic.List{Amway.Framework.Management.Entities.BaseDataRecord},System.Collections.Generic.Dictionary{System.String,System.String},System.Boolean)">
+            <summary>
+            过滤列表数据
+            </summary>
+            <param name="baseDataList"></param>
+            <param name="Filter"></param>
+            <param name="IsAnd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.GetDataTable(Amway.Framework.Management.Entities.BaseData)">
+            <summary>
+            
+            </summary>
+            <param name="baseData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.GetDataTable(Amway.Framework.Management.Entities.BaseData,System.Collections.Generic.Dictionary{System.String,System.String},System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            获取基础数据服务
+            </summary>
+            <param name="baseData"></param>
+            <param name="Filter">过滤条件</param>
+            <param name="IsAnd">与还是或</param>
+            <param name="GetFromCache">是否从缓存获取</param>
+            <param name="filterStatus">是否过滤删除的记录</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.FilteDataTable(System.Data.DataTable,System.Collections.Generic.Dictionary{System.String,System.String},System.Boolean)">
+            <summary>
+            根据条件对DataTable进行过滤
+            </summary>
+            <param name="baseDataTable"></param>
+            <param name="Filter"></param>
+            <param name="IsAnd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.GetLocalData(Amway.Framework.Management.Entities.BaseData,System.Boolean)">
+            <summary>
+            查询本地数据
+            </summary>
+            <param name="baseData"></param>
+            <param name="filterStatus"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.GetLocalDataTable(Amway.Framework.Management.Entities.BaseData,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="baseData"></param>
+            <param name="filterStatus"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.GetDbData(Amway.Framework.Management.Common.Enum.DbType,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="dbType"></param>
+            <param name="connString"></param>
+            <param name="sqlStatement"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.GetDbDataTable(Amway.Framework.Management.Common.Enum.DbType,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="dbType"></param>
+            <param name="connString"></param>
+            <param name="sqlStatement"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.GetWsData(Amway.Framework.Management.Entities.BaseData)">
+            <summary>
+            
+            </summary>
+            <param name="wsUrl"></param>
+            <param name="wsMethod"></param>
+            <param name="wsUserName"></param>
+            <param name="wsPassword"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.GetWsDataTable(Amway.Framework.Management.Entities.BaseData)">
+            <summary>
+            
+            </summary>
+            <param name="wsUrl"></param>
+            <param name="wsMethod"></param>
+            <param name="wsUserName"></param>
+            <param name="wsPassword"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.StringArraryToBaseDataRecord(Amway.Framework.Management.Entities.BaseData,System.String[][])">
+            <summary>
+            
+            </summary>
+            <param name="baseData"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.BaseDataBO.StringArraryToDataTable(Amway.Framework.Management.Entities.BaseData,System.String[][])">
+            <summary>
+            
+            </summary>
+            <param name="baseData"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amway.Framework.Management.BLL.BaseDataBO.BaseDataItemDAO">
+            <summary>
+            BaseDataItemDAO 数据访问组件
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.WorkflowVariableBO">
+            <summary>
+            WorkflowVariable业务逻辑组件
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.WorkflowVariableBO.GetWorkflowVariableByID(System.String)">
+            <summary>
+            根据当前流程ID，获取对应的流程变量名称列表
+            </summary>
+            <param name="workflowID">当前流程ID</param>
+            <returns>所有与当前流程ID相对应的流程变量</returns>
+        </member>
+        <!-- 对于成员“T:Amway.Framework.Management.BLL.ToDoListRecordBO”忽略有格式错误的 XML 注释 -->
+        <member name="F:Amway.Framework.Management.BLL.ToDoListRecordBO.systemCode">
+            <summary>
+            发送邮件的应用编码
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.BLL.ToDoListRecordBO.systemAdmin">
+            <summary>
+            接收人的角色名称
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.BLL.ToDoListRecordBO.emailTemplate">
+            <summary>
+            发送邮件的模板代码
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.BLL.ToDoListRecordBO.MAX_SIZE_MESSAGE">
+            <summary>
+            邮件内容信息最大长度
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ToDoListRecordBO.DeleteToDoListRecord(System.String,System.String)">
+            <summary>
+            删除ToDoList中的相关记录
+            </summary>
+            <param name="SystemID">系统编号</param>
+            <param name="ApplyCode">申请表单号</param>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ToDoListRecordBO.DeleteToDoListRecord(System.String)">
+            <summary>
+            根据ID删除ToDoList中的相关记录
+            </summary>
+            <param name="ID">流程实例ID,一般是ApproveEmp表中的WfWorkItemID</param>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ToDoListRecordBO.DeleteToDoListRecord(System.String,System.String,System.String)">
+            <summary>
+            跟据条件删除ToDoList中的一条记录
+            </summary>
+            <param name="SystemID">要删除记录的系统编号</param>
+            <param name="ApplyCode">要删除记录的申请表单号</param>
+            <param name="approverNumber">要删除记录的审批用户</param>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ToDoListRecordBO.InsertToDoListRecord(System.String,System.String,System.String,System.String,System.String,System.String,System.DateTime,System.String,System.String,System.String,System.String,System.String,System.String,System.DateTime)">
+            <summary>
+            往TodoList 插入一条待办记录
+            </summary>
+            <param name="ID">记录主键</param>
+            <param name="Display">显示</param>
+            <param name="Url">链接</param>
+            <param name="ApplyCode">单号</param>
+            <param name="SystemID">系统ID</param>
+            <param name="SystemName">系统名称</param>
+            <param name="ApplyTime">申请时间</param>
+            <param name="ApproverUserNum">审批人账号</param>
+            <param name="ApproverUserCn">审批人中文名称</param>
+            <param name="ApproverUserEn">审批人英文名称</param>
+            <param name="ApplyUserEn">申请人英文名称</param>
+            <param name="ApplyUserCn">申请人中文名称</param>
+            <param name="ApplyUserNum">申请人账号</param>
+            <param name="AssignTime">申请时间</param>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ToDoListRecordBO.InsertToDoListRecord(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.DateTime,System.String,System.String,System.String,System.String,System.String,System.String,System.DateTime)">
+            <summary>
+            往TodoList 插入一条待办记录 WF_2.9.0 add by Ant 2014/07/14
+            </summary>
+            <param name="ID">记录主键</param>
+            <param name="DisplayEn">显示的英文版本</param>
+            <param name="DisplayChs">显示的简体中文版本</param>
+            <param name="DisplayCht">显示的繁体中文版本</param>
+            <param name="Url">链接</param>
+            <param name="ApplyCode">单号</param>
+            <param name="SystemID">系统ID</param>
+            <param name="SystemName">系统名称</param>
+            <param name="ApplyTime">申请时间</param>
+            <param name="ApproverUserNum">审批人账号</param>
+            <param name="ApproverUserCn">审批人中文名称</param>
+            <param name="ApproverUserEn">审批人英文名称</param>
+            <param name="ApplyUserEn">申请人英文名称</param>
+            <param name="ApplyUserCn">申请人中文名称</param>
+            <param name="ApplyUserNum">申请人账号</param>
+            <param name="AssignTime">申请时间</param>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ToDoListRecordBO.InsertToDoListRecord(System.String,System.String,System.String,System.String,System.DateTime,System.String,System.String,System.DateTime)">
+            <summary>
+            往TodoList 插入一条待办记录
+            </summary>
+            <param name="Display">显示</param>
+            <param name="Url">链接</param>
+            <param name="ApplyCode">单号</param>
+            <param name="SystemID">系统ID</param>
+            <param name="ApplyTime">申请时间</param>
+            <param name="ApproverUserNum">审批人账号</param>
+            <param name="ApplyUserNum">申请人账号</param>
+            <param name="AssignTime">申请时间</param>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ToDoListRecordBO.InsertToDoListRecord(System.String,System.String,System.String,System.String,System.String,System.String,System.DateTime,System.String,System.String,System.DateTime)">
+            <summary>
+            往TodoList 插入一条待办记录
+            WF_2.9.0 增加显示的多语言版本 by Ant 2014/7/14
+            </summary>
+            <param name="DisplayEn">显示的英文版本</param>
+            <param name="DisplayChs">显示的简体中文版本</param>
+            <param name="DisplayCht">显示的繁体中文版本</param>
+            <param name="Url">链接</param>
+            <param name="ApplyCode">单号</param>
+            <param name="SystemID">系统ID</param>
+            <param name="ApplyTime">申请时间</param>
+            <param name="ApproverUserNum">审批人账号</param>
+            <param name="ApplyUserNum">申请人账号</param>
+            <param name="AssignTime">申请时间</param>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ToDoListRecordBO.InsertToDoListRecord(System.String,System.String,System.String,System.String,System.String,System.DateTime,System.String,System.String,System.DateTime)">
+            <summary>
+            往TodoList 插入一条待办记录
+            </summary>
+            <param name="Display">显示</param>
+            <param name="Url">链接</param>
+            <param name="ApplyCode">单号</param>
+            <param name="SystemID">系统ID</param>
+            <param name="ApplyTime">申请时间</param>
+            <param name="ApproverUserNum">审批人账号</param>
+            <param name="ApplyUserNum">申请人账号</param>
+            <param name="AssignTime">申请时间</param>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ToDoListRecordBO.InsertToDoListRecord(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.DateTime,System.String,System.String,System.DateTime)">
+            <summary>
+            往TodoList 插入一条待办记录
+            WF_2.9.0 增加显示的多语言版本 by Ant 2014/7/14
+            </summary>
+            <param name="ID"></param>
+            <param name="DisplayEn">显示的英文版本</param>
+            <param name="DisplayChs">显示的简体中文版本</param>
+            <param name="DisplayCht">显示的繁体中文版本</param>
+            <param name="Url">链接</param>
+            <param name="ApplyCode">单号</param>
+            <param name="SystemID">系统ID</param>
+            <param name="ApplyTime">申请时间</param>
+            <param name="ApproverUserNum">审批人账号</param>
+            <param name="ApplyUserNum">申请人账号</param>
+            <param name="AssignTime">申请时间</param>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ToDoListRecordBO.UpdateToDoListAssign(System.String,System.String,System.String,System.String)">
+            <summary>
+            更新TodoList 的审批人
+            </summary>
+            <param name="ApproverUserNum">新的审批人账号</param>
+            <param name="SystemID">系统ID</param>
+            <param name="ApplyCode">单号</param>
+            <param name="sourceAssignNumber">旧的审批人账号</param>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ToDoListRecordBO.UpdateToDoListAssign(System.String,System.String)">
+            <summary>
+            通过ID 更新TodoList 的审批人
+            </summary>
+            <param name="ID">流程实例ID,一般是ApproveEmp表中的WfWorkItemID</param>
+            <param name="ApproverUserNum">更新TodoList 的审批人</param>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ToDoListRecordBO.UpdateToDoListRecordStatus(System.Int32,System.String,System.String)">
+             <summary>
+             将Status更新为中间状态,"STATUS" IS '0为默认状态，1为处理中'
+             </summary>
+            <param name="Status">状态</param>
+            <param name="SystemID">系统ID</param>
+            <param name="ApplyCode">单号</param>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ToDoListRecordBO.HandleError(System.String,System.Exception)">
+            <summary>
+            出错处理的方法
+            暂时只需要发送邮件和记录日志
+            </summary>
+            <param name="sql">执行的sql</param>
+            <param name="exception">错误信息</param>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ToDoListRecordBO.SendErrorEmail(System.String,System.Exception)">
+            <summary>
+            发送邮件
+            </summary>
+            <param name="sql">执行的sql</param>
+            <param name="exception">错误信息</param>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ToDoListRecordBO.GetFullErrorMessage(System.Exception)">
+            <summary>
+            提取异常的全部可用信息
+            </summary>
+            <param name="exception">exception</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.SystemLogBO">
+            <summary>
+            SystemLog业务逻辑组件
+            </summary>
+            <summary>
+            SystemLog业务逻辑组件
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.SystemLogBO.GetSystemLogs(System.String,System.Int32,System.String,System.DateTime,System.DateTime,System.String,System.Int32,System.Int32)">
+            <summary>
+            查询操作日志
+            </summary>
+            <param name="systemInfoID">应用系统ID</param>
+            <param name="logLevel">日志级别</param>
+            <param name="logMessage">操作信息</param>
+            <param name="logDateFrom">查询起始时间</param>
+            <param name="logDateTo">查询结束时间</param>
+            <param name="sortExpression">排序表达式</param>
+            <param name="startRecord">起始行数</param>
+            <param name="maxRecords">每页记录数</param>
+            <returns>操作日志结果集</returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.SystemLogBO.GetRecordCount(System.String,System.Int32,System.String,System.DateTime,System.DateTime)">
+            <summary>
+            取得符合条件的记录条数
+            </summary>
+            <param name="systemInfoID">应用系统ID</param>
+            <param name="logLevel">日志级别</param>
+            <param name="logMessage">操作信息</param>
+            <param name="logDateFrom">查询起始时间</param>
+            <param name="logDateTo">查询结束时间</param>
+            <returns>符合条件的记录条数</returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.SystemLogBO.ExportSystemLogs(System.IO.Stream,System.String,System.Int32,System.String,System.DateTime,System.DateTime)">
+            <summary>
+            导出系统日志
+            </summary>
+            <param name="exportStream">导出流</param>
+            <param name="systemInfoID">应用系统ID</param>
+            <param name="logLevel">日志级别</param>
+            <param name="logMessage">日志信息</param>
+            <param name="logDateFrom">查询起始时间</param>
+            <param name="logDateFromTo">查询结束时间</param>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.QueryConditionBO">
+            <summary>
+            QueryCondition业务逻辑组件
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.ApproveBoxRoleAddedApproverBO">
+            <summary>
+            ApproveBoxRoleAddedApprover业务逻辑组件
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.WorkflowInfoBO">
+            <summary>
+            WorkflowInfo业务逻辑组件
+            </summary>
+            <summary>
+            WorkflowInfo业务逻辑组件
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.WorkflowInfoBO.GetWorkFlowInfo(System.String,System.String,System.String)">
+            <summary>
+            根据条件获取流程模板信息信息
+            </summary>
+            <param name="strSort">排序字段</param>
+            <param name="sortDirection">排序类型</param>
+            <param name="strwhere">条件</param>
+            <returns>List对象</returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.WorkflowInfoBO.GetWorkflowInfo(System.String)">
+            <summary>
+            获取流程模板信息
+            </summary>
+            <param name="workflowcode"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.WorkDelegateBO">
+            <summary>
+            WorkDelegate业务逻辑组件
+            </summary>
+            <summary>
+            WorkDelegate业务逻辑组件
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.WorkDelegateBO.GetWorkDelegates(System.String,System.String,System.String)">
+            <summary>
+            根据条件获取设置代办菜单信息
+            </summary>
+            <param name="strSort">排序字段</param>
+            <param name="sortDirection">排序类型</param>
+            <param name="strwhere">条件</param>
+            <returns>List对象</returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.WorkDelegateBO.GetWorkDelegatesStartDateLargerThenNow">
+            <summary>
+            获取委托开始日期大于现在，且还没有委托过的资料
+            </summary>
+            <returns>List对象</returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.WorkDelegateBO.GetWorkDelegatesNoApprovel">
+            <summary>
+            获取委托结束日期大于现在，且还没有收回委托的资料
+            </summary>
+            <returns>List对象</returns>
+        </member>
+        <!-- 对于成员“M:Amway.Framework.Management.BLL.WorkDelegateBO.GetWorkDelegates(System.String,System.String)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Amway.Framework.Management.BLL.WorkDelegateBO.GetFirstWorkDelegates(System.String,System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="M:Amway.Framework.Management.BLL.WorkDelegateBO.GetWorkDelegates(System.String,System.String,System.String,System.String)">
+            <summary>
+            根据条件获取设置代办信息
+            </summary>
+            <param name="strSort">排序字段</param>
+            <param name="sortDirection">排序类型</param>
+            <param name="strwhere">条件</param>
+            <param name="strEmpNumber">EmpNumber</param>
+            <returns>List对象</returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.WorkDelegateBO.GetWorkDelegateInfo(System.String)">
+            <summary>
+            根据设置代办编码获取代办对象
+            </summary>
+            <param name="strWorkDelegateCode">设置代办编码</param>
+            <returns>代办对象</returns>
+        </member>
+        <!-- 对于成员“M:Amway.Framework.Management.BLL.WorkDelegateBO.AddWorkDelegate(Amway.Framework.Management.Entities.WorkDelegate)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Amway.Framework.Management.BLL.WorkDelegateBO.DeleteWorkDelegate(System.String)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Amway.Framework.Management.BLL.WorkDelegateBO.DeleteWorkDelegate(System.String,System.String)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Amway.Framework.Management.BLL.WorkDelegateBO.GetEmpWorkDelegate(System.String,System.String)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Amway.Framework.Management.BLL.WorkDelegateBO.TransferEmpToDelegate(System.String,System.String,System.String,Ascentn.Workflow.Base.WorkflowService)”忽略有格式错误的 XML 注释 -->
+        <member name="M:Amway.Framework.Management.BLL.WorkDelegateBO.SetDelegate(System.String,System.String,System.String)">
+            <summary>
+            设置代办
+            </summary>
+            <param name="sourceNumber">委托人AD帐户</param>
+            <param name="destNumber">被委托人AD帐户</param>
+            <param name="workflowcode">流程编码</param>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.WorkDelegateBO.CancelDelegate(System.String,System.String,System.String)">
+            <summary>
+            取消代办
+            </summary>
+            <param name="sourceNumber">委托人AD帐户</param>
+            <param name="destNumber">被委托人AD帐户</param>
+            <param name="workflowcode">流程编码</param>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.WorkDelegateBO.ValidateDelegate(System.String,System.String,System.DateTime,System.DateTime)">
+            <summary>
+            验证代办时间段，是否与现有代办时间段有重复
+            
+            </summary>
+            <param name="workflowInfoId"></param>
+            <param name="sourceNumber"></param>
+            <param name="starteDate"></param>
+            <param name="endDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.WorkDelegateBO.SearchWorkDelegate(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.Int32@)">
+            <summary>
+            查询委托
+            </summary>
+            <param name="currentEmpNumber">当前用户</param>
+            <param name="fromEmpName">委托人</param>
+            <param name="toEmpName">被委托人</param>
+            <param name="workflowId">流程</param>
+            <param name="managerWorkflowId">当前用户能管理的应用ID，用","隔开</param>
+            <param name="count">记录数</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.WorkDelegateBO.GetDefaultWorkDelegates(System.String,System.String,System.Int32,System.Int32,System.Int32@)">
+            <summary>
+            获取当前用户可查看的委托
+            </summary>
+            <param name="empNumber">当前用户</param>
+            <param name="managerWorkflowId">当前用户为系统管理员的workflowInfoId</param>
+            <param name="count">委托数量</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.WorkDateBO">
+            <summary>
+            WorkDate业务逻辑组件
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.WorkDateBO.GetWorkDateByID(Amway.Framework.Management.Common.Enum.UserAreaType)">
+            <summary>
+            根据WorkDateID缓存WorkDate信息
+            </summary>
+            <param name="userArea"></param>
+            <returns></returns>  
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.WorkDateBO.GetWorkDateByDate(Amway.Framework.Management.Common.Enum.UserAreaType)">
+            <summary>
+            根据Date缓存WorkDate信息
+            </summary>
+            <param name="userArea"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.WorkDateBO.GetWorkDates(Amway.Framework.Management.Common.Enum.UserAreaType,System.DateTime,System.DateTime)">
+            <summary>
+            根据开始日期，结束日期 提取中间的工作日
+            如果开始日期是工作日则将包括开始日期，
+            如果结束日期是工作日则将包括结束日期
+            </summary>
+            <param name="userArea"></param>
+            <param name="startDate"></param>
+            <param name="endDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.WorkDateBO.GetWorkDateCount(Amway.Framework.Management.Common.Enum.UserAreaType,System.DateTime,System.DateTime)">
+            <summary>
+            根据开始日期，结束日期 提取中间的工作日的个数
+            如果开始日期是工作日则将包括开始日期，
+            如果结束日期是工作日则将包括结束日期
+            </summary>
+            <param name="userArea"></param>
+            <param name="startDate"></param>
+            <param name="endDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.WorkDateBO.GetNearlyWorkDate(System.Collections.Generic.Dictionary{System.DateTime,System.Int32},System.DateTime,System.Boolean)">
+            <summary>
+            提取就近的工作日
+            送入的date是工作日，则返回工作日
+            如果date不是工作日，那么就会提取就近的工作日
+            isNext=true 就是向后取工作日，isNext=false 就是向前取工作日
+            </summary>
+            <param name="workDateByDate"></param>
+            <param name="date"></param>
+            <param name="isNext"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.SystemVariableBO">
+            <summary>
+            SystemVariable业务逻辑组件
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.SystemVariableBO.GetSystemVarValue(System.String)">
+            <summary>
+            获取全局变量值
+            </summary>
+            <param name="variableCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.SystemVariableBO.GetSystemVarValue(System.String,System.String)">
+            <summary>
+            获取指定系统的变量值
+            </summary>
+            <param name="systemId"></param>
+            <param name="variableCode"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.WorkflowStepBO">
+            <summary>
+            WorkflowStep业务逻辑组件
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.UserProfileBO">
+            <summary>
+            UserProfile业务逻辑组件
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.UserProfileBO.GetProfileByEmpNumber(System.String)">
+            <summary>
+            根据员工AD帐号获取UserProfile
+            </summary>
+            <param name="empNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.UserProfileBO.GetProfileByEmpNumberAndRelateSystem(System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            根据员工AD帐号和关联的系统编码获取UserProfile
+            </summary>
+            <param name="empNumber">员工编号</param>
+            <param name="relateSystemCode">关联的系统</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.UserProfileBO.UpdateProfileLoginInfo(System.String)">
+            <summary>
+            更新登录信息
+            </summary>
+            <param name="empNumber"></param>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.UserProfileBO.UpdateProfileCulture(System.String)">
+            <summary>
+            更新用户的Cluture信息
+            </summary>
+            <param name="Culture"></param>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.QueryBO">
+            <summary>
+            Query业务逻辑组件
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.BLL.QueryBO.QueryDataSourceBaseDataCode">
+            <summary>
+            查询数据源的 基础数据服务编码
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.QueryBO.GetSystemInfoByCondition(System.String,System.String,System.String,System.String)">
+            <summary>
+            查询系统信息
+            </summary>
+            <param name="queryCode">查询编码</param>
+            <param name="queryName">查询名称</param>
+            <param name="systemInfoId">应用系统ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.QueryBO.GetDbSchemaByCode(System.String)">
+            <summary>
+            获取数据结构
+            </summary>
+            <param name="dataSourceCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.QueryBO.GetDataSourceByCode(System.String)">
+            <summary>
+            获取数据源对象
+            </summary>
+            <param name="dataSourceCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.QueryBO.GenerateSQL(Amway.Framework.Management.Entities.Query)">
+            <summary>
+            生成SQL语句
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.QueryBO.GenerateSQL(Amway.Framework.Management.Entities.Query,System.Collections.Generic.List{System.String})">
+            <summary>
+            生成SQL语句
+            </summary>
+            <param name="query"></param>
+            <param name="tableAlias"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.QueryBO.GenerateSQL(Amway.Framework.Management.Entities.QueryItem)">
+            <summary>
+            生成SQL语句
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.QueryBO.GenerateFrom(Amway.Framework.Management.Entities.Query)">
+            <summary>
+            
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.QueryBO.GenerateFrom(Amway.Framework.Management.Entities.Query,System.Collections.Generic.List{System.String})">
+            <summary>
+            
+            </summary>
+            <param name="query"></param>
+            <param name="tableAlias"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.QueryBO.GenerateSelect(Amway.Framework.Management.Entities.Query)">
+            <summary>
+            
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.QueryBO.GenerateWhere(Amway.Framework.Management.Entities.Query)">
+            <summary>
+            
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.QueryBO.GenerateWhere(Amway.Framework.Management.Entities.Query,System.Collections.Generic.List{System.String})">
+            <summary>
+            
+            </summary>
+            <param name="query"></param>
+            <param name="tableAlias"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.QueryBO.GenerateOrderBy(Amway.Framework.Management.Entities.Query)">
+            <summary>
+            
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.QueryBO.GenerateGroupBy(Amway.Framework.Management.Entities.Query)">
+            <summary>
+            
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.QueryBO.ConvertFromItem(Amway.Framework.Management.Entities.QueryItem)">
+            <summary>
+            
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.QueryBO.ConvertFromItem(Amway.Framework.Management.Entities.QuerySelectItem)">
+            <summary>
+            
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.QueryBO.ConvertFromItem(Amway.Framework.Management.Entities.QueryConditionItem)">
+            <summary>
+            
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.QueryBO.ConvertFromItem(Amway.Framework.Management.Entities.QueryFromItem)">
+            <summary>
+            
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.QueryBO.ConvertFromItem(Amway.Framework.Management.Entities.QueryGroupByItem)">
+            <summary>
+            
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.QueryBO.ConvertFromItem(Amway.Framework.Management.Entities.QueryOrderByItem)">
+            <summary>
+            
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.QueryBO.ConvertFromItem(Amway.Framework.Management.Entities.QueryButtonItem)">
+            <summary>
+            
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.QueryBO.ConverFromEntity(Amway.Framework.Management.Entities.Query)">
+            <summary>
+            
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.QueryBO.ConverFromEntity(Amway.Framework.Management.Entities.QueryColumn)">
+            <summary>
+            
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.QueryBO.ConvertFromEntity(Amway.Framework.Management.Entities.QueryCondition)">
+            <summary>
+            
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.QueryBO.ConvertFromEntity(Amway.Framework.Management.Entities.QueryFrom)">
+            <summary>
+            
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.QueryBO.ConvertFromEntity(Amway.Framework.Management.Entities.QueryGroupBy)">
+            <summary>
+            
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.QueryBO.ConvertFromEntity(Amway.Framework.Management.Entities.QueryOrderBy)">
+            <summary>
+            
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.QueryBO.ConvertFromEntity(Amway.Framework.Management.Entities.QueryButton)">
+            <summary>
+            
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.QueryBO.AdjustSQL(System.String,System.Int32,System.Int32,Amway.Framework.Management.Entities.Query)">
+            <summary>
+            调整SQL 语句
+            </summary>
+            <param name="strSQL"></param>
+            <param name="startRecord"></param>
+            <param name="maxRecords"></param>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.QueryBO.AdjustSQL2(System.String,System.Int32,System.Int32,Amway.Framework.Management.Entities.Query)">
+            <summary>
+            调整SQL 语句
+            </summary>
+            <param name="strSQL"></param>
+            <param name="startRecord"></param>
+            <param name="maxRecords"></param>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.QueryBO.BuildButtonList(System.String,Amway.Framework.Management.Entities.Query)">
+            <summary>
+            生成按钮列表Html
+            </summary>
+            <param name="systemId"></param>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.QueryBO.IsButtonAuthorized(System.String,Amway.Framework.Management.Entities.QueryButton)">
+            <summary>
+            对按钮鉴权
+            </summary>
+            <param name="qb"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.QueryBO.BuildConditionals(Amway.Framework.Management.Entities.Query,Amway.Framework.DAL.DBHelper,System.Collections.Generic.List{System.Data.Common.DbParameter},Amway.Framework.Management.BLL.IQueryPage)">
+            <summary>
+            创建条件误句,此处的条件是第一道条件过滤，即在分页之前就需要进行的条件过滤
+            条件格式为  TableAlias.ColumnName = @ColumnName
+            由于条件没有别名,所以ColumnName一定要保持唯一
+            </summary>
+            <param name="query"></param>
+            <param name="dbHelper"></param>
+            <param name="list"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.QueryBO.BuildFixedCondition(Amway.Framework.DAL.DBHelper,System.Collections.Generic.List{System.Data.Common.DbParameter},Amway.Framework.Management.Entities.QueryCondition)">
+            <summary>
+            创建Where后面条件的一个固定条件
+            </summary>
+            <param name="dbHelper"></param>
+            <param name="list"></param>
+            <param name="con"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.QueryBO.BuildInputCondition(Amway.Framework.DAL.DBHelper,System.Collections.Generic.List{System.Data.Common.DbParameter},Amway.Framework.Management.Entities.QueryCondition,Amway.Framework.Management.BLL.IQueryPage)">
+            <summary>
+            创建Where后面条件的一个外部条件
+            </summary>
+            <param name="dbHelper"></param>
+            <param name="list"></param>
+            <param name="con"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.QueryBO.BuildInputRangeCondition(Amway.Framework.DAL.DBHelper,System.Collections.Generic.List{System.Data.Common.DbParameter},Amway.Framework.Management.Entities.QueryCondition,Amway.Framework.Management.BLL.IQueryPage)">
+            <summary>
+            创建一个范围输入条件
+            </summary>
+            <param name="dbHelper"></param>
+            <param name="list"></param>
+            <param name="con"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.QueryBO.GetCount(System.String,Amway.Framework.Management.Entities.Query,Amway.Framework.DAL.DBHelper,Amway.Framework.Management.BLL.IQueryPage)">
+            <summary>
+            获取数据记录总数
+            </summary>
+            <param name="strSQL"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.QueryBO.GetCount2(System.String,Amway.Framework.Management.Entities.Query,Amway.Framework.DAL.DBHelper,Amway.Framework.Management.BLL.IQueryPage)">
+            <summary>
+            获取数据记录总数
+            </summary>
+            <param name="strSQL"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.QueryBO.ReplaceSystemVar(System.String)">
+            <summary>
+            将字符串中的流程变量值替换出来
+            </summary>
+            <param name="input">输入字符串</param>
+            <returns>替换后的字符串</returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.QueryBO.GetDataType(System.Int32)">
+            <summary>
+            通过类型获取SQL参数类型
+            </summary>
+            <param name="dataType"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.PolicyModifyLogBO">
+            <summary>
+            PolicyModifyLog业务逻辑组件
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.OperationLogBO">
+            <summary>
+            OperationLog业务逻辑组件
+            </summary>
+            <summary>
+            OperationLog业务逻辑组件
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.OperationLogBO.GetOperationLogs(System.String,System.String,System.String,System.DateTime,System.DateTime,System.String,System.Int32,System.Int32)">
+            <summary>
+            查询操作日志
+            </summary>
+            <param name="systemInfoID">应用系统ID</param>
+            <param name="operationType">操作类型</param>
+            <param name="operationMessage">操作信息</param>
+            <param name="operationDateFrom">查询起始时间</param>
+            <param name="operationDateTo">查询结束时间</param>
+            <param name="sortExpression">排序表达式</param>
+            <param name="startRecord">起始行数</param>
+            <param name="maxRecords">每页记录数</param>
+            <returns>操作日志结果集</returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.OperationLogBO.GetRecordCount(System.String,System.String,System.String,System.DateTime,System.DateTime)">
+            <summary>
+            取得符合条件的记录条数
+            </summary>
+            <param name="systemInfoID">应用系统ID</param>
+            <param name="operationType">操作类型</param>
+            <param name="operationMessage">操作信息</param>
+            <param name="operationDateFrom">查询起始时间</param>
+            <param name="operationDateTo">查询结束时间</param>      
+            <returns>符合条件的记录条数</returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.OperationLogBO.ExportOperationLogs(System.IO.Stream,System.String,System.String,System.String,System.DateTime,System.DateTime)">
+            <summary>
+            导出查询日志
+            </summary>
+            <param name="exportStream">导出流</param>
+            <param name="systemInfoID">应用系统ID</param>
+            <param name="operationType">操作类型</param>
+            <param name="operationMessage">操作信息</param>
+            <param name="operationDateFrom">查询起始时间</param>
+            <param name="operationDateTo">查询结束时间</param>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.EmployeeDetailBO">
+            <summary>
+            EmployeeDetail业务逻辑组件
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.EmployeeDetailBO.SearchEmployee(System.String,System.Int32,System.String)">
+            <summary>
+            通过关键字查找用户
+            </summary>
+            <param name="key">关键字</param>
+            <param name="count">返回结果行数</param>
+            <param name="area">区域</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.EmployeeBO">
+            <summary>
+            Employee业务逻辑组件
+            </summary>
+            <summary>
+            Employee业务逻辑组件
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.EmployeeBO.GetEmpolyeeInfoByNumber(System.String)">
+            <summary>
+            通过员工的AD帐号，获取员工信息
+            V_2.8.0 2014/3/25 Ant
+            修复申请人离职之后，表单打开报错的问题。
+            </summary>
+            <param name="empNumber">员工AD帐户</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.EmployeeBO.SearchEmployeeIsLocalUser(System.String,System.Int32)">
+            <summary>
+            通过关键字查找本地用户
+            </summary>
+            <param name="key">关键字</param>
+            <param name="count">返回结果行数</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.EmployeeBO.SearchEmployeeByEMPorName(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            通过用户登录帐号或者用户名字查询
+            </summary>
+            <param name="empNumber">用户登录帐号</param>
+            <param name="name">用户名字</param>
+            <param name="userArea">用户区域</param>
+            <param name="sortExpression">排序表达式</param>
+            <param name="SortDirection">排序方向</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.EmployeeBO.GetEmployeeCount">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.EmployeeBO.GetEmployee(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="StartRecord"></param>
+            <param name="MaxRecords"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.EmailTaskBO">
+            <summary>
+            EmailTask业务逻辑组件
+            </summary>
+            <summary>
+            EmailTask业务逻辑组件
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.EmailTaskBO.GetServerVariables">
+            取得全局发送参数 
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.EmailTaskBO.Sending(Amway.Framework.Management.Entities.EmailTask)">
+            发送邮件
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.EmailTaskBO.UpdateStatus(Amway.Framework.Management.Entities.EmailTask)">
+            更新邮件任务的发送状态
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.SystemInfoBO">
+            <summary>
+            应用信息管理业务逻辑
+            </summary>
+            <summary>
+            SystemInfo业务逻辑组件
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.BLL.SystemInfoBO.systemBlackListDAO">
+            <summary>
+            应用黑名单DAO
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.BLL.SystemInfoBO.systemVariableDAO">
+            <summary>
+            系统参数变量DAO
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.SystemInfoBO.FindSystemInfo(System.String,System.String,Amway.Framework.Core.PagerInfo)">
+            <summary>
+            应用系统信息查询
+            </summary>
+            <param name="systemCode">应用系统编码</param>
+            <param name="systemName">应用系统名称</param>
+            <param name="pagerInfo">分页信息</param>
+            <returns>类型为 <see cref="!:PagerResult"/> 的查询结果 </returns>
+        </member>
+        <!-- 对于成员“M:Amway.Framework.Management.BLL.SystemInfoBO.GetSystemBlackListByID(System.String,Amway.Framework.Core.PagerInfo)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Amway.Framework.Management.BLL.SystemInfoBO.AddBalckList(Amway.Framework.Management.Entities.SystemBlackList)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Amway.Framework.Management.BLL.SystemInfoBO.UpdateBalckList(Amway.Framework.Management.Entities.SystemBlackList)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Amway.Framework.Management.BLL.SystemInfoBO.DeleteBalckList(System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="M:Amway.Framework.Management.BLL.SystemInfoBO.AddSystemVariable(Amway.Framework.Management.Entities.SystemVariable)">
+            <summary>
+            增加系统参数
+            </summary>
+            <param name="systemVariable">系统参数</param>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.SystemInfoBO.UpdateSystemVariable(Amway.Framework.Management.Entities.SystemVariable)">
+            <summary>
+            更新系统参数
+            </summary>
+            <param name="systemVariable">系统参数</param>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.SystemInfoBO.DeleteSystemVariable(System.String)">
+            <summary>
+            删除系统参数
+            </summary>
+            <param name="systemVariableID">系统参数ID</param>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.SystemInfoBO.GetAllWorkFlowSystemInfo">
+            <summary>
+            获得所有工作流程为True的应用程序信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.SystemInfoBO.GetSystemInfoByCondition(System.String,System.String,System.String)">
+            <summary>
+            根据条件获取应用信息列表
+            </summary>
+            <param name="systemCode">系统编码</param>
+            <param name="systemName">系统名称</param>
+            <param name="sortExpression">排序表达式</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.SystemInfoBO.GetSystemInfoByCondition2(System.String,System.String,System.String)">
+            <summary>
+            根据条件获取应用信息列表
+            </summary>
+            <param name="systemCode">系统编码</param>
+            <param name="systemName">系统名称</param>
+            <param name="sortExpression">排序表达式</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.SystemInfoBO.GetSystemThemeList(System.String)">
+            <summary>
+            获得指定系统可用的样式
+            </summary>
+            <param name="systemID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.SystemInfoBO.GetSystemStyleList(System.String)">
+            <summary>
+            获得指定系统可用的风格
+            </summary>
+            <param name="systemID"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Amway.Framework.Management.BLL.SystemInfoBO.SystemBlackListDAO">
+            <summary>
+            应用黑名单DAO
+            </summary>
+        </member>
+        <member name="P:Amway.Framework.Management.BLL.SystemInfoBO.SystemVariableDAO">
+            <summary>
+            应用黑名单DAO
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.RoleEmpRelBO">
+            <summary>
+            RoleEmpRel业务逻辑组件
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.RoleBO">
+            <summary>
+            Role业务逻辑组件
+            </summary>
+            <summary>
+            角色业务逻辑对象
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.RoleBO.GetEmployeeList(System.String,System.String)">
+            <summary>
+            取得指定角色的用户
+            </summary>
+            <param name="systemCode">系统编码</param>
+            <param name="roleCode">角色编码</param>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.RoleBO.GetEmployeeNumberList(System.String,System.String)">
+            <summary>
+            取得指定角色的用户
+            </summary>
+            <param name="systemCode">系统编码</param>
+            <param name="roleCode">角色编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.RoleBO.GetEmployeeList(System.String)">
+            <summary>
+            取得指定角色的用户
+            </summary>
+            <param name="roleID">角色ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.RoleBO.GetEmployeeNumberList(System.String)">
+            <summary>
+            取得指定角色的用户
+            </summary>
+            <param name="roleID">角色</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.RoleBO.GetEmployeeList(Amway.Framework.Management.Entities.Role)">
+            <summary>
+            取得指定角色的用户
+            </summary>
+            <param name="role">角色</param>
+            <returns>用户列表</returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.RoleBO.GetEmployeeNumberList(Amway.Framework.Management.Entities.Role)">
+            <summary>
+            取得指定角色的用户
+            </summary>
+            <param name="role">角色</param>
+            <returns>用户列表</returns>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.QueryButtonBO">
+            <summary>
+            QueryButton业务逻辑组件
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.EmployeePortalSyncTaskBO">
+            <summary>
+            EmployeePortalSyncTask业务逻辑组件
+            </summary>
+            <summary>
+            EmployeePortalSyncTask业务逻辑组件
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.CacheItemBO">
+            <summary>
+            CacheItem业务逻辑组件
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.CacheItemBO.GetCacheItemByCondition(System.String,System.String,System.String)">
+            <summary>
+            通过条件查询缓存
+            </summary>
+            <param name="systemID">应用名称的ID</param>
+            <param name="cacheName">缓存的名称</param>
+            <param name="sortExpression">排序表达式</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.CacheItemBO.GetCacheItemCountByCondition(System.String,System.String)">
+            <summary>
+            通过条件查询缓存的数目
+            </summary>
+            <param name="systemID">应用名称的ID</param>
+            <param name="cacheName">缓存的名称</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.AttachmentServerBO">
+            <summary>
+            AttachmentServer业务逻辑组件
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.ApproveRecordBO">
+            <summary>
+            ApproveRecord业务逻辑组件
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ApproveRecordBO.SetWorkFlowCode(System.String)">
+            <summary>
+            调用之前请先执行SetWorkFlowCode
+            </summary>
+            <param name="workFlowCode">流程的编码</param>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ApproveRecordBO.GetApproveRecordList(System.String,System.String,System.Int32[])">
+            <summary>
+            获取审批记录列表(直接通过SQL)
+            </summary>
+            <param name="recordID">流程记录ID</param>
+            <param name="prefix">表前缀</param>
+            <param name="approveType">审批类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ApproveRecordBO.InsertNewRecord(System.String,System.String,System.String,System.String,Amway.Framework.Management.Entities.Employee,System.String,System.String,System.Int32)">
+            <summary>
+            插入一条审批记录(直接通过SQL)
+            </summary>
+            <param name="prefix">表前缀，例如TA</param>
+            <param name="recordID">itemRecored 的唯一标记</param>
+            <param name="wfActivtyId">wfActivtyId</param>
+            <param name="wfActvityName">wfActvityName</param>
+            <param name="employee">员工实体</param>
+            <param name="result">审批结果</param>
+            <param name="comment">备注</param>
+            <param name="type">Amway.Framework.ApproveRecordType</param>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ApproveRecordBO.InsertNewRecord(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)">
+            <summary>
+            插入一条审批记录(直接通过SQL)
+            </summary>
+            <param name="prefix">表前缀，例如TA</param>
+            <param name="recordID">itemRecored 的唯一标记</param>
+            <param name="wfActivtyId">wfActivtyId</param>
+            <param name="wfActvityName">wfActvityName</param>
+            <param name="employeeNumber">员工编号</param>
+            <param name="result">审批结果</param>
+            <param name="comment">备注</param>
+            <param name="type">Amway.Framework.ApproveRecordType</param>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ApproveRecordBO.DeleteByCondition(System.String,System.String)">
+            <summary>
+            直接执行SQL删除记录
+            </summary>
+            <param name="prefix">表前缀</param>
+            <param name="condition">删除条件Where后面的语句</param>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ApproveRecordBO.InsertNewRecord(System.String,System.String,System.Nullable{System.DateTime},System.String,System.String,Amway.Framework.Management.Entities.Employee,System.String,System.String,System.Int32)">
+            <summary>
+            插入一条审批记录(直接通过SQL)
+            </summary>
+            <param name="prefix">表前缀，例如TA</param>
+            <param name="recordID">itemRecored 的唯一标记</param>
+            <param name="assignDate">assignDate</param>
+            <param name="wfActivtyId">wfActivtyId</param>
+            <param name="wfActvityName">wfActvityName</param>
+            <param name="employee">员工实体</param>
+            <param name="result">审批结果</param>
+            <param name="comment">备注</param>
+            <param name="type">Amway.Framework.ApproveRecordType</param>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.SystemStyleBO">
+            <summary>
+            系统风格业务逻辑组件
+            </summary>
+            <summary>
+            SystemStyle业务逻辑组件
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.HolidayBO">
+            <summary>
+            Holiday业务逻辑组件
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.FormSequenceNumberBO">
+            <summary>
+            FormSequenceNumber业务逻辑组件
+            </summary>
+            <summary>
+            FormSequenceNumber业务逻辑组件
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.FormSequenceNumberBO.Amway#Framework#Management#BLL#IFormSequenceNumberBO#GetSequenceNumber(System.String,System.String,System.String)">
+            <summary>
+            获取流水号
+            </summary>
+            <param name="workflowinfoid">流程ID</param>
+            <param name="yearMonth">年月 YYYYMM</param>
+            <param name="sequenceCode">流水号编码,每个流程可以有很多种流水号，通过这一参数来区分取那一种流水号</param>
+            <returns>返回的流水号</returns>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.ExceptionEmailUserBO">
+            <summary>
+            ExceptionEmailUser业务逻辑组件
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.ExceptionDefBO">
+            <summary>
+            ExceptionDef业务逻辑组件
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ExceptionDefBO.GetExceptionDefByCondition(System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            通过条件查询异常编码信息
+            </summary>
+            <param name="exceptionCode">异常编码</param>
+            <param name="exceptionName">异常名称</param>
+            <param name="systemID">系统ID</param>
+            <param name="sortExpression">排序表达式</param>
+            <param name="StartRecord">开始记录</param>
+            <param name="MaxRecords">最大记录</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ExceptionDefBO.GetExceptionDefCountByCondition(System.String,System.String,System.String)">
+            <summary>
+            通过条件查询异常编码信息记录数
+            </summary>
+            <param name="exceptionCode">异常编码</param>
+            <param name="exceptionName">异常名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ExceptionDefBO.GetExceptionInfoByCondition(System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            通过条件查询异常信息
+            </summary>
+            <param name="systemName">应用名称</param>
+            <param name="exceptionType">异常类型</param>
+            <param name="startDate">开始时间</param>
+            <param name="endDate">结束时间</param>
+            <param name="sortExpression">排序表达式</param>
+            <param name="StartRecord">开始记录</param>
+            <param name="MaxRecords">最大记录</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ExceptionDefBO.GetExceptionInfoCountByCondition(System.String,System.String,System.String,System.String)">
+            <summary>
+            通过条件查询异常信息的记录数
+            </summary>
+            <param name="systemName">应用名称</param>
+            <param name="exceptionType">异常类型</param>
+            <param name="startDate">开始时间</param>
+            <param name="endDate">结束时间</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.AttachmentBO">
+            <summary>
+            Attachment业务逻辑组件
+            </summary>
+            <summary>
+            Attachment业务逻辑组件
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.AttachmentBO.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.AttachmentBO.GetAttachment(System.String)">
+            <summary>
+            根据条件获取所属附件
+            附件类别 缺省为Default
+            </summary>
+            <param name="strRecordId">表单ID</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.AttachmentBO.GetAttachment(System.String,System.Boolean)">
+            <summary>
+            根据条件获取所属附件
+            附件类别 缺省为Default
+            </summary>
+            <param name="strRecordId">表单ID</param>
+            <param name="orderByCreateDateDesc">按创建日期降序排列</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.AttachmentBO.GetAttachment(System.String,System.String)">
+            <summary>
+            根据条件获取所属附件
+            </summary>
+            <param name="strRecordId">表单ID</param>
+            <param name="strCategory">附件类别</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.AttachmentBO.GetAttachment(System.String,System.String,System.Boolean)">
+            <summary>
+            根据条件获取所属附件
+            </summary>
+            <param name="strRecordId">表单ID</param>
+            <param name="strCategory">附件类别</param>
+            <param name="orderByCreateDateDesc">按创建日期降序排列</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.AttachmentBO.DeleteAttachment(System.String)">
+            <summary>
+            删除一个Attachment
+            </summary>
+            <param name="strAttachmentId">附件ID</param>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.WorkflowStepButtonBO">
+            <summary>
+            WorkflowStepButton业务逻辑组件
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.WorkflowStepButtonBO.GetButtonListByStepCode(System.String,System.String,System.String)">
+            <summary>
+            通过步骤代码和版本号获取需要显示的铵钮
+            </summary>
+            <param name="workflowInfoId">流程Id</param>
+            <param name="stepCode">步骤号</param>
+            <param name="version">版本号</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.SystemBlackListBO">
+            <summary>
+            SystemBlackList业务逻辑组件
+            </summary>
+            <summary>
+            SystemBlackList业务逻辑组件
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.SystemBlackListBO.GetBlackListBySystemID(System.String,System.Int32,System.Int32)">
+            <summary>
+            通过应用ID获取黑名单
+            </summary>
+            <param name="systemID">应用ID</param>
+            <param name="StartRecord">开始记录</param>
+            <param name="MaxRecords">最大记录</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.SystemBlackListBO.GetBlackListCountBySystemID(System.String)">
+            <summary>
+            通过应用ID获取黑名单的记录数
+            </summary>
+            <param name="systemID">应用ID</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.PolicyAdminBO">
+            <summary>
+            PolicyAdmin业务逻辑组件
+            </summary>
+        </member>
+        <!-- 对于成员“M:Amway.Framework.Management.BLL.ItemRecordFlowBO.SetWorkFlowCode(System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="T:Amway.Framework.Management.BLL.ScheduleLogBO">
+            <summary>
+            ScheduleLog业务逻辑组件
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ScheduleLogBO.GetScheduleLogByCondition(System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            通过条件取任务记录
+            </summary>
+            <param name="SystemID">应用名称ID</param>
+            <param name="ScheduleCode">任务编号</param>
+            <param name="ScheduleName">任务名称</param>
+            <param name="StartDate">开始时间</param>
+            <param name="EndDate">结束时间</param>
+            <param name="StartRecord">开始记录</param>
+            <param name="MaxRecords">最大记录</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ScheduleLogBO.GetScheduleLogCountByCondition(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            通过条件取任务记录数目
+            </summary>
+            <param name="SystemID">应用名称ID</param>
+            <param name="ScheduleCode">任务编号</param>
+            <param name="ScheduleName">任务名称</param>
+            <param name="StartDate">开始时间</param>
+            <param name="EndDate">结束时间</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.RoleMenuRelBO">
+            <summary>
+            RoleMenuRel业务逻辑组件
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.QueryShortcutBO">
+            <summary>
+            QueryShortcut业务逻辑组件
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.OverDueBO">
+            <summary>
+            框架超時功能業務
+            V_2.4.0 By Ant
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.OverDueBO.GetWorkFlowOverDueSetting">
+            <summary>
+            獲取流程的超時設置，並且保存在緩存中
+            </summary> 
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.OverDueBO.GetWorkFlowStepWorkDateSetting">
+            <summary>
+            獲取流程節點的超時與催辦設置，並且保存在緩存中
+            Key:WorkFlowInfoID_WorkFlowStepCode
+            </summary> 
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.OverDueBO.CheckOverDueHandle(Amway.Framework.Management.Common.Enum.UserAreaType)">
+            <summary>
+            獲取当前区域需要催辦的任務
+            </summary>      
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.OverDueBO.UpdateOverDueItems(System.Collections.Generic.IList{Amway.Framework.Management.Entities.ItemRecordApproveEmp},Amway.Framework.Management.Common.Enum.UserAreaType)">
+            <summary>
+            对传入的单执行超时处理信息更新。
+            </summary> 
+            <param name="itemRecordApproveEmp">更新前的表单处理信息</param>       
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.OverDueBO.ExcuteOverDueHandle">
+            <summary>
+            执行催办任务
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.OverDueBO.GetExcuteItemFormDataBase(System.Int32)">
+            <summary>
+            从数据库中提取需要超时处理的列表
+            </summary>     
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.OverDueBO.SeedOverDueMailTask(Amway.Framework.Management.BLL.EmailVar,System.String)">
+            <summary>
+            超时时，发送邮件给申请人和填表人
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.OverDueBO.SeedOverDueApprovalMail(Amway.Framework.Management.BLL.EmailVar,System.String)">
+            <summary>
+            超时时，发送邮件给审批者
+            </summary>
+            <param name="emailVar"></param>
+            <param name="recordId"></param>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.OverDueBO.CreateFormUrl(Amway.Framework.Management.Entities.SystemInfo,System.String)">
+            <summary>
+            创建表单地址
+            </summary>
+            <param name="recordId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.OverDueBO.FillAttributes(System.Collections.Generic.Dictionary{System.String,System.String},System.Data.DataRow,System.String)">
+            <summary>
+            将表中一行添加到Dictionary中去
+            </summary>
+            <param name="attributes"></param>
+            <param name="dr"></param>
+            <param name="tablePrefix">key是否加表前缀，如果此值不为空，则key值为tablePrefix.ColumnName</param>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.EmployeeStageBO">
+            <summary>
+            EmployeeStage业务逻辑组件
+            </summary>
+            <summary>
+            EmployeeStage业务逻辑组件
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.EmailLogBO">
+            <summary>
+            EmailLog业务逻辑组件
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.DepartmentBO">
+            <summary>
+            Department业务逻辑组件
+            </summary>
+            <summary>
+            Department业务逻辑组件
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.DepartmentBO.SearchEmpUnitCode(System.String,System.Int32)">
+            <summary>
+            获取部门编码
+            </summary>
+            <param name="key">关键字</param>
+            <param name="count">返回结果行数</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.QueryFromBO">
+            <summary>
+            QueryFrom业务逻辑组件
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.ExceptionLogBO">
+            <summary>
+            ExceptionLog业务逻辑组件
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.ApproveBoxPolicyBO">
+            <summary>
+            ApproveBoxPolicy业务逻辑组件
+            </summary>
+        </member>
+        <!-- 对于成员“M:Amway.Framework.Management.BLL.ItemRecordApproveEmpBO.SetWorkFlowCode(System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="M:Amway.Framework.Management.BLL.ItemRecordApproveEmpBO.GetWorkflowItemApprovalEmp(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="recordId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ItemRecordApproveEmpBO.GetWorkflowItemApprovalEmpBySourceEmpNumber(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="empnumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ItemRecordApproveEmpBO.GetWorkflowItemApprovalEmpByDestEmpNumber(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="empnumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ItemRecordApproveEmpBO.DeleteApprovalEmpByRecordID(System.String)">
+            <summary>
+            通过RecordID删除(直接执行SQL)
+            </summary>
+            <param name="recordID"></param>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ItemRecordApproveEmpBO.DeleteApprovalEmp(System.String,System.Int32)">
+            <summary>
+            通过RecordID和approveType删除(直接执行SQL)
+            </summary>
+            <param name="recordID"></param>
+            <param name="approveType"></param>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ItemRecordApproveEmpBO.UpdateOverDueApproveEmps(System.Collections.Generic.IEnumerable{Amway.Framework.Management.Entities.ItemRecordApproveEmp})">
+            <summary>
+            批量更新超时与催办信息到数据库
+            </summary>
+            <param name="itemRecordApproveEmp"></param>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.EmailTemplateBO">
+            <summary>
+            EmailTemplate业务逻辑组件
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.BaseDataExtFieldBO">
+            <summary>
+            BaseDataExtField业务逻辑组件
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.ItemRecordBO">
+            <summary>
+            ItemRecord业务逻辑组件
+            使用前必须调用SetWorkFlowCode的方法设置流程变量
+            </summary>
+        </member>
+        <!-- 对于成员“M:Amway.Framework.Management.BLL.ItemRecordBO.#ctor”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Amway.Framework.Management.BLL.ItemRecordBO.SetWorkFlowCode(System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="M:Amway.Framework.Management.BLL.ItemRecordBO.CancelDelegateApprovalEmp(Ascentn.Workflow.Base.WorkflowService,System.String,System.String,System.String)">
+            <summary>
+            将sourceEmpNumber委托给destEmpNumber的正在审批的任务取回来
+            </summary>
+            <param name="api"></param>
+            <param name="sourceEmpNumber"></param>
+            <param name="destEmpNumber"></param>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ItemRecordBO.ChangeApprovalEmp(Ascentn.Workflow.Base.WorkflowService,System.String,System.String,System.String,System.String)">
+            <summary>
+            将流程中sourceEmpNumber的任务转移给destEmpNumber(非委托)
+            </summary>
+            <param name="recordId">流程Id</param>
+            <param name="sourceEmpNumber"></param>
+            <param name="destEmpNumber"></param>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ItemRecordBO.GetManagerItemRecords(System.Int32,System.Int32,System.String,System.DateTime,System.DateTime,System.String)">
+            <summary>
+            获取流程管理界面列表
+            </summary>
+            <param name="StartRecord">起始记录条数</param>
+            <param name="MaxRecords">需要获取的记录条数</param>
+            <param name="workflowCode">流程代码</param>
+            <param name="startDate">提交开始时间</param>
+            <param name="endDate">提交结束时间</param>
+            <param name="formCode">表单号</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ItemRecordBO.GetManagerItemRecordCount(System.String,System.DateTime,System.DateTime,System.String)">
+            <summary>
+            获取流程管理界面记录条数
+            </summary>
+            <param name="workflowCode">流程代码</param>
+            <param name="startDate">提交开始时间</param>
+            <param name="endDate">提交结束时间</param>
+            <param name="formCode">表单号</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ItemRecordBO.GetAnalysisSpentTime(System.DateTime,System.DateTime,System.Int32@)">
+            <summary>
+            获取流程平均处理时间
+            </summary>
+            <param name="startDate">要统计的流程提交时间范围的开始时间</param>
+            <param name="endDate">要统计的流程提交时间范围的结束时间</param>
+            <param name="number">统计的记录数</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ItemRecordBO.GetActivityAnalysisSpentTime(System.DateTime,System.DateTime,System.String,System.Int32@)">
+            <summary>
+            获取节点平均处理时间
+            </summary>
+            <param name="startDate">要统计的节点分配任务时间范围的开始时间</param>
+            <param name="endDate">要统计的节点分配任务时间范围的结束时间</param>
+            <param name="stepCode">环节代码</param>
+            <param name="number">统计的记录数</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ItemRecordBO.GetEmployeeAnalysisSpentTime(System.DateTime,System.DateTime,System.String,System.Int32@)">
+            <summary>
+            获取某个用户的任务平均处理时间
+            </summary>
+            <param name="startDate">要统计的用户任务分配任务时间范围的开始时间</param>
+            <param name="endDate">要统计的用户任务分配任务时间范围的结束时间</param>
+            <param name="employeeNumber">用户AD帐号</param>
+            <param name="number">统计的记录数</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ItemRecordBO.UpdateItemRecordStatus(System.String,System.String,Amway.Framework.ItemRecordStatus)">
+            <summary>
+            更新表单状态(直接执行SQL)
+            </summary>
+            <param name="workflowPrefix">表单表前缀</param>
+            <param name="recordId">记录ID</param>
+            <param name="itemRecordStatus">状态</param>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ItemRecordBO.UpdateItemRecordFinishDate(System.String,System.String)">
+            <summary>
+            更新表单完成时间为当前时间(直接执行SQL)
+            </summary>
+            <param name="workflowPrefix">表单表前缀</param>
+            <param name="recordId">记录ID</param>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ItemRecordBO.GetItemRecord(System.String,System.String)">
+            <summary>
+            通过SQL查询一条表单记录(直接执行SQL)
+            </summary>
+            <param name="recordID"></param>
+            <param name="prefix"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ItemRecordBO.GetRelationItemRecord(System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.Int32@)">
+            <summary>
+            获取关联表单信息
+            </summary>
+            <param name="prefix">表单表前缀</param>
+            <param name="applyEmpNameEN">申请人英文名</param>
+            <param name="applyEmpNumber">申请人AD帐号</param>
+            <param name="formCode">表单号</param>
+            <param name="applyDate">申请日期</param>
+            <param name="start">开始记录数</param>
+            <param name="size">返回记录数</param>
+            <param name="count">返回记录总数</param>
+            <returns>查找结果集</returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.DropDownListBO.GetSystemDropDownList(System.Boolean)">
+            <summary>
+            返回系统信息的下拉列表
+            </summary>
+            <param name="IncludeGobal">是否包含 全局 项</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.DropDownListBO.GetFilterSystemDropDownList(System.Boolean)">
+            <summary>
+            返回系统信息的下拉列表
+            </summary>
+            <param name="IncludeGobal">是否包含 全局 项</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.DropDownListBO.GetData(System.String,System.String,System.Boolean,System.String)">
+            <summary>
+             返回基础数据服务下拉列表
+            </summary>
+            <param name="SystemCode"></param>
+            <param name="BaseDataCode"></param>
+            <param name="IsIncludeEmptyItem"></param>
+            <param name="EmptyItemText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.DropDownListBO.GetQueryDropDownList(System.String,System.Boolean)">
+            <summary>
+            返回通用查询的下拉列表
+            </summary>
+            <param name="IncludeGobal"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.DropDownListBO.GetQueryDropDownListByMenuID(System.String,System.Boolean)">
+            <summary>
+            返回通用查询的下拉列表
+            </summary>
+            <param name="IncludeGobal"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.DropDownListBO.CultureString(System.String,System.String,System.String)">
+            <summary>
+            对字符串进行多语言选择
+            </summary>
+            <param name="valueEn">英文值</param>
+            <param name="valueChs">简体中文值</param>
+            <param name="valueCht">繁体中文值</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.ApproveBoxPolicyRoleBO">
+            <summary>
+            WorkDelegate业务逻辑组件
+            </summary>
+            <summary>
+            ApproveBoxPolicyRole业务逻辑组件
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ApproveBoxPolicyRoleBO.GetApproverPolicyRole(System.String,System.String,System.String)">
+            <summary>
+            获得审批政策角色的用户列表
+            </summary>
+            <param name="workflowID">流程ID</param>
+            <param name="policyID">审批政策ID</param>
+            <param name="empNumber">用户AD帐号</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.SystemThemeBO">
+            <summary>
+            SystemTheme业务逻辑组件
+            </summary>
+            <summary>
+            样式管理业务逻辑组件
+            </summary>    
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.ShopStaffBO">
+            <summary>
+            ShopStaff业务逻辑组件
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.QueryGroupByBO">
+            <summary>
+            QueryGroupBy业务逻辑组件
+            </summary>
+        </member>
+        <!-- 对于成员“M:Amway.Framework.Management.BLL.DefineApproverBO.SetWorkFlowCode(System.String)”忽略有格式错误的 XML 注释 -->
+        <!-- 对于成员“M:Amway.Framework.Management.BLL.DefineApproverBO.DeleteByRecordId(System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="T:Amway.Framework.Management.BLL.ApproveBoxRoleSpecialEmpBO">
+            <summary>
+            ApproveBoxRoleSpecialEmp业务逻辑组件
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.WorkStepDisplayCtlBO">
+            <summary>
+            WorkStepDisplayCtl业务逻辑组件
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.WorkflowRelationBO">
+            <summary>
+            WorkflowRelation业务逻辑组件
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.WorkflowRelationBO.GetRelationBySourceId(System.String)">
+            <summary>
+            根据当前workflow的id，取得与该Workflow相关的workflow
+            </summary>
+            <param name="sourceWorkflowId">当前workflow的id</param>
+            <returns>所有与当前workflow关联的workflow</returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.WorkflowRelationBO.GetRelationByRowId(System.String)">
+            <summary>
+            根据关联id取得关联流程信息
+            </summary>
+            <param name="rowId">关联id</param>
+            <returns>相关联流程信息</returns>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.ScheduleBO">
+            <summary>
+            Schedule业务逻辑组件
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ScheduleBO.GetScheduleByCondition(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            通过条件查询定时任务
+            </summary>
+            <param name="SystemID">应用ID</param>
+            <param name="ScheduleCode">任务编号</param>
+            <param name="ScheduleName">任务名称</param>
+            <param name="StartDate">开始时间</param>
+            <param name="EndDate">结束时间</param>
+            <param name="sortExpression">排序表达式</param>
+            <param name="StartRecord">起始记录</param>
+            <param name="MaxRecords">最大记录</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ScheduleBO.GetScheduleCountByCondition(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            通过条件查询定时任务的数目
+            </summary>
+            <param name="SystemID">应用ID</param>
+            <param name="ScheduleCode">任务编号</param>
+            <param name="ScheduleName">任务名称</param>
+            <param name="StartDate">开始时间</param>
+            <param name="EndDate">结束时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ScheduleBO.UpdateSetting(Amway.Framework.Management.Entities.Schedule)">
+            <summary>
+            更新 服务器上的定时任务
+            </summary>
+            <param name="scheduleObj"></param>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ScheduleBO.DeleteSetting(Amway.Framework.Management.Entities.Schedule)">
+            <summary>
+            删除服务器上的定时任务
+            </summary>
+            <param name="scheduleObj"></param>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.ScheduleBO.ExecuteTask(Amway.Framework.Management.Entities.Schedule)">
+            <summary>
+            执行服务器上的定时任务
+            </summary>
+            <param name="scheduleObj"></param>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.QueryOrderByBO">
+            <summary>
+            QueryOrderBy业务逻辑组件
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.QueryColumnBO">
+            <summary>
+            QueryColumn业务逻辑组件
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.BaseDataItemBO">
+            <summary>
+            BaseDataItem业务逻辑组件
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.AttachmentLogBO">
+            <summary>
+            AttachmentLog业务逻辑组件
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.EmailAttachmentBO">
+            <summary>
+            EmailAttachment业务逻辑组件
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.BaseDataWsMappingBO">
+            <summary>
+            BaseDataWsMapping业务逻辑组件
+            </summary>
+        </member>
+        <!-- 对于成员“M:Amway.Framework.Management.BLL.ItemRecordRelationBO.SetWorkFlowCode(System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="M:Amway.Framework.Management.BLL.ItemRecordRelationBO.UpdateFormCode(System.String,System.String)">
+            <summary>
+            更新关系表单中的表单号
+            </summary>
+            <param name="recordId"></param>
+            <param name="newFormCode"></param>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.EmailServiceBO">
+            <summary>
+            邮件服务组件
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.BLL.EmailServiceBO.PARAMETER_STATRT">
+            <summary>
+            模板参数开始符号
+            </summary>
+        </member>
+        <member name="F:Amway.Framework.Management.BLL.EmailServiceBO.PARAMETER_END">
+            <summary>
+            模板参数结束符号
+            </summary>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.EmailServiceBO.Send(System.String,System.String,System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String},System.String,System.Boolean,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            发送邮件
+            </summary>
+            <param name="systemCode">当前的系统编码</param>
+            <param name="fromEmailAddress">发件人邮件地址</param>
+            <param name="toEmpNumbers">收件人员工好列表</param>
+            <param name="ccEmpNumbers">抄送人</param>
+            <param name="bccEmpNumbers">暗送人</param>
+            <param name="templateCode">模板编码</param>
+            <param name="IsGolbalTemplate">是否全局模板</param>
+            <param name="parameters">模板参数</param>
+            <returns>任务ID</returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.EmailServiceBO.Send(System.String,System.String,System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String},Amway.Framework.Management.Entities.EmailTemplate,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            发送邮件
+            modify by Ant 2013/3/26 
+            如果是不敏感，个人邮件为空而且是店铺员工，这个邮件可以直接发送到店铺公共邮箱。
+            </summary>
+            <param name="systemCode">当前的系统编码</param>
+            <param name="fromEmailAddress">发件人邮件地址</param>
+            <param name="toEmpNumbers">收件人员工好列表</param>
+            <param name="ccEmpNumbers">抄送人</param>
+            <param name="bccEmpNumbers">暗送人</param>
+            <param name="template">模板</param>
+            <param name="parameters">模板参数</param>
+            <returns>任务ID</returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.EmailServiceBO.Send(System.String,System.String,System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String},System.String,System.Boolean,System.Collections.Generic.List{Amway.Framework.Core.Collection.NameValuePair})">
+            <summary>
+            发送邮件
+            </summary>
+            <param name="systemCode">当前的系统编码</param>
+            <param name="fromEmailAddress">发件人邮件地址</param>
+            <param name="toEmpNumbers">收件人员工好列表</param>
+            <param name="ccEmpNumbers">抄送人</param>
+            <param name="bccEmpNumbers"></param>
+            <param name="templateCode"></param>
+            <param name="IsGolbalTemplate"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.EmailServiceBO.Send(System.String,System.String,System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String},Amway.Framework.Management.Entities.EmailTemplate,System.Collections.Generic.List{Amway.Framework.Core.Collection.NameValuePair})">
+            <summary>
+            发送邮件
+            </summary>
+            <param name="systemCode">当前的系统编码</param>
+            <param name="fromEmailAddress">发件人邮件地址</param>
+            <param name="toEmpNumbers">收件人员工好列表</param>
+            <param name="ccEmpNumbers">抄送人</param>
+            <param name="bccEmpNumbers">暗送人</param>
+            <param name="template">模板</param>
+            <param name="parameters">模板参数</param>
+            <returns>任务ID</returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.EmailServiceBO.GetEmailTaskStatus(System.String)">
+            <summary>
+            查看邮件发送状态
+            </summary>
+            <param name="emailTaskID">邮件任务ID</param>
+            <returns>邮件任务状态</returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.EmailServiceBO.Send(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)">
+            <summary>
+            发送邮件
+            </summary>
+            <param name="systemCode">当前的系统编码</param>
+            <param name="fromEmailAddress">发件人邮件地址</param>
+            <param name="toEmailAddress">收件人邮件地址</param>
+            <param name="ccEmailAddress">抄送人邮件地址</param>
+            <param name="bccEmailAddress">暗送人邮件地址</param>
+            <param name="subject">主题</param>
+            <param name="content">内容</param>
+             <param name="retryCount">重试次数</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.EmailServiceBO.Send(System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Collections.Generic.Dictionary{System.String,System.String},System.String)">
+            <summary>
+            发送邮件
+            </summary>
+            <param name="systemCode">当前的系统编码</param>
+            <param name="fromEmailAddress">发件人邮件地址</param>
+            <param name="toEmailAddress">收件人邮件地址</param>
+            <param name="ccEmailAddress">抄送人邮件地址</param>
+            <param name="bccEmailAddress">暗送人邮件地址</param>
+            <param name="templateCode">模板编码</param>
+            <param name="IsGolbalTemplate">是否全局模板</param>
+            <param name="parameters">模板参数</param>
+            <param name="culture">发送的语言，支持en-US,zh-CHT,zh-CHS</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.EmailServiceBO.Send(System.String,System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Collections.Generic.List{Amway.Framework.Core.Collection.NameValuePair},System.String)">
+            <summary>
+            发送邮件
+            </summary>
+            <param name="systemCode">当前的系统编码</param>
+            <param name="fromEmailAddress">发件人邮件地址</param>
+            <param name="toEmailAddress">收件人邮件地址</param>
+            <param name="ccEmailAddress">抄送人邮件地址</param>
+            <param name="bccEmailAddress">暗送人邮件地址</param>
+            <param name="templateCode">模板编码</param>
+            <param name="IsGolbalTemplate">是否全局模板</param>
+            <param name="parameters">模板参数</param>
+            <param name="culture">发送的语言，支持en-US,zh-CHT,zh-CHS</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.EmailServiceBO.Send(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.DateTime,System.Int32)">
+            <summary>
+            发送邮件
+            </summary>
+            <param name="systemCode">当前的系统编码</param>
+            <param name="fromEmailAddress">发件人邮件地址</param>
+            <param name="toEmailAddress">收件人邮件地址</param>
+            <param name="ccEmailAddress">抄送人邮件地址</param>
+            <param name="bccEmailAddress">暗送人邮件地址</param>
+            <param name="subject">主题</param>
+            <param name="content">内容</param>
+            <param name="sendTime">发送时间</param>
+            <param name="retryCount">重试次数</param>
+            <returns>邮件任务ID</returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.EmailServiceBO.FormatTemplateString(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            格式化模板字符串
+            </summary>
+            <param name="templateString">模板字符串</param>
+            <param name="parameters">参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:Amway.Framework.Management.BLL.EmailServiceBO.GetEmailAddressString(System.Collections.Generic.List{System.String},System.Boolean)">
+            <summary>
+            返回邮件地址
+            modify by Ant 2013/3/26 FW_2_3_0
+            添加一个参数，是否是敏感邮件
+            </summary>
+            <param name="empNumbers">员工编号</param>
+            <param name="isSensitive">是否包含敏感信息</param>
+            <returns></returns>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.BaseDataItemExtBO">
+            <summary>
+            BaseDataItemExt业务逻辑组件
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.ShopInfoBO">
+            <summary>
+            ShopInfo业务逻辑组件
+            </summary>
+        </member>
+        <member name="T:Amway.Framework.Management.BLL.RoleScopeBO">
+            <summary>
+            RoleScope业务逻辑组件
+            </summary>
+        </member>
+    </members>
+</doc>
