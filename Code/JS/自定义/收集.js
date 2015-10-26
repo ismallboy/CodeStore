@@ -88,4 +88,5 @@ function openWindow(sURL, sName, w, h, left, top) {
 	}
 16.js提交
 	setTimeout(__doPostBack($("#btnRebindControlData").attr("name"), ''),0);
-17. 
+17. C#后台获取URL参数乱码问题：js使用encodeURI(参数)即可；
+18.
