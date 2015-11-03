@@ -5,3 +5,5 @@
 	②response.redirect("");
 2.WebService允许访问session
 	[WebMethod(EnableSession=true)]
+3.asp.net webform 获取模板页控件
+    ((TextBox)Master.FindControl("txtMsgTest")).Text;
