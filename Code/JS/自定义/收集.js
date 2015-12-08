@@ -1,4 +1,4 @@
-1.访问父页面元素事件：
+﻿1.访问父页面元素事件：
 	①window.opener.document.getElementById("btnSearch").click();
 	② $("#btnSearch", window.opener.document).click();
 
@@ -89,4 +89,5 @@ function openWindow(sURL, sName, w, h, left, top) {
 16.js提交
 	setTimeout(__doPostBack($("#btnRebindControlData").attr("name"), ''),0);
 17. C#后台获取URL参数乱码问题：js使用encodeURI(参数)即可；
-18.
+18.保留两位小数：.toFixed(2)
+19.
