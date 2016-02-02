@@ -90,4 +90,9 @@ function openWindow(sURL, sName, w, h, left, top) {
 	setTimeout(__doPostBack($("#btnRebindControlData").attr("name"), ''),0);
 17. C#后台获取URL参数乱码问题：js使用encodeURI(参数)即可；
 18.保留两位小数：.toFixed(2)
-19.
+19.用于设置最长文本：
+//求字符串占用的字节数（中文2个字节，英文1一个字节，空格一个字节）
+String.prototype.lenB = function () {
+    return this.replace(/[^\x00-\xff]/g, "**").length;
+}
+20.
