@@ -11,8 +11,10 @@ delimiter ';';
 call schema_change();
 drop procedure if exists schema_change;
 2.修改数据库字段类型
---alter table upload change column <old name> <new name> <new datatype>
+--alter table upload change column <old name> <new name> <new datatype> --(可以更改列名和列类型)
+--ALTER [IGNORE] TABLE tbl_name alter_spec [, alter_spec ...] --(只能更改列类型而不能更改列名称)
 alter table filetable change column fdata fdata MediumBlob
+
 3.连表更新字段
 update admin_follow_customer as a, admin_user_extension as b
 set a.UserId = b.UserId, a.Remark = NULL
