@@ -1,0 +1,46 @@
+
+-- ----------------------------
+-- Table structure for product
+-- ----------------------------
+DROP TABLE IF EXISTS `product`;
+CREATE TABLE `product` (
+  `Id` varchar(32) NOT NULL COMMENT 'ID',
+  `ProductName` varchar(255) NOT NULL COMMENT '产品名称',
+  `ProductLogo` varchar(512) NOT NULL COMMENT '产品LOGO',
+  `CompanyId` varchar(32) NOT NULL COMMENT '所属公司Id',
+  `ParentProductTypeId` varchar(32) NOT NULL COMMENT '父级商品类型',
+  `ProductTypeId` varchar(32) NOT NULL COMMENT '商品类型',
+  `ProductStatus` int(11) unsigned NOT NULL COMMENT '产品状态（待审核、审核不通过、上架、下架、删除）',
+  `Remark` varchar(1024) DEFAULT NULL COMMENT '备注',
+  `CreateDate` datetime NOT NULL COMMENT '创建时间',
+  `UpdateDate` datetime DEFAULT NULL COMMENT '最后更新时间',
+  `PublishDate` datetime DEFAULT NULL COMMENT '产品发布时间',
+  `ProductStageId` int(11) NOT NULL COMMENT '产品阶段(设计阶段，开模阶段，样品阶段，量产阶段)',
+  `IsSupplySample` bit(1) NOT NULL COMMENT '是否提供样品',
+  `StandardAttachment` varchar(512) NOT NULL COMMENT '标配附件',
+  `MinOrderAmout` int(11) unsigned NOT NULL COMMENT '最小订单量',
+  `MinOrderAmoutUnit` int(11) NOT NULL DEFAULT '0' COMMENT '最小订单量单位（枚举值：件、个、只、套、台）',
+  `Dep` varchar(255) NOT NULL COMMENT '起运港',
+  `ModelName` varchar(255) NOT NULL COMMENT '产品型号',
+  `FactoryPrice` decimal(15,2) NOT NULL COMMENT '工厂价格',
+  `PriceUnit` int(11) NOT NULL COMMENT '付款单位',
+  `ProductionCycle` varchar(255) NOT NULL COMMENT '生产周期（界面提供：1个月,3个月,6个月,其他）',
+  `IsScore` bit(1) NOT NULL COMMENT '平台评分状态（0未评分，1已评分）',
+  `Score` decimal(4,2) DEFAULT NULL COMMENT '综合分',
+  `ViewCount` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '浏览数',
+  `CollectCount` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '收藏数',
+  `CommentCount` int(11) unsigned NOT NULL DEFAULT '0' COMMENT '评价数',
+  `InquiryCount` int(11) NOT NULL DEFAULT '0' COMMENT '询盘量',
+  `ProductAuths` varchar(512) DEFAULT NULL COMMENT '产品认证组合(只展示用 多个用,分离)',
+  `SaleMarkets` varchar(512) DEFAULT NULL COMMENT '产品销售市场组合（只展示用）',
+  `Shippings` varchar(512) DEFAULT NULL COMMENT '冗余-交货方式（只用于展示）',
+  `PayClauses` varchar(512) DEFAULT NULL COMMENT '付款条件  组合(只展示用 多个用,分离)',
+  `QRCodeUrl` varchar(512) DEFAULT NULL COMMENT '产品二维码',
+  `DevCycleUnit` varchar(32) DEFAULT NULL COMMENT '日期的单位months（默认）、days',
+  `UserId` varchar(32) DEFAULT NULL COMMENT '用户Id',
+  `IsHighGrade` int(11) DEFAULT NULL COMMENT '是否优质产品 ',
+  `IfFinalist` bit(1) DEFAULT NULL COMMENT '是否入围，true入围，null或false不入围',
+  PRIMARY KEY (`Id`),
+  KEY `CreateDate` (`CreateDate`),
+  KEY `ProductTypeId` (`ProductTypeId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='产品表';
