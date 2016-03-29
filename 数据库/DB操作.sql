@@ -19,4 +19,8 @@ IF NOT EXISTS ( SELECT  d.name ,
 	EXEC sp_addextendedproperty 'MS_Description', '备注', 'Schema', dbo, 'table', MSTB_MR_ROOM_INFO, 'column', REMARK
 GO
 
+--更改主键字段类型
+alter table Stuinfo alter column Id nchar(36) not null;
+alter table Stuinfo add constraint PK_StuInfo primary key clustered(Id);
+
 --
